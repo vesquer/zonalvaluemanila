@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PH Land Use Map</title>
+  <style>
+html,body,#map{margin:0;height:100%;font:13px system-ui,sans-serif}
+.panel{position:absolute;left:10px;top:10px;width:230px;background:#fff;border-radius:8px;padding:10px;box-shadow:0 1px 6px #0003;max-height:calc(100% - 40px);overflow:auto}
+.panel h4{margin:8px 0 4px;font-size:12px;text-transform:uppercase;color:#555}
+#results button{display:block;width:100%;text-align:left;border:0;background:#f3f4f6;margin-top:2px;padding:5px;cursor:pointer}
+#q{width:100%;box-sizing:border-box;padding:6px}
+#layers input[type=range]{width:100%}
+#legend i,#zlegend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:middle}
+#vlegend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:middle;border-radius:2px}
+#vlegend i.vconf{height:0;border-top:2px dashed #d03b3b;border-radius:0}
+#vpanel select{width:100%;margin:2px 0 6px;padding:4px} #vpanel label{display:block;font-size:12px}
+.vnote{font-weight:600;margin-bottom:4px} .vunit{font-size:11px;color:#555}
+#vgaps ul{padding-left:14px} #vgaps li{margin:2px 0} #vgaps .why{color:#666} #vgaps details{margin:2px 0}
+details{margin-top:8px;font-size:11px;color:#444} ul{padding-left:16px;margin:4px 0}
+@media(max-width:600px){.panel{width:calc(100% - 76px);max-height:42vh}}
+</style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="panel">
+    <input id="q" placeholder="Search city or municipality" /><div id="results"></div>
+    <h4>Layers</h4><div id="layers"></div>
+    <h4>Zonal values</h4><div id="vpanel"></div>
+    <h4>Zoning</h4><div id="zlegend"></div>
+    <h4>Land cover</h4><div id="legend"></div>
+    <details><summary>Data sources</summary><ul id="attrib"></ul></details>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

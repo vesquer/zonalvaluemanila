@@ -1,0 +1,8 @@
+{
+  "name": "ph-land-use-map",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "tsc && vite build", "preview": "vite preview" },
+  "dependencies": { "maplibre-gl": "^4.7.1", "pmtiles": "^3.2.0" },
+  "devDependencies": { "typescript": "^5.6.0", "vite": "^5.4.0" }
+}

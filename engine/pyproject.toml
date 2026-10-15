@@ -1,0 +1,16 @@
+[project]
+name = "zv"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["geopandas>=1.0", "shapely>=2.0", "pyproj>=3.6", "pymupdf", "jsonschema", "xlrd"]
+[project.optional-dependencies]
+dev = ["pytest"]
+[project.scripts]
+zv = "zv.cli:main"
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.package-data]
+zv = ["schema/*.json"]
+[tool.setuptools.packages.find]
+where = ["src"]
