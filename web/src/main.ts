@@ -25,6 +25,13 @@ const byClass = (c: string): any => ["==", ["get", "class_code"], c];
 // Quezon City, Manila and Pasig with a margin; the map does not pan beyond it
 const VIEW: [number, number, number, number] = [120.95, 14.55, 121.13, 14.77];
 const MAX_BOUNDS: [number, number, number, number] = [120.85, 14.45, 121.25, 14.88];
+// A shared #zoom/lat/lon outside the cities (or the #10/0/0 written before the first fit) would open on empty sea:
+// drop it so the map opens on VIEW.
+{
+  const [, lat, lon] = location.hash.slice(1).split("/").map(Number);
+  const [w, s, e, n] = MAX_BOUNDS;
+  if (location.hash && !(lat >= s && lat <= n && lon >= w && lon <= e)) history.replaceState(null, "", location.pathname + location.search);
+}
 
 const map = new maplibregl.Map({
   container: "map",
