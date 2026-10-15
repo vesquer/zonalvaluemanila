@@ -1,5 +1,5 @@
 import pytest
-from shapely.geometry import LineString
+from shapely.geometry import LineString, box
 from zv import ops
 from zv.ops import SelectionEmpty
 from zv.run import run_values
@@ -169,3 +169,21 @@ def test_row_naming_two_streets_values_both(vbase):
                       {"op": "assign_value", "input": "u", "value_php_sqm": 1, "class_code": "RR", "applies_to": "street"}]}
     r = run_values(vbase, [row])
     assert r.flags == [] and r.streets.iloc[0].geometry.length == pytest.approx(1000 + 500 + ops.EDGE_M, abs=1)
+
+
+def test_area_names_match_without_their_designator(vbase):
+    poly = box(600, 600, 900, 900)
+    vbase.features.loc[len(vbase.features)] = ["Capitol 8", poly]
+    vbase.features.loc[len(vbase.features)] = ["Capitol 8 Center", poly.buffer(-100)]
+    assert ops.select_feature(vbase, name="CAPITOL 8 SUBD.", within="Poblacion").area == pytest.approx(300 * 300)
+    with pytest.raises(SelectionEmpty):
+        ops.select_roads(vbase, name="ALBAY SUBD.", within="San Isidro")  # streets keep the designator
+
+
+def test_initials_either_side_and_saints(vbase):
+    vbase.roads.loc[len(vbase.roads)] = ["residential", "F. Pike Street", LineString([(300, 0), (300, 1000)])]
+    vbase.roads.loc[len(vbase.roads)] = ["residential", "Saint Paul Street", LineString([(400, 0), (400, 1000)])]
+    assert ops.select_roads(vbase, name="FELIPE PIKE ST.", within="San Isidro").length == pytest.approx(1000)
+    assert ops.select_roads(vbase, name="ST. PAUL", within="San Isidro").length == pytest.approx(1000)
+    with pytest.raises(SelectionEmpty):
+        ops.select_roads(vbase, name="FELIPE", within="San Isidro")  # an initial alone never matches

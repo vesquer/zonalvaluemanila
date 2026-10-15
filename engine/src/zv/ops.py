@@ -43,33 +43,44 @@ _STOP = {"road", "street", "avenue", "highway", "st", "ave", "rd", "blvd", "boul
 
 
 _ABBR = {"sct": "scout", "gen": "general", "col": "colonel", "sgt": "sergeant", "hon": "honorable", "sto": "santo", "sta": "santa",
-         "dr": "doctor", "atty": "attorney", "capt": "captain", "lt": "lieutenant", "pres": "president", "mt": "mount", "bgy": "barangay",
-         "vill": "village", "subd": "subdivision", "ext": "extension"}
+         "dr": "doctor", "atty": "attorney", "capt": "captain", "cpl": "corporal", "pvt": "private", "maj": "major", "lt": "lieutenant", "pres": "president", "mt": "mount", "bgy": "barangay",
+         "vill": "village", "subd": "subdivision", "cmpd": "compound", "exec": "executive", "ext": "extension"}
+# Named places are often mapped without their designator ("CAPITOL 8 SUBD." is "Capitol 8" in OSM), so area names
+# are compared without these words too.
+_AREA = _STOP | {"subdivision", "subdivisions", "subd", "village", "vill", "compound", "cmpd", "homes", "townhomes", "townhouse",
+                 "townhouses", "estate", "estates", "sitio"}
 
 
-def _words(s: str) -> list[str]:
+def _words(s: str, stop: set[str] = _STOP) -> list[str]:
     """Significant words in order."""
     words = _norm(str(s).replace(".", ". ")).replace("-", " ").replace(",", " ").replace("ñ", "n").replace("'", "").split()
     if len(words) > 1 and words[-1] == "dr":  # "Bellevue Dr." is a drive, "Dr. Garcia" a doctor
         words[-1] = "drive"
-    return [_ABBR.get(t, t) for t in words if t not in _STOP]
+    if len(words) > 1 and words[0] == "st":  # "St. Paul" is a saint, "Paul St." a street
+        words[0] = "saint"
+    words = [_ABBR.get(t, t) for t in words]
+    return [t for t in words if t not in stop]
 
 
-def _tokens(s: str) -> set[str]:
-    return set(_words(s))
+def _tokens(s: str, stop: set[str] = _STOP) -> set[str]:
+    return set(_words(s, stop))
 
 
 def _covers(have: set[str], want: set[str]) -> bool:
-    """Every wanted token is in `have`; a one-letter token is an initial ("A. Bonifacio" = "Andres Bonifacio")."""
-    return all(t in have or (len(t) == 1 and any(h.startswith(t) for h in have)) for t in want) and \
-        any(len(t) > 1 for t in want)
+    """Every wanted token is in `have`; a one-letter token on either side is an initial ("A. Bonifacio" = "Andres
+    Bonifacio", "Felipe Pike" = "F. Pike Street")."""
+    def ok(t):
+        return t in have or (len(t) == 1 and any(h.startswith(t) for h in have)) or \
+            (len(t) > 1 and not t.isdigit() and t[0] in have)
+    return all(ok(t) for t in want) and any(len(t) > 1 and t in have for t in want)
 
 
 def _name_match(series, name: str, log: list[str] | None = None, aliases: dict[str, list[str]] | None = None,
-                scoped: bool = False, where: str | list[str] = ""):
+                scoped: bool = False, where: str | list[str] = "", stop: set[str] = _STOP):
     """A reviewed alias first; else exact (case/punctuation-insensitive); else every significant token of `name`
     must appear in the candidate's name. Approximate matches are logged for review. `scoped`: the candidates are
-    already limited to a small area (one barangay), so a one-word name may match a candidate with exactly that word."""
+    already limited to a small area (one barangay), so a one-word name may match a candidate with exactly that word.
+    `stop`: words ignored when comparing (_AREA for named places)."""
     n = _norm(name)
     for key in ([_alias_key(name, where)] if where else []) + [n]:
         if aliases and key in aliases:
@@ -80,18 +91,18 @@ def _name_match(series, name: str, log: list[str] | None = None, aliases: dict[s
     exact = series.fillna("").map(lambda v: _norm(v) == n)
     if exact.any():
         return exact
-    want = _tokens(name)
+    want = _tokens(name, stop)
     if not want:
         return exact
     if len(want) < 2:  # one significant word ("Dao", "Walnut") is too weak to match loosely city-wide
         if not scoped:
             return exact
-        loose = series.fillna("").map(lambda v: bool(v) and _tokens(v) == want)
+        loose = series.fillna("").map(lambda v: bool(v) and _tokens(v, stop) == want)
     else:
-        loose = series.fillna("").map(lambda v: bool(v) and _covers(_tokens(v), want))
+        loose = series.fillna("").map(lambda v: bool(v) and _covers(_tokens(v, stop), want))
     if loose.any():
         names = sorted(set(series[loose]))
-        same = [x for x in names if _words(x) == _words(name)]  # "Tandang Sora Ave" is the avenue, not "... Avenue Extension"
+        same = [x for x in names if _words(x, stop) == _words(name, stop)]  # "Tandang Sora Ave" is the avenue, not "... Avenue Extension"
         if len({_norm(x) for x in names}) > 1 and len({_norm(x) for x in same}) == 1:
             loose = series.fillna("").map(lambda v: _norm(v) == _norm(same[0]))
             names = sorted(set(series[loose]))
@@ -205,7 +216,7 @@ def select_feature(b: Base, *, name: str, within: str | list[str] = "", near: Ba
     if area is not None:
         near = area.buffer(SCOPE_M)
     feats = _near(b.features, near)
-    f = feats[_name_match(feats["name"], name, b.match_log, b.aliases, scoped=near is not None, where=within)]
+    f = feats[_name_match(feats["name"], name, b.match_log, b.aliases, scoped=near is not None, where=within, stop=_AREA)]
     if f.empty:
         raise SelectionEmpty(f"feature not found: {name!r}" + (f" in {within}" if within else ""))
     g = unary_union(f.geometry.values)

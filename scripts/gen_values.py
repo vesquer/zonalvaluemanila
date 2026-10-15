@@ -21,6 +21,7 @@ OUT_OF_SCOPE = {"RC": "residential condominium unit", "CC": "commercial condomin
 AREA = re.compile(r"\b(VILL(AGE)?|SUBD(IVISION)?S?|COMPOUND|CMPD|HOMES|HEIGHTS|ESTATES?|HOUSING|PROJECT|SITIO|TOWNHOMES?|"
                   r"RESIDENCES|PHASE|PH\.?\s*[IVX\d]+|GK|GAWAD KALINGA|CONDO(MINIUM)?S?|TOWN ?HOUSES?|CAMP|CAMPUS|COMPLEX)\b")
 STREET_END = re.compile(r"\b(ST|STREET|AVE|AVENUE|RD|ROAD|DR|DRIVE|LANE|EXT|EXTENSION|BLVD|BOULEVARD|HI-?WAY|HIGHWAY)\.?$")
+GENERIC = re.compile(r"^(ALLEY|ALLEYS|CALLEJON|CALLEJONS|INTERIOR|INTERIOR LOTS?|ROAD LOTS?|PATHWAYS?)\s*\*?$")
 UNITS = re.compile(r"\b(CONDO(MINIUM)?S?|TOWN ?HOUSES?|T'HOUSE|CCT|TCT)\b")
 # hyphenated words that are one name, not "from - to"
 COMPOUND = re.compile(r"\b(PAG-ASA|PAG-IBIG|HI-WAY|DUYAN-DUYAN|STO\.?-|STA\.?-|BAGONG-|SAN-|DE-|LA-)", re.I)
@@ -59,8 +60,9 @@ def split_vicinity(v: list[str]) -> tuple[str, str] | None:
 
 
 def street_names(s: str) -> list[str]:
-    """'TUAYAN ST./FAMILARA ST.' -> two streets; 'KALAWAG(CALAUAG)' -> the first spelling."""
-    s = re.sub(r"\s*\(.*?\)\s*", " ", s).strip()
+    """'TUAYAN ST./FAMILARA ST.' -> two streets; 'KALAWAG(CALAUAG)' -> the first spelling.
+    'C. VALIENTE ST. (formerly Valiente St) *' -> the current name (the star marks a renamed street)."""
+    s = re.sub(r"\s*\(.*?\)\s*", " ", s).replace("*", " ").strip()
     return [p.strip() for p in re.split(r"\s*/\s*|\s+&\s+", s) if len(p.strip()) >= 2]
 
 
@@ -90,6 +92,9 @@ def main() -> None:
                         recipe=None, assumptions=[], confidence=1.0, status="out_of_scope")
         elif not brgy:
             rule.update(interpretation=f"Barangay {r['barangay']!r} is not in the boundary data; add it to aliases.json.",
+                        recipe=None, assumptions=[], confidence=0.0, status="manual_geometry")
+        elif GENERIC.match(up):
+            rule.update(interpretation="Applies to unnamed alleys or lanes in the barangay, which the map cannot locate.",
                         recipe=None, assumptions=[], confidence=0.0, status="manual_geometry")
         elif up.startswith("ALL ") and UNITS.search(up):
             rule.update(interpretation="Applies to townhouse or condominium lots in the barangay, which the map cannot locate.",

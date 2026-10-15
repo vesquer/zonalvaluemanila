@@ -1,0 +1,4119 @@
+{
+ "by_rdo": [
+  {
+   "rdo": "43",
+   "rows": 2646,
+   "in_scope": 1350,
+   "placed": 750,
+   "unmatched": 508,
+   "manual": 92,
+   "out_of_scope": 1296,
+   "match_rate": 0.5556
+  }
+ ],
+ "conflicts": [
+  {
+   "a": "PSV-43-0001",
+   "b": "PSV-43-0002",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    14000.0,
+    20000.0
+   ],
+   "shared": 448.4,
+   "barangays": [
+    "Bagong Ilog"
+   ]
+  },
+  {
+   "a": "PSV-43-0233",
+   "b": "PSV-43-1173",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    43000.0,
+    40000.0
+   ],
+   "shared": 774.0,
+   "barangays": [
+    "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0235",
+   "b": "PSV-43-1173",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    43000.0,
+    40000.0
+   ],
+   "shared": 774.0,
+   "barangays": [
+    "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0237",
+   "b": "PSV-43-1173",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    43000.0,
+    40000.0
+   ],
+   "shared": 774.0,
+   "barangays": [
+    "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0274",
+   "b": "PSV-43-0407",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    14000.0,
+    26000.0
+   ],
+   "shared": 233.5,
+   "barangays": [
+    "Caniogan",
+    "Kapasigan"
+   ]
+  },
+  {
+   "a": "PSV-43-0302",
+   "b": "PSV-43-1705",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    63000.0,
+    65000.0
+   ],
+   "shared": 1098.4,
+   "barangays": [
+    "Dela Paz",
+    "Santolan"
+   ]
+  },
+  {
+   "a": "PSV-43-0359",
+   "b": "PSV-43-0360",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    22000.0,
+    20000.0
+   ],
+   "shared": 390.2,
+   "barangays": [
+    "Kalawaan"
+   ]
+  },
+  {
+   "a": "PSV-43-0409",
+   "b": "PSV-43-0410",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    26000.0,
+    23000.0
+   ],
+   "shared": 340.6,
+   "barangays": [
+    "Kapasigan"
+   ]
+  },
+  {
+   "a": "PSV-43-0415",
+   "b": "PSV-43-1515",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    25000.0,
+    20000.0
+   ],
+   "shared": 274.6,
+   "barangays": [
+    "Kapasigan",
+    "San Jose"
+   ]
+  },
+  {
+   "a": "PSV-43-0522",
+   "b": "PSV-43-1015",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    70000.0,
+    65000.0
+   ],
+   "shared": 299.5,
+   "barangays": [
+    "Kapitolyo",
+    "Pineda"
+   ]
+  },
+  {
+   "a": "PSV-43-0620",
+   "b": "PSV-43-1705",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    60000.0,
+    65000.0
+   ],
+   "shared": 297.1,
+   "barangays": [
+    "Manggahan",
+    "Santolan"
+   ]
+  },
+  {
+   "a": "PSV-43-0700",
+   "b": "PSV-43-1057",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    45000.0,
+    40000.0
+   ],
+   "shared": 131.1,
+   "barangays": [
+    "Maybunga",
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-0838",
+   "b": "PSV-43-1827",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    18000.0,
+    30000.0
+   ],
+   "shared": 250.1,
+   "barangays": [
+    "Palatiw",
+    "Santo Tomas"
+   ]
+  },
+  {
+   "a": "PSV-43-0839",
+   "b": "PSV-43-1827",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    18000.0,
+    30000.0
+   ],
+   "shared": 250.1,
+   "barangays": [
+    "Palatiw",
+    "Santo Tomas"
+   ]
+  },
+  {
+   "a": "PSV-43-1065",
+   "b": "PSV-43-1634",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    45000.0,
+    50000.0
+   ],
+   "shared": 1770.9,
+   "barangays": [
+    "Rosario",
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1524",
+   "b": "PSV-43-1525",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    18000.0,
+    16000.0
+   ],
+   "shared": 997.1,
+   "barangays": [
+    "San Miguel"
+   ]
+  },
+  {
+   "a": "PSV-43-1524",
+   "b": "PSV-43-1526",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    18000.0,
+    16000.0
+   ],
+   "shared": 997.1,
+   "barangays": [
+    "San Miguel"
+   ]
+  },
+  {
+   "a": "PSV-43-1602",
+   "b": "PSV-43-1625",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    28000.0,
+    20000.0
+   ],
+   "shared": 221.2,
+   "barangays": [
+    "San Nicolas (Pob.)",
+    "Santa Cruz"
+   ]
+  },
+  {
+   "a": "PSV-43-1697",
+   "b": "PSV-43-1855",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    19000.0,
+    18000.0
+   ],
+   "shared": 466.0,
+   "barangays": [
+    "Santa Rosa",
+    "Sumilang"
+   ]
+  },
+  {
+   "a": "PSV-43-1768",
+   "b": "PSV-43-1769",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    14000.0,
+    19000.0
+   ],
+   "shared": 269.2,
+   "barangays": [
+    "Santolan"
+   ]
+  },
+  {
+   "a": "PSV-43-1868",
+   "b": "PSV-43-1869",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    20000.0,
+    24000.0
+   ],
+   "shared": 768.1,
+   "barangays": [
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-0044",
+   "b": "PSV-43-1888",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    55000.0,
+    108000.0
+   ],
+   "shared": 282.3,
+   "barangays": [
+    "Bagong Ilog",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-0234",
+   "b": "PSV-43-1174",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    73000.0,
+    70000.0
+   ],
+   "shared": 774.0,
+   "barangays": [
+    "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0236",
+   "b": "PSV-43-1174",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    73000.0,
+    70000.0
+   ],
+   "shared": 774.0,
+   "barangays": [
+    "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0238",
+   "b": "PSV-43-1174",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    73000.0,
+    70000.0
+   ],
+   "shared": 774.0,
+   "barangays": [
+    "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0530",
+   "b": "PSV-43-0772",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    225000.0,
+    200000.0
+   ],
+   "shared": 1687.5,
+   "barangays": [
+    "Kapitolyo",
+    "Oranbo"
+   ]
+  },
+  {
+   "a": "PSV-43-0530",
+   "b": "PSV-43-0531",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    225000.0,
+    210000.0
+   ],
+   "shared": 2679.0,
+   "barangays": [
+    "Kapitolyo"
+   ]
+  },
+  {
+   "a": "PSV-43-0530",
+   "b": "PSV-43-1209",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    225000.0,
+    290000.0
+   ],
+   "shared": 1199.5,
+   "barangays": [
+    "Kapitolyo",
+    "San Antonio"
+   ]
+  },
+  {
+   "a": "PSV-43-0531",
+   "b": "PSV-43-0772",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    210000.0,
+    200000.0
+   ],
+   "shared": 1687.5,
+   "barangays": [
+    "Kapitolyo",
+    "Oranbo"
+   ]
+  },
+  {
+   "a": "PSV-43-0531",
+   "b": "PSV-43-1209",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    210000.0,
+    290000.0
+   ],
+   "shared": 1199.5,
+   "barangays": [
+    "Kapitolyo",
+    "San Antonio"
+   ]
+  },
+  {
+   "a": "PSV-43-0701",
+   "b": "PSV-43-1058",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    63000.0,
+    55000.0
+   ],
+   "shared": 131.1,
+   "barangays": [
+    "Maybunga",
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-0772",
+   "b": "PSV-43-1209",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    200000.0,
+    290000.0
+   ],
+   "shared": 204.0,
+   "barangays": [
+    "Oranbo",
+    "San Antonio"
+   ]
+  },
+  {
+   "a": "PSV-43-1062",
+   "b": "PSV-43-1635",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    75000.0,
+    88000.0
+   ],
+   "shared": 1770.9,
+   "barangays": [
+    "Rosario",
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1063",
+   "b": "PSV-43-1635",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    75000.0,
+    88000.0
+   ],
+   "shared": 1770.9,
+   "barangays": [
+    "Rosario",
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1191",
+   "b": "PSV-43-1874",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    325000.0,
+    160000.0
+   ],
+   "shared": 204.0,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1203",
+   "b": "PSV-43-1901",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    290000.0,
+    200000.0
+   ],
+   "shared": 739.1,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1203",
+   "b": "PSV-43-1900",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    290000.0,
+    220000.0
+   ],
+   "shared": 739.1,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1900",
+   "b": "PSV-43-1901",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    220000.0,
+    200000.0
+   ],
+   "shared": 4503.8,
+   "barangays": [
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-0045",
+   "b": "PSV-43-1887",
+   "class_code": "I",
+   "applies_to": "street",
+   "values": [
+    45000.0,
+    73000.0
+   ],
+   "shared": 282.3,
+   "barangays": [
+    "Bagong Ilog",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-0303",
+   "b": "PSV-43-1706",
+   "class_code": "I",
+   "applies_to": "street",
+   "values": [
+    73000.0,
+    85000.0
+   ],
+   "shared": 1098.4,
+   "barangays": [
+    "Dela Paz",
+    "Santolan"
+   ]
+  },
+  {
+   "a": "PSV-43-0536",
+   "b": "PSV-43-0538",
+   "class_code": "I",
+   "applies_to": "street",
+   "values": [
+    125000.0,
+    115000.0
+   ],
+   "shared": 618.7,
+   "barangays": [
+    "Kapitolyo"
+   ]
+  },
+  {
+   "a": "PSV-43-0621",
+   "b": "PSV-43-1706",
+   "class_code": "I",
+   "applies_to": "street",
+   "values": [
+    70000.0,
+    85000.0
+   ],
+   "shared": 297.1,
+   "barangays": [
+    "Manggahan",
+    "Santolan"
+   ]
+  },
+  {
+   "a": "PSV-43-0702",
+   "b": "PSV-43-1059",
+   "class_code": "I",
+   "applies_to": "street",
+   "values": [
+    50000.0,
+    48000.0
+   ],
+   "shared": 131.1,
+   "barangays": [
+    "Maybunga",
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1064",
+   "b": "PSV-43-1636",
+   "class_code": "I",
+   "applies_to": "street",
+   "values": [
+    60000.0,
+    70000.0
+   ],
+   "shared": 1770.9,
+   "barangays": [
+    "Rosario",
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1204",
+   "b": "PSV-43-1904",
+   "class_code": "X",
+   "applies_to": "street",
+   "values": [
+    225000.0,
+    175000.0
+   ],
+   "shared": 739.1,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-0173",
+   "b": "PSV-43-0193",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    13000.0,
+    17000.0
+   ],
+   "shared": 521172.9,
+   "barangays": [
+    "Bambang"
+   ]
+  },
+  {
+   "a": "PSV-43-0277",
+   "b": "PSV-43-0293",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    12000.0,
+    15000.0
+   ],
+   "shared": 1044235.2,
+   "barangays": [
+    "Caniogan"
+   ]
+  },
+  {
+   "a": "PSV-43-0315",
+   "b": "PSV-43-0350",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    14000.0,
+    16000.0
+   ],
+   "shared": 1314052.4,
+   "barangays": [
+    "Dela Paz"
+   ]
+  },
+  {
+   "a": "PSV-43-0381",
+   "b": "PSV-43-0394",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    15000.0,
+    17000.0
+   ],
+   "shared": 1007941.2,
+   "barangays": [
+    "Kalawaan"
+   ]
+  },
+  {
+   "a": "PSV-43-0607",
+   "b": "PSV-43-0615",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    15000.0,
+    16000.0
+   ],
+   "shared": 241441.4,
+   "barangays": [
+    "Malinao"
+   ]
+  },
+  {
+   "a": "PSV-43-0924",
+   "b": "PSV-43-0967",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    12000.0,
+    13000.0
+   ],
+   "shared": 3546569.9,
+   "barangays": [
+    "Pinagbuhatan"
+   ]
+  },
+  {
+   "a": "PSV-43-1549",
+   "b": "PSV-43-1579",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    11000.0,
+    15000.0
+   ],
+   "shared": 1224103.8,
+   "barangays": [
+    "San Miguel"
+   ]
+  },
+  {
+   "a": "PSV-43-1773",
+   "b": "PSV-43-1802",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    13000.0,
+    16000.0
+   ],
+   "shared": 2079697.9,
+   "barangays": [
+    "Santolan"
+   ]
+  },
+  {
+   "a": "PSV-43-1916",
+   "b": "PSV-43-1926",
+   "class_code": "RR",
+   "applies_to": "interior",
+   "values": [
+    16000.0,
+    75000.0
+   ],
+   "shared": 3749725.3,
+   "barangays": [
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-0387",
+   "b": "PSV-43-0389",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    30000.0,
+    40000.0
+   ],
+   "shared": 16889.3,
+   "barangays": [
+    "Kalawaan"
+   ]
+  },
+  {
+   "a": "PSV-43-0934",
+   "b": "PSV-43-0935",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    24000.0,
+    42000.0
+   ],
+   "shared": 25944.8,
+   "barangays": [
+    "Pinagbuhatan"
+   ]
+  },
+  {
+   "a": "PSV-43-1074",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    28000.0,
+    38000.0
+   ],
+   "shared": 14800.8,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1081",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    18000.0,
+    38000.0
+   ],
+   "shared": 22805.7,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1083",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    22000.0,
+    38000.0
+   ],
+   "shared": 18225.2,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1091",
+   "b": "PSV-43-1093",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    40000.0,
+    68000.0
+   ],
+   "shared": 77133.8,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1091",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    40000.0,
+    38000.0
+   ],
+   "shared": 77133.8,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1092",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    40000.0,
+    38000.0
+   ],
+   "shared": 59251.3,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1093",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    68000.0,
+    38000.0
+   ],
+   "shared": 77133.8,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1106",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    18000.0,
+    38000.0
+   ],
+   "shared": 18546.2,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1107",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    33000.0,
+    38000.0
+   ],
+   "shared": 92629.9,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1115",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    19000.0,
+    38000.0
+   ],
+   "shared": 7802.1,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1116",
+   "b": "PSV-43-1121",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    19000.0,
+    38000.0
+   ],
+   "shared": 5258.5,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1121",
+   "b": "PSV-43-1125",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    38000.0,
+    25000.0
+   ],
+   "shared": 5803.9,
+   "barangays": [
+    "Rosario"
+   ]
+  },
+  {
+   "a": "PSV-43-1663",
+   "b": "PSV-43-1664",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    30000.0,
+    45000.0
+   ],
+   "shared": 325.4,
+   "barangays": [
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1663",
+   "b": "PSV-43-1666",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    30000.0,
+    45000.0
+   ],
+   "shared": 325.4,
+   "barangays": [
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1664",
+   "b": "PSV-43-1665",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    45000.0,
+    30000.0
+   ],
+   "shared": 325.4,
+   "barangays": [
+    "Santa Lucia"
+   ]
+  },
+  {
+   "a": "PSV-43-1665",
+   "b": "PSV-43-1666",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    30000.0,
+    45000.0
+   ],
+   "shared": 325.4,
+   "barangays": [
+    "Santa Lucia"
+   ]
+  }
+ ],
+ "unmatched_by_barangay": {
+  "Bagong Ilog": [
+   {
+    "rule_id": "PSV-43-0004",
+    "text": "APLAYA ST. | RIVERSIDE - L. INTALAN | RR | 20,000",
+    "reason": "no road named 'APLAYA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0005",
+    "text": "APLAYA ST. | RIVERSIDE - L. INTALAN | CR | 47,000",
+    "reason": "no road named 'APLAYA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0006",
+    "text": "APLAYA ST. | RIVERSIDE - L. INTALAN | I | 37,000",
+    "reason": "no road named 'APLAYA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0014",
+    "text": "C. SANTIAGO ST. | PVT. AURELLANA-AVIS ST (RIVERSIDE DRIVE) | RR | 20,000",
+    "reason": "no road named 'C. SANTIAGO ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0015",
+    "text": "C. SANTIAGO ST. | PVT. AURELLANA-AVIS ST (RIVERSIDE DRIVE) | CR | 35,000",
+    "reason": "no road named 'C. SANTIAGO ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0017",
+    "text": "CAPT. HP JAVIER | CANLEY - ORANBO | RR | 75,000",
+    "reason": "no road named 'CAPT. HP JAVIER' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0018",
+    "text": "CAPT. HP JAVIER | CANLEY - ORANBO | CR | 115,000",
+    "reason": "no road named 'CAPT. HP JAVIER' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0022",
+    "text": "CPL. IKONG ST. | SANTIAGO-RIVERSIDE DR | RR | 20,000",
+    "reason": "no road named 'CPL. IKONG ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0023",
+    "text": "CPL. IKONG ST. | SANTIAGO-RIVERSIDE DR | CR | 35,000",
+    "reason": "no road named 'CPL. IKONG ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0032",
+    "text": "E. RODRIGUEZ JR. AVE/ C. P. GARCIA/ C-5 | PASIG RIVER - J. BORRIS | CR | 150,000",
+    "reason": "no road named 'C. P. GARCIA' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0033",
+    "text": "E. RODRIGUEZ JR. AVE/ C. P. GARCIA/ C-5 | PASIG RIVER - J. BORRIS | I | 115,000",
+    "reason": "no road named 'C. P. GARCIA' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0041",
+    "text": "HILLCREST DRIVE | SHAW BLVD - DANNY FLORO | RR | 70,000",
+    "reason": "no road named 'HILLCREST DRIVE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0042",
+    "text": "HILLCREST DRIVE | SHAW BLVD - DANNY FLORO | CR | 83,000",
+    "reason": "no road named 'HILLCREST DRIVE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0065",
+    "text": "PASIG BLVD EXT. | ESCARPMENT-MASILANG | CR | 120,000",
+    "reason": "no road named 'PASIG BLVD EXT.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0066",
+    "text": "PASIG BLVD EXT. | ESCARPMENT-MASILANG | I | 80,000",
+    "reason": "no road named 'PASIG BLVD EXT.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0067",
+    "text": "PASIG BLVD EXT. | ESCARPMENT-MASILANG | RR | 60,000",
+    "reason": "no road named 'PASIG BLVD EXT.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0068",
+    "text": "PVT C. AURELLANA ST. | FLORES-RIVERSIDE DR | RR | 20,000",
+    "reason": "no road named 'PVT C. AURELLANA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0069",
+    "text": "R. VALDEZ ST. | DR. M. FLORES - MRR | RR | 20,000",
+    "reason": "'R. VALDEZ ST.' is ambiguous; candidates: R. Valdez Extension; Rafael Valdez Street"
+   },
+   {
+    "rule_id": "PSV-43-0070",
+    "text": "RETELCO DRIVE | E. RODRIGUEZ JR. AVE | RR | 33,000",
+    "reason": "no road named 'RETELCO DRIVE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0071",
+    "text": "RETELCO DRIVE | E. RODRIGUEZ JR. AVE | CR | 85,000",
+    "reason": "no road named 'RETELCO DRIVE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0072",
+    "text": "RIVERSIDE | APLAYA-END | RR | 20,000",
+    "reason": "no road named 'RIVERSIDE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0073",
+    "text": "RIVERSIDE | APLAYA-END | I | 32,000",
+    "reason": "no road named 'RIVERSIDE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0076",
+    "text": "SGT F. LIMJOCO ST. | DR. M. FLORES - L. INTALAN | RR | 20,000",
+    "reason": "no road named 'SGT F. LIMJOCO ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0078",
+    "text": "SGT L. PASCUA | E. RODRIGUEZ - RIVERSIDE DRIVE | RR | 20,000",
+    "reason": "no road named 'SGT L. PASCUA' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0079",
+    "text": "SGT L. PASCUA | E. RODRIGUEZ - RIVERSIDE DRIVE | RR | 15,000",
+    "reason": "no road named 'SGT L. PASCUA' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0080",
+    "text": "STA ANA ST. | PASCUA-INTALAN | RR | 20,000",
+    "reason": "no road named 'STA ANA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0081",
+    "text": "STA ROSA DE LIMA ST. | BUENAVENTURA-CPL CRUZ | RR | 28,000",
+    "reason": "no road named 'STA ROSA DE LIMA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0082",
+    "text": "STA ROSA DE LIMA ST. | BUENAVENTURA-CPL CRUZ | I | 35,000",
+    "reason": "no road named 'STA ROSA DE LIMA ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0083",
+    "text": "VELASQUEZ ST. | SGT. L. PASCUA (MRR)- END | RR | 20,000",
+    "reason": "no road named 'VELASQUEZ ST.' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0087",
+    "text": "YLAYA | CANLEY-KAMAGONG | RR | 30,000",
+    "reason": "no road named 'YLAYA' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0095",
+    "text": "LAKEVIEW SUBD | PASIG BLVD | RR | 75,000",
+    "reason": "feature not found: 'LAKEVIEW SUBD' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0096",
+    "text": "PHOENIX SUBD | CAPT. HP JAVIER | RR | 85,000",
+    "reason": "'PHOENIX SUBD' is ambiguous; candidates: Phoenix; Phoenix Subdivision"
+   },
+   {
+    "rule_id": "PSV-43-0097",
+    "text": "ROBINSONS CIRCLE SUBD | CAPT. HP JAVIER | RR | 70,000",
+    "reason": "feature not found: 'ROBINSONS CIRCLE SUBD' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0098",
+    "text": "MARBLE TOWNHOUSE iii | BAGONG ILOG | RR | 55,000",
+    "reason": "feature not found: 'MARBLE TOWNHOUSE iii' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0099",
+    "text": "PASIG EXECUTIVE TOWNHOUSE | SAN BUENAVENTURA-BAGONG ILOG | RR | 55,000",
+    "reason": "feature not found: 'PASIG EXECUTIVE TOWNHOUSE' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0100",
+    "text": "THE RIDGE AT LAKEVIEW (TH-REGULAR) * | LAKEVIEW DRIVE | RR | 70,000",
+    "reason": "no road named 'THE RIDGE AT LAKEVIEW' in Bagong Ilog"
+   },
+   {
+    "rule_id": "PSV-43-0090",
+    "text": "ALLEY * | PEDESTRIAN | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0091",
+    "text": "ALLEY * | PEDESTRIAN | CR | 25,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0092",
+    "text": "CALLEJON * | I LANE ROAD | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0093",
+    "text": "CALLEJON * | I LANE ROAD | CR | 32,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Bagong Katipunan": [
+   {
+    "rule_id": "PSV-43-0129",
+    "text": "A BONIFACIO | P BURGOS-DR GARCIA | RR | 18,000",
+    "reason": "no road named 'A BONIFACIO' in Bagong Katipunan"
+   },
+   {
+    "rule_id": "PSV-43-0130",
+    "text": "A BONIFACIO | P BURGOS-DR GARCIA | CR | 24,000",
+    "reason": "no road named 'A BONIFACIO' in Bagong Katipunan"
+   },
+   {
+    "rule_id": "PSV-43-0133",
+    "text": "F. ACEDILLO ST. | A. BONIFACIO | RR | 16,000",
+    "reason": "no road named 'F. ACEDILLO ST.' in Bagong Katipunan"
+   }
+  ],
+  "Bambang": [
+   {
+    "rule_id": "PSV-43-0135",
+    "text": "B. LARA ST | PASIG RIVER-DOS DE JULIO ST | RR | 14,000",
+    "reason": "no road named 'B. LARA ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0136",
+    "text": "C POZON/V POZON | JACINTO-F MANALO | RR | 15,000",
+    "reason": "no road named 'C POZON' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0137",
+    "text": "COL. F. B. VICTORINO ST (formerly F.B. VICTORINO ST.) | FARMERS AVE- Balderan - Acacia | RR | 16,000",
+    "reason": "no road named 'COL. F. B. VICTORINO ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0140",
+    "text": "E FELICIANO ST | E SANTOS-DR GARCIA ST | RR | 17,000",
+    "reason": "no road named 'E FELICIANO ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0141",
+    "text": "E FELICIANO ST | E SANTOS-DR GARCIA ST | CR | 24,000",
+    "reason": "no road named 'E FELICIANO ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0143",
+    "text": "E SANTOS ST | A LUNA-SUMILAN GBDRY | RR | 18,000",
+    "reason": "'E SANTOS ST' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
+   },
+   {
+    "rule_id": "PSV-43-0144",
+    "text": "E STA. ANA ST | PASIG RIVER-DOS DE JULIO ST | RR | 14,000",
+    "reason": "no road named 'E STA. ANA ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0145",
+    "text": "ESTOMATA ST | PASIG RIVER-DOS DE JULIO ST | RR | 14,000",
+    "reason": "no road named 'ESTOMATA ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0152",
+    "text": "FARMERS AVENUE | JB MIGUEL-F. ANTONIO-BGY BDRY | RR | 20,000",
+    "reason": "no road named 'FARMERS AVENUE' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0160",
+    "text": "JUSTICE R. JABSON/ A. LUNA | ROTONDA-BRIDGE | CR | 50,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0161",
+    "text": "JUSTICE R. JABSON/ A. LUNA | ROTONDA-BRIDGE | RR | 30,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0162",
+    "text": "JUSTICE R. JABSON/ A. LUNA | ROTONDA-BRIDGE | RR | 23,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0164",
+    "text": "P. TUAZON ST | F. ANTONIO-KALAWAAN BDRY | RR | 19,000",
+    "reason": "no road named 'P. TUAZON ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0168",
+    "text": "PONCE ST | BALDERAMA-V POZON ST | RR | 14,000",
+    "reason": "no road named 'PONCE ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0169",
+    "text": "PONCE ST | BALDERAMA-V POZON ST | CR | 23,000",
+    "reason": "no road named 'PONCE ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0170",
+    "text": "SAMSON ST | PASIG RIVER-DOS DE JULIO ST | RR | 14,000",
+    "reason": "no road named 'SAMSON ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0172",
+    "text": "VILLA ROSA ST | A LUNA ST-E JACINTO ST | RR | 14,000",
+    "reason": "no road named 'VILLA ROSA ST' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0179",
+    "text": "CAPITOL HOMES SUBD | F MANALO | RR | 24,000",
+    "reason": "feature not found: 'CAPITOL HOMES SUBD' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0180",
+    "text": "DAMIAN SUBD | J PUEBLO-M SANTOS | RR | 19,000",
+    "reason": "feature not found: 'DAMIAN SUBD' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0181",
+    "text": "DONA BINDAY SUBD | STA ANA-LARA-SAMSON | RR | 19,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0182",
+    "text": "LOURDES HOMES | ALONG F MANALO ST | RR | 25,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0183",
+    "text": "MAGDALENA H'SING PROJ. | F. ANTONIO | RR | 20,000",
+    "reason": "no road named \"MAGDALENA H'SING PROJ.\" in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0184",
+    "text": "MONTVILLE PLACE 1 (TH-REGULAR) * | PIO ALVAREZ | RR | 55,000",
+    "reason": "no road named 'MONTVILLE PLACE 1' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0185",
+    "text": "MONTVILLE PLACE 2 (TH-REGULAR) * | F. MANALO | RR | 55,000",
+    "reason": "no road named 'MONTVILLE PLACE 2' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0186",
+    "text": "REYES COMPD | JB MIGUEL | RR | 19,000",
+    "reason": "no road named 'REYES COMPD' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0187",
+    "text": "S P S SUBD | PRIVATE ROAD | RR | 19,000",
+    "reason": "feature not found: 'S P S SUBD' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0188",
+    "text": "SONNY VILLE SUBD | JB MIGUEL | RR | 19,000",
+    "reason": "feature not found: 'SONNY VILLE SUBD' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0189",
+    "text": "VICTORINO COMPOUND | E JACINTO | RR | 18,000",
+    "reason": "feature not found: 'VICTORINO COMPOUND' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0190",
+    "text": "VILLA ALFONSO | VICTORINO EXT | RR | 18,000",
+    "reason": "no road named 'VILLA ALFONSO' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0191",
+    "text": "VILLA ANGELES COMPD | JOSE PUEBLO ST | RR | 18,000",
+    "reason": "no road named 'VILLA ANGELES COMPD' in Bambang"
+   },
+   {
+    "rule_id": "PSV-43-0175",
+    "text": "CALLEJON * | 1 LANE ROAD | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0176",
+    "text": "CALLEJON * | 1 LANE ROAD | CR | 18,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0177",
+    "text": "ALLEY * | PEDESTRIAN | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0178",
+    "text": "ALLEY * | PEDESTRIAN | CR | 16,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Buting": [
+   {
+    "rule_id": "PSV-43-0204",
+    "text": "E DELOS SANTOS | LOZADA - SAN GUILLERMO | RR | 13,000",
+    "reason": "no road named 'E DELOS SANTOS' in Buting"
+   },
+   {
+    "rule_id": "PSV-43-0208",
+    "text": "E SANTOS | LOZADA - SAN GUILLERMO | RR | 18,000",
+    "reason": "'E SANTOS' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
+   },
+   {
+    "rule_id": "PSV-43-0210",
+    "text": "F T ANGELES | PATEROS BDRY-SAN GUILLERMO | RR | 12,000",
+    "reason": "no road named 'F T ANGELES' in Buting"
+   },
+   {
+    "rule_id": "PSV-43-0216",
+    "text": "TANANGCO/TANINGCO ST | SANTOS-END | RR | 13,000",
+    "reason": "no road named 'TANANGCO' in Buting"
+   },
+   {
+    "rule_id": "PSV-43-0223",
+    "text": "AUSTRIA COMPOUND 1,2,3 | M. CONCEPCION AVE | RR | 16,000",
+    "reason": "feature not found: 'AUSTRIA COMPOUND 1,2,3' in Buting"
+   },
+   {
+    "rule_id": "PSV-43-0224",
+    "text": "AUSMOLO CMPD | E MENDOZA ST | RR | 15,000",
+    "reason": "feature not found: 'AUSMOLO CMPD' in Buting"
+   },
+   {
+    "rule_id": "PSV-43-0219",
+    "text": "CALLEJON * | 1 LANE ROAD | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0220",
+    "text": "CALLEJON * | 1 LANE ROAD | CR | 20,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0221",
+    "text": "ALLEY * | PEDESTRIAN | RR | 9,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0222",
+    "text": "ALLEY * | PEDESTRIAN | CR | 18,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Caniogan": [
+   {
+    "rule_id": "PSV-43-0241",
+    "text": "C RAYMUNDO AVE EXT (PASIG BLVD EXT) * | VARGAS BRIDGE- DR S. ANTONIO AVE - C RAYMUNDO AVE | CR | 73,000",
+    "reason": "no road named 'C RAYMUNDO AVE EXT' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0242",
+    "text": "C RAYMUNDO AVE EXT (PASIG BLVD EXT) * | VARGAS BRIDGE- DR S. ANTONIO AVE - C RAYMUNDO AVE | RR | 40,000",
+    "reason": "no road named 'C RAYMUNDO AVE EXT' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0243",
+    "text": "C RAYMUNDO AVE EXT (PASIG BLVD EXT) * | VARGAS BRIDGE- DR S. ANTONIO AVE - C RAYMUNDO AVE | I | 58,000",
+    "reason": "no road named 'C RAYMUNDO AVE EXT' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0246",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | CR | 70,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0247",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | RR | 43,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0248",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | X | 50,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0249",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | CR | 70,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0250",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | RR | 43,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0251",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | RR | 43,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0252",
+    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | CR | 70,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0253",
+    "text": "INT DR SIXTO ANTONIO AVE | C RAYMUNDO AVE- N ESPIRITU ST | RR | 35,000",
+    "reason": "no road named 'INT DR SIXTO ANTONIO AVE' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0259",
+    "text": "KATARUNGAN | ANTONIO-END | RR | 13,000",
+    "reason": "no road named 'KATARUNGAN' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0262",
+    "text": "LIGAYA ST | ANTONIO-END | RR | 13,000",
+    "reason": "no road named 'LIGAYA ST' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0264",
+    "text": "LORENZO ST | C RAYMUNDO AVE-COL P. LICSI | RR | 13,000",
+    "reason": "no road named 'LORENZO ST' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0265",
+    "text": "LUNINGNING | SGT BERNARDO ST | RR | 13,000",
+    "reason": "no road named 'LUNINGNING' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0270",
+    "text": "P LICSI | ANTONIO - END | RR | 13,000",
+    "reason": "'P LICSI' is ambiguous; candidates: Colonel P. Licsi Extension; Colonel P. Licsi Street; Colonel P. Licsi Street Extension"
+   },
+   {
+    "rule_id": "PSV-43-0283",
+    "text": "CAMELLA CERRITOS EAST SUBD * | MERCEDES AVE. | RR | 38,000",
+    "reason": "feature not found: 'CAMELLA CERRITOS EAST SUBD' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0284",
+    "text": "JABSON CMPD | C RAYMUNDO AVE | RR | 18,000",
+    "reason": "feature not found: 'JABSON CMPD' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0285",
+    "text": "JABSON CMPD | C RAYMUNDO AVE | RR | 20,000",
+    "reason": "feature not found: 'JABSON CMPD' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0286",
+    "text": "JABSON CMPD | C RAYMUNDO AVE | CR | 30,000",
+    "reason": "feature not found: 'JABSON CMPD' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0287",
+    "text": "UNITED GLORIETTA III SUBD | C. RAYMUNDO | RR | 20,000",
+    "reason": "feature not found: 'UNITED GLORIETTA III SUBD' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0288",
+    "text": "UNITED GLORIETTA III SUBD | C. RAYMUNDO | CR | 27,000",
+    "reason": "feature not found: 'UNITED GLORIETTA III SUBD' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0289",
+    "text": "VICTORIA'S PLACE | ROSA | RR | 33,000",
+    "reason": "no road named \"VICTORIA'S PLACE\" in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0290",
+    "text": "VILLA SULA | DSAA CANIOGAN | RR | 20,000",
+    "reason": "no road named 'VILLA SULA' in Caniogan"
+   },
+   {
+    "rule_id": "PSV-43-0279",
+    "text": "ALLEY * | PEDESTRIAN | RR | 8,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0280",
+    "text": "ALLEY * | PEDESTRIAN | CR | 15,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0281",
+    "text": "CALLEJON * | 1 LANE ROAD | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0282",
+    "text": "CALLEJON * | 1 LANE ROAD | CR | 17,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Dela Paz": [
+   {
+    "rule_id": "PSV-43-0305",
+    "text": "INTERIOR A. RODRIGUEZ | MANGGAHAN-MARIKINA BDRY | RR | 55,000",
+    "reason": "no road named 'INTERIOR A. RODRIGUEZ' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0306",
+    "text": "DAANG PUTOL / SHOE AVE EXT | MARCOS HIGHWAY-MARIKINA BDRY | RR | 15,000",
+    "reason": "no road named 'DAANG PUTOL' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0311",
+    "text": "IMELDA AVE /FRANCISCO FELIX AVE * | MARCOS HI-WAY - CAINTA BOUNDARY | CR | 65,000",
+    "reason": "no road named 'IMELDA AVE' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0312",
+    "text": "IMELDA AVE /FRANCISCO FELIX AVE * | MARCOS HI-WAY - CAINTA BOUNDARY | I | 53,000",
+    "reason": "no road named 'IMELDA AVE' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0322",
+    "text": "AGAPITO SUBD | A RODRIGUEZ AVENUE | RR | 28,000",
+    "reason": "feature not found: 'AGAPITO SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0323",
+    "text": "BARTVILLE SUBD | A RODRIGUEZ AVENUE | RR | 20,000",
+    "reason": "feature not found: 'BARTVILLE SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0324",
+    "text": "BARTVILLE SUBD | A RODRIGUEZ AVENUE | CR | 35,000",
+    "reason": "feature not found: 'BARTVILLE SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0325",
+    "text": "BARTVILLE SUBD | A RODRIGUEZ AVENUE | X | 28,000",
+    "reason": "feature not found: 'BARTVILLE SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0328",
+    "text": "CHARLES SUBD | A RODRIGUEZ AVENUE | RR | 18,000",
+    "reason": "feature not found: 'CHARLES SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0329",
+    "text": "CHASON SOUTHVILLE | A RODRIGUEZ AVENUE | RR | 23,000",
+    "reason": "no road named 'CHASON SOUTHVILLE' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0331",
+    "text": "DREAM HOME SUBD | A RODRIGUEZ AVENUE | RR | 20,000",
+    "reason": "feature not found: 'DREAM HOME SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0332",
+    "text": "DREAM HOME SUBD | A RODRIGUEZ AVENUE | X | 30,000",
+    "reason": "feature not found: 'DREAM HOME SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0333",
+    "text": "EMERALD SUBD | A RODRIGUEZ AVENUE | RR | 22,000",
+    "reason": "feature not found: 'EMERALD SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0334",
+    "text": "FERNANDO CMPD | MRR | RR | 20,000",
+    "reason": "feature not found: 'FERNANDO CMPD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0335",
+    "text": "FERNANDO CMPD | MRR | I | 35,000",
+    "reason": "feature not found: 'FERNANDO CMPD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0336",
+    "text": "GSIS SUBD | A RODRIGUEZ AVENUE | RR | 19,000",
+    "reason": "feature not found: 'GSIS SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0337",
+    "text": "LIMKIN SUBD | A RODRIGUEZ AVENUE | RR | 18,000",
+    "reason": "feature not found: 'LIMKIN SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0338",
+    "text": "MANILA MAHOGANY | A RODRIGUEZ AVENUE | RR | 22,000",
+    "reason": "no road named 'MANILA MAHOGANY' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0346",
+    "text": "SIGNAL SUBD | MARCOS HWAY | RR | 18,000",
+    "reason": "feature not found: 'SIGNAL SUBD' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0349",
+    "text": "VISTA VERDE | IMELDA AVE | RR | 23,000",
+    "reason": "no road named 'VISTA VERDE' in Dela Paz"
+   },
+   {
+    "rule_id": "PSV-43-0318",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0319",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 47,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0320",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0321",
+    "text": "ALLEY * | PEDESTRIAN | CR | 41,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Kalawaan": [
+   {
+    "rule_id": "PSV-43-0365",
+    "text": "AXIS ROAD - INTERIOR | AXIS ROAD/SIKAP HOMEOWNERS | RR | 19,000",
+    "reason": "no road named 'AXIS ROAD - INTERIOR' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0367",
+    "text": "CHAMPACA ST | BGY KALAWAAN | RR | 19,000",
+    "reason": "no road named 'CHAMPACA ST' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0368",
+    "text": "ELIZCO ROAD | DAANG PASS-CREEK TAGIG | RR | 35,000",
+    "reason": "no road named 'ELIZCO ROAD' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0369",
+    "text": "ELIZCO ROAD | DAANG PASS-CREEK TAGIG | CR | 65,000",
+    "reason": "no road named 'ELIZCO ROAD' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0370",
+    "text": "ELIZCO ROAD | DAANG PASS-CREEK TAGIG | I | 50,000",
+    "reason": "no road named 'ELIZCO ROAD' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0371",
+    "text": "F SAN PEDRO ST | P VISITACION ST | RR | 18,000",
+    "reason": "no road named 'F SAN PEDRO ST' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0372",
+    "text": "JIMENEZ | ELISCO - BRIDGE | RR | 18,000",
+    "reason": "no road named 'JIMENEZ' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0373",
+    "text": "JIMENEZ | ELISCO - BRIDGE | CR | 25,000",
+    "reason": "no road named 'JIMENEZ' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0380",
+    "text": "CALAWAAN RESETTLEMENT | BALIMBING-PAULINO | RR | 9,000",
+    "reason": "no road named 'CALAWAAN RESETTLEMENT' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0390",
+    "text": "PAR SUBD | ELISCO ROAD | RR | 24,000",
+    "reason": "feature not found: 'PAR SUBD' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0391",
+    "text": "SARINAS CPD | ELISCO ROAD | RR | 18,000",
+    "reason": "no road named 'SARINAS CPD' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0393",
+    "text": "VILLA MUNSOD | VILLA BERNANDO | RR | 19,000",
+    "reason": "no road named 'VILLA MUNSOD' in Kalawaan"
+   },
+   {
+    "rule_id": "PSV-43-0383",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0384",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 18,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0385",
+    "text": "ALLEY * | PEDESTRIAN | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0386",
+    "text": "ALLEY * | PEDESTRIAN | CR | 16,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Kapasigan": [
+   {
+    "rule_id": "PSV-43-0404",
+    "text": "BEDANA | ANTONIO-SAN NICOLAS | RR | 25,000",
+    "reason": "no road named 'BEDANA' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0411",
+    "text": "DR SIXTO ANTONIO AVE | A. MABINI-R BEDANA, SAN NICOLAS | CR | 90,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0412",
+    "text": "DR SIXTO ANTONIO AVE | A. MABINI-R BEDANA, SAN NICOLAS | RR | 50,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-0413",
+    "text": "F BLUMENTRITT | MABINI-COMMERCIO | CR | 48,000",
+    "reason": "no road named 'F BLUMENTRITT' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0414",
+    "text": "F BLUMENTRITT | MABINI-COMMERCIO | RR | 25,000",
+    "reason": "no road named 'F BLUMENTRITT' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0416",
+    "text": "INDUSTRIA | CONCEPCION-BLUMENTRITT | CR | 48,000",
+    "reason": "no road named 'INDUSTRIA' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0417",
+    "text": "INDUSTRIA | CONCEPCION-BLUMENTRITT | X | 38,000",
+    "reason": "no road named 'INDUSTRIA' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0418",
+    "text": "INDUSTRI EXT (PUGAD BABOY) | KAPASIGAN | RR | 25,000",
+    "reason": "no road named 'INDUSTRI EXT' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0426",
+    "text": "GRAND MONACO VILLA | COMMERCIO | RR | 48,000",
+    "reason": "no road named 'GRAND MONACO VILLA' in Kapasigan"
+   },
+   {
+    "rule_id": "PSV-43-0422",
+    "text": "CALLEJON * | ONE-LANE | RR | 16,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0423",
+    "text": "CALLEJON * | ONE-LANE | CR | 33,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0424",
+    "text": "ALLEY * | PEDESTRIAN | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0425",
+    "text": "ALLEY * | PEDESTRIAN | CR | 28,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Kapitolyo": [
+   {
+    "rule_id": "PSV-43-0442",
+    "text": "C RAYMUNDO AVE (PASIG BLVD) | SHAW BLVD-SAN IGNACIO(ENCARP-MASILANG) | CR | 145,000",
+    "reason": "no road named 'C RAYMUNDO AVE' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0448",
+    "text": "PHILAM ROAD | SAN RAFAEL-1ST ST | RR | 70,000",
+    "reason": "no road named 'PHILAM ROAD' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0453",
+    "text": "ROSEMARY LANE | PASIG BLVD - END | RR | 70,000",
+    "reason": "no road named 'ROSEMARY LANE' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0454",
+    "text": "ROSEMARY LANE | PASIG BLVD - END | CR | 85,000",
+    "reason": "no road named 'ROSEMARY LANE' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0516",
+    "text": "SANTA ISABEL ST | SANTA MARIA - SANTA ROSA | RR | 60,000",
+    "reason": "no road named 'SANTA ISABEL ST' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0517",
+    "text": "SANTA ISABEL ST | SANTA MARIA - SANTA ROSA | CR | 75,000",
+    "reason": "no road named 'SANTA ISABEL ST' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0546",
+    "text": "ROSE MARY LANE SUBDIVISION | ROSE MARY LANE | RR | 73,000",
+    "reason": "feature not found: 'ROSE MARY LANE SUBDIVISION' in Kapitolyo"
+   },
+   {
+    "rule_id": "PSV-43-0544",
+    "text": "ALLEY * | PEDESTRIAN | RR | 39,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0545",
+    "text": "ALLEY * | PEDESTRIAN | CR | 49,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Malinao": [
+   {
+    "rule_id": "PSV-43-0602",
+    "text": "JUSTICE R. JABSON/ A LUNA | BAMBANG-P.FLORES | CR | 50,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in Malinao"
+   },
+   {
+    "rule_id": "PSV-43-0603",
+    "text": "JUSTICE R. JABSON/ A LUNA | BAMBANG-P.FLORES | RR | 30,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in Malinao"
+   },
+   {
+    "rule_id": "PSV-43-0604",
+    "text": "JUSTICE R. JABSON/ A LUNA | BAMBANG-P.FLORES | X | 35,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in Malinao"
+   },
+   {
+    "rule_id": "PSV-43-0605",
+    "text": "PLAZA FLORES | MH DEL PILAR-A LUNA ST | RR | 28,000",
+    "reason": "no road named 'PLAZA FLORES' in Malinao"
+   },
+   {
+    "rule_id": "PSV-43-0606",
+    "text": "TATCO ST | A LUNA-S JACINTO ST | RR | 18,000",
+    "reason": "no road named 'TATCO ST' in Malinao"
+   },
+   {
+    "rule_id": "PSV-43-0613",
+    "text": "DAMIAN SUBD | JOSE PUEBLO-M SANTOS | RR | 19,000",
+    "reason": "feature not found: 'DAMIAN SUBD' in Malinao"
+   },
+   {
+    "rule_id": "PSV-43-0614",
+    "text": "SPS SUBD | G RAYMUNDO | RR | 19,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0609",
+    "text": "CALLEJON * | ONE-LANE | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0610",
+    "text": "CALLEJON * | ONE-LANE | CR | 32,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0611",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0612",
+    "text": "ALLEY * | PEDESTRIAN | CR | 27,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Manggahan": [
+   {
+    "rule_id": "PSV-43-0623",
+    "text": "B SOLIVEN SR | GREEN PARK | CR | 50,000",
+    "reason": "no road named 'B SOLIVEN SR' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0626",
+    "text": "KAGINHAWAHAN | KARANGALAN | RR | 25,000",
+    "reason": "no road named 'KAGINHAWAHAN' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0627",
+    "text": "KAGINHAWAHAN | KARANGALAN | CR | 50,000",
+    "reason": "no road named 'KAGINHAWAHAN' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0628",
+    "text": "KAGINHAWAHAN | KARANGALAN | X | 38,000",
+    "reason": "no road named 'KAGINHAWAHAN' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0629",
+    "text": "IMELDA AVE | DELA PAZ BDRY - ROSARIO BDRY | CR | 65,000",
+    "reason": "no road named 'IMELDA AVE' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0630",
+    "text": "M L QUEZON | MRR-END | RR | 22,000",
+    "reason": "'M L QUEZON' is ambiguous; candidates: Manuel Luis Quezon Street; Manuel Luis Quezon Street Extension"
+   },
+   {
+    "rule_id": "PSV-43-0631",
+    "text": "M L QUEZON | MRR-END | CR | 43,000",
+    "reason": "'M L QUEZON' is ambiguous; candidates: Manuel Luis Quezon Street; Manuel Luis Quezon Street Extension"
+   },
+   {
+    "rule_id": "PSV-43-0645",
+    "text": "CARMINAR SUBD | A MABINI | RR | 19,000",
+    "reason": "feature not found: 'CARMINAR SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0647",
+    "text": "EVERGREEN PARK SUBD | SOLIVEN | RR | 19,000",
+    "reason": "feature not found: 'EVERGREEN PARK SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0648",
+    "text": "GOMEZVILLE | MABINI | RR | 25,000",
+    "reason": "no road named 'GOMEZVILLE' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0649",
+    "text": "GSIS SUBD | MAGSAYSAY-KARANGALAN | RR | 19,000",
+    "reason": "feature not found: 'GSIS SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0651",
+    "text": "KARANGALAN VILLAGE | IMELDA AVENUE | CR | 58,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0652",
+    "text": "KARANGALAN VILLAGE | IMELDA AVENUE | RR | 45,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0654",
+    "text": "MANELA CMPD | MAGSAYSAY-LAPU-LAPU ST | RR | 22,000",
+    "reason": "feature not found: 'MANELA CMPD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0655",
+    "text": "MANILA MAHOGANY CMPD | MRR-END | RR | 22,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0656",
+    "text": "MY LAND HOMES SUBD | PASIG GREENPARK | RR | 19,000",
+    "reason": "feature not found: 'MY LAND HOMES SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0657",
+    "text": "NAPICO | TANIMANG BAYAN | RR | 20,000",
+    "reason": "no road named 'NAPICO' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0661",
+    "text": "S P S SUBD | EAST PANTI RD | RR | 22,000",
+    "reason": "feature not found: 'S P S SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0662",
+    "text": "S P S SUBD | EAST PANTI RD | I | 33,000",
+    "reason": "feature not found: 'S P S SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0663",
+    "text": "SAN LORENZO CMPD | KARANGALAN | RR | 22,000",
+    "reason": "'SAN LORENZO CMPD' is ambiguous; candidates: San Lorenzo Ruiz Elementary School; San Lorenzo Ruiz Senior High School"
+   },
+   {
+    "rule_id": "PSV-43-0664",
+    "text": "SOMMERSET PLACE | MABINI | RR | 43,000",
+    "reason": "no road named 'SOMMERSET PLACE' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0666",
+    "text": "TIBAY SUBD | A RODRIGUEZ AVE | RR | 19,000",
+    "reason": "feature not found: 'TIBAY SUBD' in Manggahan"
+   },
+   {
+    "rule_id": "PSV-43-0640",
+    "text": "CALLEJON * | ONE LANE ROAD | RR | 14,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0641",
+    "text": "CALLEJON * | ONE LANE ROAD | CR | 25,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0642",
+    "text": "ALLEY * | PEDESTRIAN | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0643",
+    "text": "ALLEY * | PEDESTRIAN | CR | 22,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Maybunga": [
+   {
+    "rule_id": "PSV-43-0694",
+    "text": "EUSEBIO ST | SAN MIGUEL BBDRY-F LEGAZPI AVE | RR | 23,000",
+    "reason": "no road named 'EUSEBIO ST' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0695",
+    "text": "EUSEBIO ST | SAN MIGUEL BBDRY-F LEGAZPI AVE | X | 28,000",
+    "reason": "no road named 'EUSEBIO ST' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0703",
+    "text": "MARKET AVE | DR. SIXTO ANTONIO AVE | RR | 45,000",
+    "reason": "no road named 'MARKET AVE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0704",
+    "text": "MARKET AVE | DR. SIXTO ANTONIO AVE | CR | 68,000",
+    "reason": "no road named 'MARKET AVE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0705",
+    "text": "MARKET AVE | DR. SIXTO ANTONIO AVE | I | 55,000",
+    "reason": "no road named 'MARKET AVE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0706",
+    "text": "MARKET AVE | DR. SIXTO ANTONIO AVE | GP | 17,000",
+    "reason": "no road named 'MARKET AVE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0714",
+    "text": "BUEN MAR SUBD | C RAYMUNDO | RR | 23,000",
+    "reason": "feature not found: 'BUEN MAR SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0716",
+    "text": "DAMAYAN HOMES PHASE I | JENNY'S AVE EXT | RR | 22,000",
+    "reason": "feature not found: 'DAMAYAN HOMES PHASE I' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0717",
+    "text": "DAMAYAN HOMES PHASE II | JENNY'S AVE EXT | RR | 22,000",
+    "reason": "feature not found: 'DAMAYAN HOMES PHASE II' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0718",
+    "text": "DELOS REYES CMPD | C RAYMUNDO | RR | 19,000",
+    "reason": "feature not found: 'DELOS REYES CMPD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0719",
+    "text": "E SANTOS CMPD | GUANIO CPD NEAR C. RAYMUNDO | RR | 19,000",
+    "reason": "feature not found: 'E SANTOS CMPD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0720",
+    "text": "EASTSIDE MANOR SUBD | C RAYMUNDO | RR | 35,000",
+    "reason": "feature not found: 'EASTSIDE MANOR SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0721",
+    "text": "EASTSIDE MANOR TOWNHOUSE (TH-REGULAR) * | C RAYMUNDO | RR | 35,000",
+    "reason": "feature not found: 'EASTSIDE MANOR TOWNHOUSE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0722",
+    "text": "PASIG EMPLOYEES HOUSING I VILLAGE * | JENNY'S AVE EXT | RR | 19,000",
+    "reason": "feature not found: 'PASIG EMPLOYEES HOUSING I VILLAGE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0723",
+    "text": "GUANIO SUBD | C RAYMUNDO | RR | 22,000",
+    "reason": "feature not found: 'GUANIO SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0724",
+    "text": "MARTIN CMPD | DR SIXTO ANTONIO AVE | RR | 19,000",
+    "reason": "feature not found: 'MARTIN CMPD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0725",
+    "text": "MELENDRES VILLAGE (TH-REGULAR) * | JENNY'S AVE | RR | 43,000",
+    "reason": "feature not found: 'MELENDRES VILLAGE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0727",
+    "text": "NORTH LUZON MAHOGANY SUBD | JENNY'S AVE-MAYBUNGA | RR | 22,000",
+    "reason": "feature not found: 'NORTH LUZON MAHOGANY SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0728",
+    "text": "PACENCIA CRUZ CMPD | JENNY'S AVE | RR | 19,000",
+    "reason": "feature not found: 'PACENCIA CRUZ CMPD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0729",
+    "text": "PARKWOOD EXECUTIVE VILL 1 & 2 | F LEGASPI | RR | 45,000",
+    "reason": "'PARKWOOD EXECUTIVE VILL 1' is ambiguous; candidates: Parkwood Greens Executive Village 1-A; Parkwood Greens Executive Village 1-D"
+   },
+   {
+    "rule_id": "PSV-43-0730",
+    "text": "PASIG GREENLAND SUBD | JENNY'S AVENUE | RR | 28,000",
+    "reason": "'PASIG GREENLAND SUBD' is ambiguous; candidates: Pasig Greenland Village Circle; Pasig Greenland Village Moon; Pasig Greenland Village Ⅱ"
+   },
+   {
+    "rule_id": "PSV-43-0731",
+    "text": "PASIG GREENLAND SUBD | JENNY'S AVENUE | CR | 43,000",
+    "reason": "'PASIG GREENLAND SUBD' is ambiguous; candidates: Pasig Greenland Village Circle; Pasig Greenland Village Moon; Pasig Greenland Village Ⅱ"
+   },
+   {
+    "rule_id": "PSV-43-0732",
+    "text": "PASIG MILLENIUM GARDENS (TH-REGULAR) * | JENNYS AVE | RR | 60,000",
+    "reason": "no road named 'PASIG MILLENIUM GARDENS' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0733",
+    "text": "PENAFLOR COMPD | PUROK I | RR | 19,000",
+    "reason": "no road named 'PENAFLOR COMPD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0734",
+    "text": "RUFINA HOMES CPD | C RAYMUNDO | RR | 22,000",
+    "reason": "feature not found: 'RUFINA HOMES CPD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0736",
+    "text": "STELLA MARRIS SUBD | C RAYMUNDO & DR SIXTO | RR | 23,000",
+    "reason": "feature not found: 'STELLA MARRIS SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0737",
+    "text": "STELLA MARRIS SUBD | C RAYMUNDO & DR SIXTO | CR | 44,000",
+    "reason": "feature not found: 'STELLA MARRIS SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0738",
+    "text": "SUAREZ VILLE | SUAREZ ST | RR | 20,000",
+    "reason": "no road named 'SUAREZ VILLE' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0740",
+    "text": "VILLA CONCHA SUBD | LEMON ST - JENNYS AVE | RR | 20,000",
+    "reason": "feature not found: 'VILLA CONCHA SUBD' in Maybunga"
+   },
+   {
+    "rule_id": "PSV-43-0709",
+    "text": "CALLEJON * | ONE-LANE | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0710",
+    "text": "CALLEJON * | ONE-LANE | CR | 35,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0711",
+    "text": "ALLEY * | PEDESTRIAN | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0712",
+    "text": "ALLEY * | PEDESTRIAN | CR | 30,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Oranbo": [
+   {
+    "rule_id": "PSV-43-0758",
+    "text": "CAPT HP JAVIER | MERALCO AVE - BAGONG ILOG | RR | 85,000",
+    "reason": "no road named 'CAPT HP JAVIER' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0759",
+    "text": "CAPT HP JAVIER | MERALCO AVE - BAGONG ILOG | CR | 138,000",
+    "reason": "no road named 'CAPT HP JAVIER' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0760",
+    "text": "CAPT HP JAVIER | MERALCO AVE - BAGONG ILOG | I | 108,000",
+    "reason": "no road named 'CAPT HP JAVIER' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0761",
+    "text": "CHRISTIAN ROUTE (D. FLORO) | (PASIG) SHAW BLVD - HILLCREST | RR | 88,000",
+    "reason": "no road named 'CHRISTIAN ROUTE' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0762",
+    "text": "CHRISTIAN ROUTE (D. FLORO) | (PASIG) SHAW BLVD - HILLCREST | CR | 138,000",
+    "reason": "no road named 'CHRISTIAN ROUTE' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0764",
+    "text": "ESTANCIA MALL | ORANBO CAPITOL COMMONS | CR | 255,000",
+    "reason": "no road named 'ESTANCIA MALL' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0765",
+    "text": "HILL CREST DRIVE | PASIG BLVD-CAPT. H. P. JAVIER | RR | 75,000",
+    "reason": "no road named 'HILL CREST DRIVE' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0766",
+    "text": "HILL CREST DRIVE | PASIG BLVD-CAPT. H. P. JAVIER | CR | 100,000",
+    "reason": "no road named 'HILL CREST DRIVE' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0790",
+    "text": "CITYLAND SUBD. | ST MARTIN ST | RR | 80,000",
+    "reason": "feature not found: 'CITYLAND SUBD.' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0792",
+    "text": "VALLE VERDE MANSION (TH-REGULAR) * | CAPT. HP. JAVIER | RR | 85,000",
+    "reason": "no road named 'VALLE VERDE MANSION' in Oranbo"
+   },
+   {
+    "rule_id": "PSV-43-0788",
+    "text": "ALLEY * | PEDESTRIAN | RR | 35,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0789",
+    "text": "ALLEY * | PEDESTRIAN | CR | 45,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Palatiw": [
+   {
+    "rule_id": "PSV-43-0830",
+    "text": "A MATIENZO ST | STO. TOMAS BDRY-NOCHE BUENA ST | RR | 18,000",
+    "reason": "no road named 'A MATIENZO ST' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0834",
+    "text": "BALTAZAR | STO TOMAS-PINAGBUHATAN | RR | 18,000",
+    "reason": "no road named 'BALTAZAR' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0835",
+    "text": "BOLANTE CARUNCHO EXT (MUTYA NG PASIG) | FARMERS AVE- U VELASCO | RR | 18,000",
+    "reason": "no road named 'BOLANTE CARUNCHO EXT' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0842",
+    "text": "G.L. GUINTO ST | U VELASCO AVE-END | RR | 18,000",
+    "reason": "no road named 'G.L. GUINTO ST' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0843",
+    "text": "JABSON SITE | U. VELASCO AVE. | RR | 18,000",
+    "reason": "no road named 'JABSON SITE' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0849",
+    "text": "MAGSAYSAY ST | A SANDOVAL AVE-END | RR | 24,000",
+    "reason": "no road named 'MAGSAYSAY ST' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0850",
+    "text": "MARKET AVENUE | CARUNCHO AVE-SAN MIGUEL | CR | 48,000",
+    "reason": "no road named 'MARKET AVENUE' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0851",
+    "text": "MARKET AVENUE | CARUNCHO AVE-SAN MIGUEL | RR | 29,000",
+    "reason": "no road named 'MARKET AVENUE' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0852",
+    "text": "MC GUINTO ST | ROMAN CRUZ STO CATALINO ST | RR | 14,000",
+    "reason": "no road named 'MC GUINTO ST' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0855",
+    "text": "NOCHE BUENA ST | BG TAON ST- G UMALI ST | RR | 14,000",
+    "reason": "no road named 'NOCHE BUENA ST' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0858",
+    "text": "SANDOVAL | SAN MIGUEL - PINAGBUHATAN | RR | 25,000",
+    "reason": "no road named 'SANDOVAL' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0859",
+    "text": "SANDOVAL | SAN MIGUEL - PINAGBUHATAN | I | 33,000",
+    "reason": "no road named 'SANDOVAL' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0866",
+    "text": "ASILO CMPD | ASILO VILLAGE | RR | 18,000",
+    "reason": "feature not found: 'ASILO CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0867",
+    "text": "CARUNCHO CMPD | M CRUZ VILLA RAYMUNDO | RR | 18,000",
+    "reason": "feature not found: 'CARUNCHO CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0868",
+    "text": "DEL ROSARIO CMPD | MARKET AVE | RR | 18,000",
+    "reason": "feature not found: 'DEL ROSARIO CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0869",
+    "text": "GAHIT CMPD | E SANTOS | RR | 18,000",
+    "reason": "feature not found: 'GAHIT CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0870",
+    "text": "GRAND MONACO-LA FORTEZA (TH-REGULAR) * | N. CRUZ STREET | RR | 58,000",
+    "reason": "no road named 'GRAND MONACO-LA FORTEZA' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0871",
+    "text": "JOKSONVILLE TOWNHOMES * | PALATIW KANAN-SAN AGUSTIN | RR | 30,000",
+    "reason": "feature not found: 'JOKSONVILLE TOWNHOMES' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0872",
+    "text": "JOKSONVILLE TOWNHOMES * | PALATIW KANAN-SAN AGUSTIN | CR | 45,000",
+    "reason": "feature not found: 'JOKSONVILLE TOWNHOMES' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0873",
+    "text": "JOKSONVILLE TOWNHOMES (TH-REGULAR) * | SAN AGUSTIN - PALATIW | RR | 35,000",
+    "reason": "feature not found: 'JOKSONVILLE TOWNHOMES' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0874",
+    "text": "REYES CMPD | E SANDOVAL | RR | 18,000",
+    "reason": "feature not found: 'REYES CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0875",
+    "text": "TAYO NAMAN CMPC | PALATIW | RR | 18,000",
+    "reason": "no road named 'TAYO NAMAN CMPC' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0877",
+    "text": "VILLA LEGASPI | SAN AGUSTIN AVE | RR | 20,000",
+    "reason": "no road named 'VILLA LEGASPI' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0878",
+    "text": "VILLA MIGUELA CMPD | PINAGBUHATAN-BDRY | RR | 20,000",
+    "reason": "feature not found: 'VILLA MIGUELA CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0879",
+    "text": "VILLA RAYMUNDO | SAN AGUSTIN AVE | RR | 20,000",
+    "reason": "no road named 'VILLA RAYMUNDO' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0880",
+    "text": "VILLA ROSARIO | M H DEL PILAR | RR | 20,000",
+    "reason": "no road named 'VILLA ROSARIO' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0881",
+    "text": "VILLA SANCHEZ | M H DEL PILAR | RR | 20,000",
+    "reason": "no road named 'VILLA SANCHEZ' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0882",
+    "text": "VILLA SULA | M H DEL PILAR | RR | 20,000",
+    "reason": "no road named 'VILLA SULA' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0883",
+    "text": "VILLA TECH | M H DEL PILAR | RR | 20,000",
+    "reason": "no road named 'VILLA TECH' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0884",
+    "text": "VILLARAN CMPD | M H DEL PILAR | RR | 20,000",
+    "reason": "feature not found: 'VILLARAN CMPD' in Palatiw"
+   },
+   {
+    "rule_id": "PSV-43-0862",
+    "text": "CALLEJON * | ONE LANE ROAD | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0863",
+    "text": "CALLEJON * | ONE LANE ROAD | CR | 22,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0864",
+    "text": "ALLEY * | PEDESTRIAN | RR | 9,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0865",
+    "text": "ALLEY * | PEDESTRIAN | CR | 19,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Pinagbuhatan": [
+   {
+    "rule_id": "PSV-43-0894",
+    "text": "A BONIFACIO | A. SANDOVAL - ILUGIN RIVER | RR | 14,000",
+    "reason": "no road named 'A BONIFACIO' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0896",
+    "text": "BALTAZAR | ESGUERRA - END | RR | 14,000",
+    "reason": "no road named 'BALTAZAR' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0897",
+    "text": "BOLANTE CARUNCHO EXT (MUTYA NG PASIG) | FARMERS AVE- U VELASCO | RR | 18,000",
+    "reason": "no road named 'BOLANTE CARUNCHO EXT' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0901",
+    "text": "CATTLEYA | U VELASCO - END | RR | 14,000",
+    "reason": "no road named 'CATTLEYA' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0903",
+    "text": "ESGUERRA | U VELASCO - END | RR | 14,000",
+    "reason": "no road named 'ESGUERRA' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0905",
+    "text": "FARMERS AVE / SAN AGUSTINE AVE | BAMBANG BDRY-U. VELASCO AVE-CARUNCHO AVE- -BGY PALATIW/BGY SAN NICOLAS BDRY | RR | 20,000",
+    "reason": "no road named 'FARMERS AVE' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0906",
+    "text": "FARMERS AVE / SAN AGUSTINE AVE | BAMBANG BDRY-U. VELASCO AVE-CARUNCHO AVE- -BGY PALATIW/BGY SAN NICOLAS BDRY | CR | 35,000",
+    "reason": "no road named 'FARMERS AVE' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0907",
+    "text": "FERRER | U VELASCO | RR | 19,000",
+    "reason": "no road named 'FERRER' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0912",
+    "text": "MC GUINTO ST | R CRUZ | RR | 14,000",
+    "reason": "'MC GUINTO ST' is ambiguous; candidates: M. C. Guinto Street; M. C. Guinto Street Extension"
+   },
+   {
+    "rule_id": "PSV-43-0914",
+    "text": "MALASAGA | GUANIO-MALASAGA | RR | 14,000",
+    "reason": "no road named 'MALASAGA' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0917",
+    "text": "SANTOS ST | FARMERS AVE. - SAN AGUSTIN | RR | 14,000",
+    "reason": "no road named 'SANTOS ST' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0918",
+    "text": "SITIO NAGPAYONG | A. SANDOVAL AVE. - BDRY TAYTAY | RR | 14,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0919",
+    "text": "SITIO NAGPAYONG | A. SANDOVAL AVE. - BDRY TAYTAY | X | 18,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0923",
+    "text": "VICENTE CALIWAG | U. VELASCO AVE - V. BALTAZAR | RR | 14,000",
+    "reason": "no road named 'VICENTE CALIWAG' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0930",
+    "text": "CAMELLA ABRAZA (TH-REGULAR) * | MH DEL PILAR | RR | 58,000",
+    "reason": "no road named 'CAMELLA ABRAZA' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0931",
+    "text": "CATTLEYA HOMES (TH-REGULAR) * | URBANO VELASCO AVE- R CRUZ | RR | 45,000",
+    "reason": "'CATTLEYA HOMES' is ambiguous; candidates: Cattleya; Cattleya Compound"
+   },
+   {
+    "rule_id": "PSV-43-0932",
+    "text": "CHRISTINA HOMES SUBD | A. SANDOVAL AVE | RR | 20,000",
+    "reason": "feature not found: 'CHRISTINA HOMES SUBD' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0933",
+    "text": "GAHIT CMPD | JOBSON SITE - PASIG RIVER | RR | 18,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-0937",
+    "text": "GREENWOOD EXEC PH 1 | A SANDOVAL AVE | RR | 30,000",
+    "reason": "feature not found: 'GREENWOOD EXEC PH 1' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0938",
+    "text": "GREENWOOD EXEC PH 1 | A SANDOVAL AVE | X | 38,000",
+    "reason": "feature not found: 'GREENWOOD EXEC PH 1' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0939",
+    "text": "GREENWOOD EXEC PH 2 | A SANDOVAL AVE | RR | 30,000",
+    "reason": "feature not found: 'GREENWOOD EXEC PH 2' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0940",
+    "text": "GREENWOOD EXEC PH 3 & 4 | A SANDOVAL AVE | RR | 30,000",
+    "reason": "feature not found: 'GREENWOOD EXEC PH 3' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0941",
+    "text": "ILLUGIN RIVER PARINAS | A SANDOVAL AVE | APD | 9,000",
+    "reason": "no road named 'ILLUGIN RIVER PARINAS' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0942",
+    "text": "ILUGIN SUBD | A SANDOVAL AVE | RR | 15,000",
+    "reason": "feature not found: 'ILUGIN SUBD' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0944",
+    "text": "JABSON SITE | U. VELASCO | RR | 18,000",
+    "reason": "no road named 'JABSON SITE' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0945",
+    "text": "MIGUELA SUBD | SALANDAN-CRUZ | RR | 15,000",
+    "reason": "feature not found: 'MIGUELA SUBD' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0946",
+    "text": "MUNTING BAHAYAN | A SANDOVAL AVE | RR | 16,000",
+    "reason": "no road named 'MUNTING BAHAYAN' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0947",
+    "text": "NAGPAYONG RESETTLEMENT * | SANDOVAL AVENUE | RR | 14,000",
+    "reason": "no road named 'NAGPAYONG RESETTLEMENT' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0948",
+    "text": "PALMADALE BUENA HOMES | A. SANDOVAL AVE | RR | 16,000",
+    "reason": "feature not found: 'PALMADALE BUENA HOMES' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0949",
+    "text": "PALMDALE HEIGHT PH11-A (TH-REGULAR) * | A. SANDOVAL AVE | RR | 43,000",
+    "reason": "feature not found: 'PALMDALE HEIGHT PH11-A' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0950",
+    "text": "PALMDALE HEIGHT PH11-B (TH-REGULAR) * | A. SANDOVAL AVE | RR | 43,000",
+    "reason": "feature not found: 'PALMDALE HEIGHT PH11-B' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0951",
+    "text": "PALMDALE HEIGHT PH11-C (TH-REGULAR) * | A. SANDOVAL AVE | RR | 43,000",
+    "reason": "feature not found: 'PALMDALE HEIGHT PH11-C' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0952",
+    "text": "PALMDALE HEIGHT PH1-A (TH-REGULAR) * | A. SANDOVAL AVE | RR | 43,000",
+    "reason": "feature not found: 'PALMDALE HEIGHT PH1-A' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0953",
+    "text": "PALMDALE HEIGHT PH1-B (TH-REGULAR) * | A. SANDOVAL AVE | RR | 43,000",
+    "reason": "feature not found: 'PALMDALE HEIGHT PH1-B' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0954",
+    "text": "PALMDALE HEIGHT PH1-C (TH-REGULAR) * | A. SANDOVAL AVE | RR | 43,000",
+    "reason": "feature not found: 'PALMDALE HEIGHT PH1-C' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0956",
+    "text": "REYES CMPD | A. SANDOVAL AVE. | RR | 18,000",
+    "reason": "feature not found: 'REYES CMPD' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0957",
+    "text": "RIVER VILLE HOMES ASS | A. SANDOVAL AVE. - BDRY TAYTAY | RR | 15,000",
+    "reason": "feature not found: 'RIVER VILLE HOMES ASS' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0958",
+    "text": "SUAREZ SUBD I | A SANDOVAL AVE | RR | 15,000",
+    "reason": "feature not found: 'SUAREZ SUBD I' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0959",
+    "text": "SUAREZ SUBD II | A SANDOVAL AVE | RR | 15,000",
+    "reason": "feature not found: 'SUAREZ SUBD II' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0960",
+    "text": "VILLA ALEGRE | FERNANDEZ-GUANIO | RR | 15,000",
+    "reason": "no road named 'VILLA ALEGRE' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0961",
+    "text": "VILLA CUANA | A. SANDOVAL AVE. - BDRY TAYTAY | RR | 15,000",
+    "reason": "no road named 'VILLA CUANA' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0962",
+    "text": "VILLA GLORIA III | A SANDOVAL AVE | RR | 15,000",
+    "reason": "no road named 'VILLA GLORIA III' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0964",
+    "text": "VILLA REY MALASAGA | URBANO VELASCO AVE. | RR | 15,000",
+    "reason": "no road named 'VILLA REY MALASAGA' in Pinagbuhatan"
+   },
+   {
+    "rule_id": "PSV-43-0926",
+    "text": "CALLEJON * | ONE LANE ROAD | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0927",
+    "text": "CALLEJON * | ONE LANE ROAD | CR | 27,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0928",
+    "text": "ALLEY * | PEDESTRIAN | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-0929",
+    "text": "ALLEY * | PEDESTRIAN | CR | 24,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Pineda": [
+   {
+    "rule_id": "PSV-43-0989",
+    "text": "C RAYMUNDO (PASIG BLVD) | SAN IGNACIO-MRR | CR | 130,000",
+    "reason": "no road named 'C RAYMUNDO' in Pineda"
+   },
+   {
+    "rule_id": "PSV-43-0990",
+    "text": "CORONADO ESTATE | PUROK 4 | RR | 16,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1002",
+    "text": "MRR ROAD | PASIG BLVD-MANDALUYONG | RR | 22,000",
+    "reason": "no road named 'MRR ROAD' in Pineda"
+   },
+   {
+    "rule_id": "PSV-43-1003",
+    "text": "MRR ROAD | PASIG BLVD-MANDALUYONG | CR | 40,000",
+    "reason": "no road named 'MRR ROAD' in Pineda"
+   },
+   {
+    "rule_id": "PSV-43-1004",
+    "text": "RELIANCE ST. | BRIXTON - MANDALUYONG BDRY | CR | 120,000",
+    "reason": "no road named 'RELIANCE ST.' in Pineda"
+   },
+   {
+    "rule_id": "PSV-43-1005",
+    "text": "RELIANCE ST. | BRIXTON - MANDALUYONG BDRY | I | 100,000",
+    "reason": "no road named 'RELIANCE ST.' in Pineda"
+   },
+   {
+    "rule_id": "PSV-43-1019",
+    "text": "ALLEY * | PEDESTRIAN | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1020",
+    "text": "ALLEY * | PEDESTRIAN | CR | 24,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Rosario": [
+   {
+    "rule_id": "PSV-43-1052",
+    "text": "FLOODWAY ROAD | EAST AND WEST | RR | 28,000",
+    "reason": "no road named 'FLOODWAY ROAD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1053",
+    "text": "FLOODWAY ROAD | EAST AND WEST | I | 38,000",
+    "reason": "no road named 'FLOODWAY ROAD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1054",
+    "text": "FLOODWAY ROAD | EAST AND WEST | CR | 50,000",
+    "reason": "no road named 'FLOODWAY ROAD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1060",
+    "text": "NAPICO (TANIMANG BAYAN) | LIFE HOMES SUBD - BGY BOUNDARY | RR | 20,000",
+    "reason": "no road named 'NAPICO' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1061",
+    "text": "NAPICO (TANIMANG BAYAN) | LIFE HOMES SUBD - BGY BOUNDARY | CR | 38,000",
+    "reason": "no road named 'NAPICO' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1066",
+    "text": "INTERIOR ORTIGAS EXT | ORTIGAS EXT | RR | 35,000",
+    "reason": "no road named 'INTERIOR ORTIGAS EXT' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1067",
+    "text": "INTERIOR ORTIGAS EXT | ORTIGAS EXT | CR | 60,000",
+    "reason": "no road named 'INTERIOR ORTIGAS EXT' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1075",
+    "text": "AMADA SUBD | ORTIGAS | RR | 18,000",
+    "reason": "feature not found: 'AMADA SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1076",
+    "text": "ANDREA VILLAGE | ORTIGAS AVE EXT | RR | 18,000",
+    "reason": "feature not found: 'ANDREA VILLAGE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1077",
+    "text": "AVELINA SUBD | INTERIOR-ORTIGAS AVE | RR | 18,000",
+    "reason": "feature not found: 'AVELINA SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1078",
+    "text": "BAUTISTA VILLE | ORTIGAS | RR | 18,000",
+    "reason": "no road named 'BAUTISTA VILLE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1079",
+    "text": "BLDG IX (TH-REGULAR) * | ORTIGAS EXT. | RR | 40,000",
+    "reason": "no road named 'BLDG IX' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1080",
+    "text": "BLISS FLEXIHOMES (TH-REGULAR) * | ROSARIO PASIG | RR | 33,000",
+    "reason": "no road named 'BLISS FLEXIHOMES' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1082",
+    "text": "BUENMAR SUBD | C RAYMUNDO | RR | 23,000",
+    "reason": "feature not found: 'BUENMAR SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1084",
+    "text": "CHASON PEARL CMPD | MAYBUNGA (C RAYMUNDO) | RR | 18,000",
+    "reason": "feature not found: 'CHASON PEARL CMPD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1085",
+    "text": "CIUDAD DEL CARMEN | PASIG BLVD EXT | RR | 22,000",
+    "reason": "no road named 'CIUDAD DEL CARMEN' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1086",
+    "text": "CIUDAD DEL MEJIA | A RODRIGUEZ | RR | 22,000",
+    "reason": "no road named 'CIUDAD DEL MEJIA' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1087",
+    "text": "CIUDAD GRANDE | ORTIGAS AVE EXT | RR | 28,000",
+    "reason": "no road named 'CIUDAD GRANDE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1088",
+    "text": "CVS HOMES | IMELDA | RR | 18,000",
+    "reason": "feature not found: 'CVS HOMES' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1089",
+    "text": "DAMIANA VILLAGE | ORTIGAS AVE EXT | RR | 18,000",
+    "reason": "feature not found: 'DAMIANA VILLAGE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1090",
+    "text": "DON BOSCO (TH-REGULAR) * | ORTIGAS EXT. | RR | 38,000",
+    "reason": "no road named 'DON BOSCO' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1095",
+    "text": "FSJWI (TH-REGULAR) * | ORTIGAS AVE EXT | RR | 40,000",
+    "reason": "no road named 'FSJWI' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1096",
+    "text": "GOMEZVILLE SUBD | A RODRIGUEZ AVE | RR | 25,000",
+    "reason": "feature not found: 'GOMEZVILLE SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1097",
+    "text": "GREENFIELD SUBD | F ANDRES ROSARIO | RR | 18,000",
+    "reason": "feature not found: 'GREENFIELD SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1098",
+    "text": "GREEN HAVEN SUBD (TH-REGULAR) * | ROSARIO PASIG | RR | 38,000",
+    "reason": "feature not found: 'GREEN HAVEN SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1099",
+    "text": "GREEN HAVEN SUBD (TH-REGULAR) * | ROSARIO PASIG | RR | 30,000",
+    "reason": "feature not found: 'GREEN HAVEN SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1100",
+    "text": "GSIS SUBD | PASIG BLVD-MANGGAHAN | RR | 19,000",
+    "reason": "feature not found: 'GSIS SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1101",
+    "text": "HONEYCOMB TOWNHOUSE (TH-REGULAR) * | ORTIGAS AVE EXT | RR | 38,000",
+    "reason": "feature not found: 'HONEYCOMB TOWNHOUSE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1102",
+    "text": "HUNTERS ROTC | ORTIGAS-END | RR | 18,000",
+    "reason": "no road named 'HUNTERS ROTC' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1103",
+    "text": "JABSON ESTATE | ORTIGAS AVE EXT | RR | 28,000",
+    "reason": "feature not found: 'JABSON ESTATE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1104",
+    "text": "JABSON ESTATE TOWNHOUSE (TH-REGULAR)* | ORTIGAS AVE EXT | RR | 38,000",
+    "reason": "feature not found: 'JABSON ESTATE TOWNHOUSE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1105",
+    "text": "KARANGALAN VILLAGE (TH-REGULAR) * | ROSARIO PASIG | RR | 65,000",
+    "reason": "feature not found: 'KARANGALAN VILLAGE' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1110",
+    "text": "M.M.C. | C. RAYMUNDO | RR | 19,000",
+    "reason": "no road named 'M.M.C.' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1111",
+    "text": "MAMERTO CMPD | ROSARIO (ROSARIO SPORTS COMPLEX) | RR | 18,000",
+    "reason": "feature not found: 'MAMERTO CMPD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1112",
+    "text": "MARIA CATOC CMPD | DR SIXTO ANTONIO AVE | RR | 19,000",
+    "reason": "feature not found: 'MARIA CATOC CMPD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1113",
+    "text": "METROVILLE SUBD | IMELDA AVE | RR | 19,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1114",
+    "text": "PASIG GREENLAND SUBD | ROSARIO | RR | 28,000",
+    "reason": "'PASIG GREENLAND SUBD' is ambiguous; candidates: Pasig Greenland Village Circle; Pasig Greenland Village I; Pasig Greenland Village Moon; Pasig Greenland Village Saturn; Pasig Greenland Village Ⅱ"
+   },
+   {
+    "rule_id": "PSV-43-1117",
+    "text": "RAYOS CMPD | BERNALIST/DSAA ROSARIO | RR | 19,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1118",
+    "text": "RSG TOWNHOMES -PH 1 (TH-REGULAR * | KARANGALAN DR. | RR | 48,000",
+    "reason": "feature not found: 'RSG TOWNHOMES -PH 1 (TH-REGULAR' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1119",
+    "text": "RODRIGUEZ CMPD | GSIS ROAD-PASIG BLVD | APD | 19,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1120",
+    "text": "RODRIGUEZ CMPD | GSIS ROAD-PASIG BLVD | RR | 19,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1122",
+    "text": "S.P.S. SUBD | ORTIGAS EXT. ROSARIO | RR | 18,000",
+    "reason": "feature not found: 'S.P.S. SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1123",
+    "text": "ST. JOSEPH SUBD | ORTIGAS EXT ROSARIO | RR | 18,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1124",
+    "text": "ST. JOSEPH THE WORKERS (TH-REGULAR) * | ORTIGAS EXT ROSARIO | RR | 35,000",
+    "reason": "no road named 'ST. JOSEPH THE WORKERS' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1126",
+    "text": "VILLA LETICIA | ORTIGAS EXT | RR | 19,000",
+    "reason": "no road named 'VILLA LETICIA' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1127",
+    "text": "VILLA RICA | ORTIGAS EXT | RR | 19,000",
+    "reason": "no road named 'VILLA RICA' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1128",
+    "text": "VILLA SOCORRO | ORTIGAS EXT | RR | 19,000",
+    "reason": "no road named 'VILLA SOCORRO' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1129",
+    "text": "VISTA VERDE SUBD | IMELDA | RR | 23,000",
+    "reason": "feature not found: 'VISTA VERDE SUBD' in Rosario"
+   },
+   {
+    "rule_id": "PSV-43-1070",
+    "text": "CALLEJON * | ONE-LANE | RR | 14,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1071",
+    "text": "CALLEJON * | ONE-LANE | CR | 30,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1072",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1073",
+    "text": "ALLEY * | PEDESTRIAN | CR | 26,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Sagad": [
+   {
+    "rule_id": "PSV-43-1175",
+    "text": "DODGE CITY | PILAPIL-RAYMUNDO | RR | 22,000",
+    "reason": "no road named 'DODGE CITY' in Sagad"
+   },
+   {
+    "rule_id": "PSV-43-1177",
+    "text": "DR SIXTO ANTONIO AVE | AFABLE-RAYMUNDO | CR | 80,000",
+    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
+   },
+   {
+    "rule_id": "PSV-43-1179",
+    "text": "FELICIANO | ANTONIO-GUNAO | RR | 18,000",
+    "reason": "no road named 'FELICIANO' in Sagad"
+   },
+   {
+    "rule_id": "PSV-43-1180",
+    "text": "GUNAO | RAYMUNDO-FELICIANO | APD | 14,000",
+    "reason": "no road named 'GUNAO' in Sagad"
+   },
+   {
+    "rule_id": "PSV-43-1187",
+    "text": "AFABLE SUBD | ANTONIO-PILAPIL | RR | 20,000",
+    "reason": "feature not found: 'AFABLE SUBD' in Sagad"
+   },
+   {
+    "rule_id": "PSV-43-1183",
+    "text": "CALLEJON * | ONE-LANE | RR | 14,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1184",
+    "text": "CALLEJON * | ONE-LANE | CR | 40,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1185",
+    "text": "ALLEY * | PEDESTRIAN | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1186",
+    "text": "ALLEY * | PEDESTRIAN | CR | 35,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "San Antonio": [
+   {
+    "rule_id": "PSV-43-1193",
+    "text": "F ORTRIGAZ JR. AVE (EMERALD AVE) | ORTIGAS AVE-JULIA VARGAS AVE | CR | 290,000",
+    "reason": "no road named 'F ORTRIGAZ JR. AVE' in San Antonio"
+   },
+   {
+    "rule_id": "PSV-43-1195",
+    "text": "GOLD LOOP CIRCLE | PEARL DRIVE - J. MA. ESCRIVA DR. | CR | 240,000",
+    "reason": "no road named 'GOLD LOOP CIRCLE' in San Antonio"
+   },
+   {
+    "rule_id": "PSV-43-1197",
+    "text": "JOSE MA. ESCRIVA DRIVE (Formerly Amber Drive) * | SHAW BLVD. - AMBER DRIVE | CR | 190,000",
+    "reason": "no road named 'JOSE MA. ESCRIVA DRIVE' in San Antonio"
+   },
+   {
+    "rule_id": "PSV-43-1198",
+    "text": "LOURDES ST | PEARL DRIVE | CR | 190,000",
+    "reason": "no road named 'LOURDES ST' in San Antonio"
+   },
+   {
+    "rule_id": "PSV-43-1199",
+    "text": "MERALCO AVE | ORTIGAS AVE - GEN. LIM | CR | 315,000",
+    "reason": "'MERALCO AVE' is ambiguous; candidates: Meralco Avenue; Meralco Road"
+   },
+   {
+    "rule_id": "PSV-43-1200",
+    "text": "MERALCO AVE | ORTIGAS AVE - GEN. LIM | CR | 280,000",
+    "reason": "'MERALCO AVE' is ambiguous; candidates: Meralco Avenue; Meralco Road"
+   },
+   {
+    "rule_id": "PSV-43-1211",
+    "text": "CHASON TOWNHOUSE (TH- REGULAR) * | GEN. ATIENZA | RR | 100,000",
+    "reason": "feature not found: 'CHASON TOWNHOUSE' in San Antonio"
+   },
+   {
+    "rule_id": "PSV-43-1212",
+    "text": "MAGARA TOWNHOUSE | SAN ANTONIO | RR | 100,000",
+    "reason": "feature not found: 'MAGARA TOWNHOUSE' in San Antonio"
+   },
+   {
+    "rule_id": "PSV-43-1223",
+    "text": "(TH- REGULAR) * | ORTIGAS CENTER | RR | 100,000",
+    "reason": "no road named '(TH- REGULAR) *' in San Antonio"
+   }
+  ],
+  "San Joaquin": [
+   {
+    "rule_id": "PSV-43-1473",
+    "text": "E. SANTOS | A LUNA-END | CR | 45,000",
+    "reason": "'E. SANTOS' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
+   },
+   {
+    "rule_id": "PSV-43-1477",
+    "text": "HERNANDEZ | ELISCO-ROAD | RR | 18,000",
+    "reason": "no road named 'HERNANDEZ' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1480",
+    "text": "JUSTICE R. JABSON/ A LUNA | PASIG RIVER-E. SANTOS | CR | 50,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1481",
+    "text": "JUSTICE R. JABSON/ A LUNA | PASIG RIVER-E. SANTOS | CR | 43,000",
+    "reason": "no road named 'JUSTICE R. JABSON' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1482",
+    "text": "POLICARPIO ST. | JABSON ST | RR | 16,000",
+    "reason": "no road named 'POLICARPIO ST.' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1485",
+    "text": "ULILANG KAWAYAN | VISITACION - END | RR | 16,000",
+    "reason": "no road named 'ULILANG KAWAYAN' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1493",
+    "text": "AUSTRIA CMPD. | CONCEPCION | RR | 16,000",
+    "reason": "feature not found: 'AUSTRIA CMPD.' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1494",
+    "text": "CALAYAN CMPD. | A. LUNA | RR | 16,000",
+    "reason": "feature not found: 'CALAYAN CMPD.' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1495",
+    "text": "CONCEPCION CMPD. | CONCEPCION | RR | 16,000",
+    "reason": "feature not found: 'CONCEPCION CMPD.' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1496",
+    "text": "EMERALD SUBD. | ASTORIA AND PATEROS | RR | 22,000",
+    "reason": "feature not found: 'EMERALD SUBD.' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1498",
+    "text": "LEXINGTON VILLAGE | ELISCO ROAD | RR | 45,000",
+    "reason": "feature not found: 'LEXINGTON VILLAGE' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1499",
+    "text": "TATCO CMPD. | E SANTOS ST-END | RR | 16,000",
+    "reason": "feature not found: 'TATCO CMPD.' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1501",
+    "text": "VILLA MONSOD | ULILANG KAWAYAN | RR | 16,000",
+    "reason": "no road named 'VILLA MONSOD' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1502",
+    "text": "VILLA TUPUZ | VISITACION | RR | 16,000",
+    "reason": "no road named 'VILLA TUPUZ' in San Joaquin"
+   },
+   {
+    "rule_id": "PSV-43-1489",
+    "text": "CALLEJON * | ONE-LANE | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1490",
+    "text": "CALLEJON * | ONE-LANE | CR | 28,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1491",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1492",
+    "text": "ALLEY * | PEDESTRIAN | CR | 24,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "San Miguel": [
+   {
+    "rule_id": "PSV-43-1523",
+    "text": "DAMAYAN | EUSEBIO AVE. | RR | 16,000",
+    "reason": "no road named 'DAMAYAN' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1527",
+    "text": "EUSEBIO ST. | MARKET AVE - F LEGASPI | RR | 23,000",
+    "reason": "no road named 'EUSEBIO ST.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1528",
+    "text": "EUSEBIO ST. | MARKET AVE - F LEGASPI | I | 33,000",
+    "reason": "no road named 'EUSEBIO ST.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1529",
+    "text": "EUSEBIO ST. | MARKET AVE - F LEGASPI | RR | 23,000",
+    "reason": "no road named 'EUSEBIO ST.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1530",
+    "text": "JENNY'S AVE. | EUSEBIO ST-MAYBUNGA BDRY | RR | 38,000",
+    "reason": "no road named \"JENNY'S AVE.\" in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1531",
+    "text": "JENNY'S AVE. | EUSEBIO ST-MAYBUNGA BDRY | CR | 50,000",
+    "reason": "no road named \"JENNY'S AVE.\" in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1532",
+    "text": "JENNY'S AVE. | EUSEBIO ST-MAYBUNGA BDRY | I | 45,000",
+    "reason": "no road named \"JENNY'S AVE.\" in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1533",
+    "text": "KABABAIHANG TANGLAW | PINAGBUHATAN | RR | 16,000",
+    "reason": "no road named 'KABABAIHANG TANGLAW' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1536",
+    "text": "MARKET AVE. | PILAPIL-MAYBUNGA | RR | 30,000",
+    "reason": "no road named 'MARKET AVE.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1537",
+    "text": "MARKET AVE. | PILAPIL-MAYBUNGA | I | 45,000",
+    "reason": "no road named 'MARKET AVE.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1538",
+    "text": "MARKET AVE. | PILAPIL-MAYBUNGA | CR | 55,000",
+    "reason": "no road named 'MARKET AVE.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1544",
+    "text": "SANDOVAL | MERCEDES AVE-PINAGBUHATAN | RR | 30,000",
+    "reason": "no road named 'SANDOVAL' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1545",
+    "text": "SANDOVAL | MERCEDES AVE-PINAGBUHATAN | I | 43,000",
+    "reason": "no road named 'SANDOVAL' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1546",
+    "text": "SANDOVAL | MERCEDES AVE-PINAGBUHATAN | CR | 53,000",
+    "reason": "no road named 'SANDOVAL' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1547",
+    "text": "INTERIOR SANDOVAL | MERCEDES AVE-PINAGBUHATAN | RR | 25,000",
+    "reason": "no road named 'INTERIOR SANDOVAL' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1548",
+    "text": "SITIO KUMUNOY | LUPANG PARI-SAN MIGUEL | RR | 13,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1555",
+    "text": "AMETTA PLACE SUBD. | FRANKFURT STREET | RR | 60,000",
+    "reason": "feature not found: 'AMETTA PLACE SUBD.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1556",
+    "text": "(TH-REGULAR) * | RR | 60,000",
+    "reason": "no road named '(TH-REGULAR) *' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1558",
+    "text": "CAMELLA CERRITOS EAST SUBD. * | MERCEDES AVE - SANDOVAL AVE | RR | 38,000",
+    "reason": "feature not found: 'CAMELLA CERRITOS EAST SUBD.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1559",
+    "text": "CARUNCHO HOMES | SANDOVAL AVENUE - MERCEDES | RR | 25,000",
+    "reason": "feature not found: 'CARUNCHO HOMES' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1560",
+    "text": "CHRISTINE ROYALE EXEC. VILLAGE | M. EUSEBIO | RR | 28,000",
+    "reason": "feature not found: 'CHRISTINE ROYALE EXEC. VILLAGE' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1562",
+    "text": "GRAND MONACO LA POTENZA (TH-REGULAR)* | MONACO AVE. - SANDOVAL AVE. | RR | 45,000",
+    "reason": "no road named 'GRAND MONACO LA POTENZA' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1563",
+    "text": "GREENWOOD | SANDOVAL AVE | RR | 30,000",
+    "reason": "no road named 'GREENWOOD' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1565",
+    "text": "JABSON CMPD. | MARKET AVE | RR | 18,000",
+    "reason": "feature not found: 'JABSON CMPD.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1566",
+    "text": "MAXVILLE SUBD. | DR PILAPIL STREET | RR | 20,000",
+    "reason": "feature not found: 'MAXVILLE SUBD.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1567",
+    "text": "MERCEDES EXEC VILLAGE | MERCEDES AVE - FRANKFURT ST | RR | 28,000",
+    "reason": "feature not found: 'MERCEDES EXEC VILLAGE' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1568",
+    "text": "N. ESPIRITU COMPOUND | SAN MIGUEL | RR | 20,000",
+    "reason": "feature not found: 'N. ESPIRITU COMPOUND' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1569",
+    "text": "ONE MERCEDES PLAZA | MERCEDES AVE | CR | 68,000",
+    "reason": "no road named 'ONE MERCEDES PLAZA' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1570",
+    "text": "PCFI SUBD. | A. SANDOVAL AVE | RR | 19,000",
+    "reason": "feature not found: 'PCFI SUBD.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1571",
+    "text": "PERALTA CMPD. | MERCEDEZ AVE | RR | 19,000",
+    "reason": "feature not found: 'PERALTA CMPD.' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1573",
+    "text": "TEACHERS VILLAGE | MERCEDES AVE | RR | 20,000",
+    "reason": "feature not found: 'TEACHERS VILLAGE' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1574",
+    "text": "TEACHERS VILLAGE | MERCEDES AVE | CR | 28,000",
+    "reason": "feature not found: 'TEACHERS VILLAGE' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1575",
+    "text": "VILLA CONCHA | BGY SAN MIGUEL | RR | 20,000",
+    "reason": "no road named 'VILLA CONCHA' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1576",
+    "text": "VILLA EUSEBIO | EUSEBIO AVE | RR | 16,000",
+    "reason": "no road named 'VILLA EUSEBIO' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1578",
+    "text": "VILLA STA. ANA | MARKET AVE | RR | 21,000",
+    "reason": "no road named 'VILLA STA. ANA' in San Miguel"
+   },
+   {
+    "rule_id": "PSV-43-1551",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1552",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 30,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1553",
+    "text": "ALLEY * | PEDESTRIAN | RR | 9,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1554",
+    "text": "ALLEY * | PEDESTRIAN | CR | 26,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "San Nicolas (Pob.)": [
+   {
+    "rule_id": "PSV-43-1603",
+    "text": "M. MARCELO ST. | MH DEL PILAR ST-STA. CRUZ BDRY | RR | 23,000",
+    "reason": "no road named 'M. MARCELO ST.' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1604",
+    "text": "MARKET AVE. (M SUAREZ ST) | SAN MIGUEL/PALATIW | RR | 25,000",
+    "reason": "no road named 'MARKET AVE.' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1605",
+    "text": "PLAZA FLORES | CARUNCHO AVE | CR | 53,000",
+    "reason": "no road named 'PLAZA FLORES' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1607",
+    "text": "UMALI ST. | R BEDAÑA ST MH DEL PILAR ST | RR | 16,000",
+    "reason": "no road named 'UMALI ST.' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1614",
+    "text": "CAMELLA SONRISA * | F. MANALO-SAN NICOLAS | RR | 40,000",
+    "reason": "no road named 'CAMELLA SONRISA' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1615",
+    "text": "CAMELLA SONRISA (TH-REGULAR) * | CARUNCHO AVE. | RR | 58,000",
+    "reason": "no road named 'CAMELLA SONRISA' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1616",
+    "text": "GRAND MONACO * | F. MANALO-SAN NICOLAS | RR | 43,000",
+    "reason": "no road named 'GRAND MONACO' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1617",
+    "text": "GRAND MONACO LA IMPREZA(TH-REGULAR) * | F. MANALO ST. | RR | 53,000",
+    "reason": "no road named 'GRAND MONACO LA IMPREZA' in San Nicolas (Pob.)"
+   },
+   {
+    "rule_id": "PSV-43-1610",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1611",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 39,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1612",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1613",
+    "text": "ALLEY * | PEDESTRIAN | CR | 34,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Santa Cruz": [
+   {
+    "rule_id": "PSV-43-1626",
+    "text": "M. MARCELO | CAPT ATO | RR | 20,000",
+    "reason": "no road named 'M. MARCELO' in Santa Cruz"
+   },
+   {
+    "rule_id": "PSV-43-1628",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1629",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Santa Lucia": [
+   {
+    "rule_id": "PSV-43-1630",
+    "text": "FLOODWAY RD / EAST BANK ROAD / VICTORIO IGNACIO BLVD | ORTIGAS AVE - CAINTA BOUNDARY | RR | 33,000",
+    "reason": "no road named 'FLOODWAY RD' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1631",
+    "text": "FLOODWAY RD / EAST BANK ROAD / VICTORIO IGNACIO BLVD | ORTIGAS AVE - CAINTA BOUNDARY | CR | 50,000",
+    "reason": "no road named 'FLOODWAY RD' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1632",
+    "text": "FRANCOR ROAD | FLOODWAY ROAD | RR | 18,000",
+    "reason": "no road named 'FRANCOR ROAD' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1633",
+    "text": "IRENE EXTENSION (LIAMZON EXT.) | ALONG DE CASTRO | RR | 19,000",
+    "reason": "no road named 'IRENE EXTENSION' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1644",
+    "text": "ARMEL SUBD. | MARIETTA ROMEO SUBD. | RR | 16,000",
+    "reason": "feature not found: 'ARMEL SUBD.' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1645",
+    "text": "BAUTISTA CMPD. | NEW SOCIETY | RR | 21,000",
+    "reason": "feature not found: 'BAUTISTA CMPD.' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1646",
+    "text": "COUNTRYSIDE SUBD. | ORTIGAS AVE EXT | RR | 22,000",
+    "reason": "feature not found: 'COUNTRYSIDE SUBD.' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1647",
+    "text": "COUNTRYSIDE SUBD. | ORTIGAS AVE EXT | CR | 35,000",
+    "reason": "feature not found: 'COUNTRYSIDE SUBD.' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1650",
+    "text": "DON BOSCO SUBD / TEACHER'S VILLAGE | ORTIGAS AVE EXT | RR | 25,000",
+    "reason": "feature not found: 'DON BOSCO SUBD' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1651",
+    "text": "EVP TOWNHOUSE (TH-REGULAR)* | BGY SANTA LUCIA | RR | 44,000",
+    "reason": "feature not found: 'EVP TOWNHOUSE' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1652",
+    "text": "GSIS VILLAGE / MRR | FLOODWAY-CAINTA BDRY | RR | 19,000",
+    "reason": "feature not found: 'GSIS VILLAGE' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1653",
+    "text": "JULIANA SUBD. I | DAMA DE NOCHE ST. DE CASTRO SUBD. | RR | 20,000",
+    "reason": "feature not found: 'JULIANA SUBD. I' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1654",
+    "text": "JULIANA SUBD. II | NEW SOCIETY ST. - ROSARIO 4 | RR | 20,000",
+    "reason": "feature not found: 'JULIANA SUBD. II' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1658",
+    "text": "MAXVILLE X | ROSARIO VILLAGE -MARIETA ROMEO VILL | RR | 20,000",
+    "reason": "no road named 'MAXVILLE X' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1659",
+    "text": "MAXVILLE XI | MORALES COMP. - METROPOLIS VILL I | RR | 20,000",
+    "reason": "no road named 'MAXVILLE XI' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1660",
+    "text": "METRO GREEN SUBD. | MARIETTA ROMEO SUBD. | RR | 20,000",
+    "reason": "feature not found: 'METRO GREEN SUBD.' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1661",
+    "text": "METRO GREEN SUBD. VI | MARIETTA ROMEO SUBD. | RR | 23,000",
+    "reason": "feature not found: 'METRO GREEN SUBD. VI' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1662",
+    "text": "METRO GREEN SUBD. VII | MARIETTA ROMEO SUBD. | RR | 23,000",
+    "reason": "feature not found: 'METRO GREEN SUBD. VII' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1667",
+    "text": "METROPOLIS VILLAGE III (TH-REGULAR)* | COUNTRYSIDE VILL. | RR | 45,000",
+    "reason": "feature not found: 'METROPOLIS VILLAGE III' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1672",
+    "text": "ROMEO-MARIETTA SUBD. | COUTNRYSIDE AVE | RR | 20,000",
+    "reason": "'ROMEO-MARIETTA SUBD.' is ambiguous; candidates: Marietta Romeo Village; Marietta Romeo Village 6; Marietta Romeo Village 7; Marietta Romeo Village 8; Marietta Romeo Village Homeowners Association; Marietta-Romeo Village"
+   },
+   {
+    "rule_id": "PSV-43-1673",
+    "text": "ROSARIO 4 SUBD. (NEW SOCIETY) | JULIANA 2 | RR | 20,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1677",
+    "text": "SOLDIER VILLAGE | ALONG FLOODWAY | RR | 18,000",
+    "reason": "feature not found: 'SOLDIER VILLAGE' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1678",
+    "text": "SUMMERFIELD PASIG (TH-REGULAR) * | DE CASTRO SUBD | RR | 58,000",
+    "reason": "no road named 'SUMMERFIELD PASIG' in Santa Lucia"
+   },
+   {
+    "rule_id": "PSV-43-1640",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1641",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 30,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1642",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1643",
+    "text": "ALLEY * | PEDESTRIAN | CR | 26,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Santa Rosa": [
+   {
+    "rule_id": "PSV-43-1694",
+    "text": "ABANDONED MERALCO RD. | E SANTOS AVE-PASIG RIVER | RR | 14,000",
+    "reason": "no road named 'ABANDONED MERALCO RD.' in Santa Rosa"
+   },
+   {
+    "rule_id": "PSV-43-1695",
+    "text": "ACACIA ST. | LOPEZ JAENA DRIVE-GARCIA EXT | RR | 14,000",
+    "reason": "no road named 'ACACIA ST.' in Santa Rosa"
+   },
+   {
+    "rule_id": "PSV-43-1696",
+    "text": "DR GARCIA EXTN. | LOPEZ JAENA-P BURGOS ST | RR | 19,000",
+    "reason": "no road named 'DR GARCIA EXTN.' in Santa Rosa"
+   }
+  ],
+  "Santo Tomas": [
+   {
+    "rule_id": "PSV-43-1823",
+    "text": "A. MATIENZO ST. | E. SANTOS - BRGY. PALATIW BDRY | RR | 17,000",
+    "reason": "no road named 'A. MATIENZO ST.' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1825",
+    "text": "BALTAZAR | MANALO-MARKET AVE | RR | 24,000",
+    "reason": "no road named 'BALTAZAR' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1831",
+    "text": "LORENZO R. JOSE ST. | R ANGELES-PALATIW | RR | 17,000",
+    "reason": "no road named 'LORENZO R. JOSE ST.' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1833",
+    "text": "MARKET AVE. | PALATIW BDRY-SAN NICOLAS BDRY | CR | 45,000",
+    "reason": "no road named 'MARKET AVE.' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1834",
+    "text": "TATLONG HARI | CANDELARIA-MATIENZO | RR | 17,000",
+    "reason": "no road named 'TATLONG HARI' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1836",
+    "text": "VILLA ROSA | M H DEL PILAR STREET | RR | 17,000",
+    "reason": "no road named 'VILLA ROSA' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1837",
+    "text": "VILLA SAN JUAN | M H DEL PILAR STREET | RR | 17,000",
+    "reason": "no road named 'VILLA SAN JUAN' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1844",
+    "text": "BARTOLOME SUBD. | PALATIW | RR | 17,000",
+    "reason": "feature not found: 'BARTOLOME SUBD.' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1845",
+    "text": "VILLA ROSA CMPD. | BAGONG TAON ST | RR | 17,000",
+    "reason": "feature not found: 'VILLA ROSA CMPD.' in Santo Tomas"
+   },
+   {
+    "rule_id": "PSV-43-1840",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 14,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1841",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 34,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1842",
+    "text": "ALLEY * | PEDESTRIAN | RR | 12,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1843",
+    "text": "ALLEY * | PEDESTRIAN | CR | 29,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Santolan": [
+   {
+    "rule_id": "PSV-43-1712",
+    "text": "CONCEPCION ST. | EVANGELISTA-M DE LEON ST | RR | 16,000",
+    "reason": "no road named 'CONCEPCION ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1713",
+    "text": "DR. GARCIA ST. | JAENA-PASIG-MARIKINA | RR | 23,000",
+    "reason": "no road named 'DR. GARCIA ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1714",
+    "text": "DUMANDAN ST. | EVANGELISTA-STO. TOMAS ST | RR | 19,000",
+    "reason": "no road named 'DUMANDAN ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1728",
+    "text": "GABRIEL ST. | EVANGELISTA-PASEO DE ANIMALES | RR | 14,000",
+    "reason": "no road named 'GABRIEL ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1734",
+    "text": "M. DE LEON ST. | EVANGELISTA-E CONCEPCION | RR | 19,000",
+    "reason": "'M. DE LEON ST.' is ambiguous; candidates: M. de Leon East Street; M. de Leon West Street"
+   },
+   {
+    "rule_id": "PSV-43-1758",
+    "text": "PINAGKAISA ST. | TAWIRAN EXT. | RR | 19,000",
+    "reason": "no road named 'PINAGKAISA ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1759",
+    "text": "PINAGPALA ST. | TAWIRAN EXT | RR | 19,000",
+    "reason": "no road named 'PINAGPALA ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1760",
+    "text": "Q. MEJIA ST. | EVANGELISTA-PASEO DE ANIMALES | RR | 16,000",
+    "reason": "no road named 'Q. MEJIA ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1764",
+    "text": "SANTIAGO ST. | EVANGELISTA ST | RR | 19,000",
+    "reason": "no road named 'SANTIAGO ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1765",
+    "text": "SANTIAGO ST. | EVANGELISTA ST | CR | 34,000",
+    "reason": "no road named 'SANTIAGO ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1766",
+    "text": "SGT. E DE LEON ST. | PASEO DE ANIMALES-EVANGELISTA ST | RR | 16,000",
+    "reason": "no road named 'SGT. E DE LEON ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1767",
+    "text": "SGT. E DE LEON ST. | PASEO DE ANIMALES-EVANGELISTA ST | CR | 34,000",
+    "reason": "no road named 'SGT. E DE LEON ST.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1770",
+    "text": "TAWIRAN EXTN. | TAWIRAN EXT-END | RR | 16,000",
+    "reason": "no road named 'TAWIRAN EXTN.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1779",
+    "text": "AGAPITO SUBD. | MARCOS HIWAY-RODRIGUEZ | RR | 28,000",
+    "reason": "feature not found: 'AGAPITO SUBD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1780",
+    "text": "BELEN SANTOS SUBD. | MARISOL SUBD-PASCO | RR | 20,000",
+    "reason": "feature not found: 'BELEN SANTOS SUBD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1784",
+    "text": "CARLOS VILLE SUBD. | E PASCO AVE | RR | 20,000",
+    "reason": "feature not found: 'CARLOS VILLE SUBD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1785",
+    "text": "D SANTIAGO SUBD. | EVANGELISTA | RR | 20,000",
+    "reason": "feature not found: 'D SANTIAGO SUBD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1789",
+    "text": "DONA JUANA SUBD. | MARCOS HIWAY | RR | 40,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1790",
+    "text": "DONA JUANA SUBD. | MARCOS HIWAY | CR | 48,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1791",
+    "text": "ESTANISLAO CMPD. | EVANGELISTA-STO. TOMAS ST | RR | 17,000",
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+   },
+   {
+    "rule_id": "PSV-43-1792",
+    "text": "IGNACIO CMPD. | EVANGELISTA-PASEO DE ANIMALES | RR | 17,000",
+    "reason": "feature not found: 'IGNACIO CMPD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1793",
+    "text": "LUCAS CMPD. | EVANGELISTA-PASEO DE ANIMALES | RR | 17,000",
+    "reason": "feature not found: 'LUCAS CMPD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1794",
+    "text": "MA. SOLEDAD SUBD (MARISOL SUBD.) | EVANGELISTA ST - DUMANDAN ST. | RR | 20,000",
+    "reason": "feature not found: 'MA. SOLEDAD SUBD' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1795",
+    "text": "MERALCO SUBD. | SANTOLAN | RR | 21,000",
+    "reason": "feature not found: 'MERALCO SUBD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1796",
+    "text": "ROBLES SUBD. | EVANGELISTA STREET | RR | 20,000",
+    "reason": "feature not found: 'ROBLES SUBD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1797",
+    "text": "SANTIAGO CMPD. | EVANGELISTA STREET | RR | 17,000",
+    "reason": "feature not found: 'SANTIAGO CMPD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1798",
+    "text": "SANTOS CMPD. | EVANGELSITA ST | RR | 17,000",
+    "reason": "feature not found: 'SANTOS CMPD.' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1800",
+    "text": "STA MARIA SUBD. | F AGAPITO SUBD | RR | 23,000",
+    "reason": "'STA MARIA SUBD.' is ambiguous; candidates: Santa Maria Compound Phase 1; Santa Maria Compound Phase 2; Santa Maria Compound Phase 3; Santa Maria Compound Phase 4"
+   },
+   {
+    "rule_id": "PSV-43-1801",
+    "text": "TIERRA VERDE EXEC VIL | A RODRIGUEZ AVE | RR | 30,000",
+    "reason": "no road named 'TIERRA VERDE EXEC VIL' in Santolan"
+   },
+   {
+    "rule_id": "PSV-43-1775",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 10,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1776",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 27,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1777",
+    "text": "ALLEY * | PEDESTRIAN | RR | 9,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1778",
+    "text": "ALLEY * | PEDESTRIAN | CR | 23,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Sumilang": [
+   {
+    "rule_id": "PSV-43-1850",
+    "text": "E. RODRIGUEZ ST. | DAKILA ST | RR | 18,000",
+    "reason": "no road named 'E. RODRIGUEZ ST.' in Sumilang"
+   },
+   {
+    "rule_id": "PSV-43-1851",
+    "text": "E. SANTOS AVE. | LOPEZ JAENA-BAMBANG | RR | 30,000",
+    "reason": "'E. SANTOS AVE.' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
+   },
+   {
+    "rule_id": "PSV-43-1854",
+    "text": "LIWANAG ST. | LOPEZ JAENA-KALAYAAN ST | RR | 18,000",
+    "reason": "no road named 'LIWANAG ST.' in Sumilang"
+   },
+   {
+    "rule_id": "PSV-43-1858",
+    "text": "VILLA ATANACIA | E SANTOS | RR | 17,000",
+    "reason": "no road named 'VILLA ATANACIA' in Sumilang"
+   },
+   {
+    "rule_id": "PSV-43-1861",
+    "text": "CALLEJON * | ONE-LANE ROAD | RR | 13,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1862",
+    "text": "CALLEJON * | ONE-LANE ROAD | CR | 27,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1863",
+    "text": "ALLEY * | PEDESTRIAN | RR | 11,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   },
+   {
+    "rule_id": "PSV-43-1864",
+    "text": "ALLEY * | PEDESTRIAN | CR | 23,000",
+    "reason": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate."
+   }
+  ],
+  "Ugong": [
+   {
+    "rule_id": "PSV-43-1866",
+    "text": "ARCOVIA CITY | E RODRIGUEZ (C5 - WITHIN ARCOVIA) | CR | 163,000",
+    "reason": "no road named 'ARCOVIA CITY' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1870",
+    "text": "CARLO CAPARAS ST / MAGDALO | E RODRIGUEZ JR AVE-P.E. ANTONIO | I | 73,000",
+    "reason": "no road named 'MAGDALO' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1871",
+    "text": "CARLO CAPARAS ST / MAGDALO | E RODRIGUEZ JR AVE-P.E. ANTONIO | CR | 108,000",
+    "reason": "no road named 'MAGDALO' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1872",
+    "text": "DIMASALANG | MAGDIWANG-EAGLE | I | 59,000",
+    "reason": "no road named 'DIMASALANG' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1873",
+    "text": "DIMASALANG | MAGDIWANG-EAGLE | RR | 44,000",
+    "reason": "no road named 'DIMASALANG' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1875",
+    "text": "E RODRIGUEZ JR/ C.P. GARCIA AVE./ C-5 | BAGONG ILOG-QC BDRY | I | 115,000",
+    "reason": "no road named 'C.P. GARCIA AVE.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1876",
+    "text": "E RODRIGUEZ JR/ C.P. GARCIA AVE./ C-5 | BAGONG ILOG-QC BDRY | CR | 150,000",
+    "reason": "no road named 'C.P. GARCIA AVE.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1884",
+    "text": "GREENMEADOWS AVE. | QUEZON CITY BDRY-ORTIGAS AVE | RR | 95,000",
+    "reason": "no road named 'GREENMEADOWS AVE.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1885",
+    "text": "H AGUIRRE ST. | P BERNAL-P5 | RR | 17,000",
+    "reason": "no road named 'H AGUIRRE ST.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1886",
+    "text": "I. JOSE ST. | P BERNAL -P3 | RR | 17,000",
+    "reason": "no road named 'I. JOSE ST.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1892",
+    "text": "LAON LAAN | RODRIGUEZ-DIMASALANG | I | 73,000",
+    "reason": "no road named 'LAON LAAN' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1893",
+    "text": "LAON LAAN | RODRIGUEZ-DIMASALANG | CR | 108,000",
+    "reason": "no road named 'LAON LAAN' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1894",
+    "text": "M. REYES ST. | ORTIGAS AVE | RR | 17,000",
+    "reason": "no road named 'M. REYES ST.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1896",
+    "text": "MAGDALO | CASLOS CAPARAS SR. | RR | 17,000",
+    "reason": "no road named 'MAGDALO' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1897",
+    "text": "MAGDIWANG ST. | DIMASALANG ST-END | RR | 17,000",
+    "reason": "no road named 'MAGDIWANG ST.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1898",
+    "text": "MERALCO AVE. | ORTIGAS-J. VARGAS | CR | 170,000",
+    "reason": "'MERALCO AVE.' is ambiguous; candidates: Meralco Avenue; Meralco Road"
+   },
+   {
+    "rule_id": "PSV-43-1899",
+    "text": "MERALCO AVE. | ORTIGAS-J. VARGAS | CR | 170,000",
+    "reason": "'MERALCO AVE.' is ambiguous; candidates: Meralco Avenue; Meralco Road"
+   },
+   {
+    "rule_id": "PSV-43-1908",
+    "text": "PATROCINO CONCEPCION ST. | E RODRIGUEZ JR AVE-F. LEGASPI | RR | 55,000",
+    "reason": "no road named 'PATROCINO CONCEPCION ST.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1909",
+    "text": "PATROCINO CONCEPCION ST. | E RODRIGUEZ JR AVE-F. LEGASPI | CR | 105,000",
+    "reason": "no road named 'PATROCINO CONCEPCION ST.' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1919",
+    "text": "VALLE VERDE 1 | RODRIGUEZ-LANUZA AVE | RR | 120,000",
+    "reason": "no road named 'VALLE VERDE 1' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1920",
+    "text": "VALLE VERDE 2 | RODRIGUEZ-LANUZA AVE | RR | 120,000",
+    "reason": "no road named 'VALLE VERDE 2' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1921",
+    "text": "VALLE VERDE 3 | RODRIGUEZ-LANUZA AVE | RR | 120,000",
+    "reason": "no road named 'VALLE VERDE 3' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1922",
+    "text": "VALLE VERDE 4 | JULIA VARGAS AVE | RR | 125,000",
+    "reason": "no road named 'VALLE VERDE 4' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1923",
+    "text": "VALLE VERDE 5 | JULIA VARGAS AVE | RR | 130,000",
+    "reason": "no road named 'VALLE VERDE 5' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1924",
+    "text": "VALLE VERDE 6 | ORTIGAS AVE | RR | 125,000",
+    "reason": "no road named 'VALLE VERDE 6' in Ugong"
+   },
+   {
+    "rule_id": "PSV-43-1925",
+    "text": "VALLE VERDE 7 | ORTIGAS AVE - FIREFLY ST. | RR | 120,000",
+    "reason": "no road named 'VALLE VERDE 7' in Ugong"
+   }
+  ]
+ }
+}

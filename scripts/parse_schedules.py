@@ -17,7 +17,6 @@ import xlrd
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CITIES = json.loads((ROOT / "scripts/cities.json").read_text())
 PAGE = "https://www.bir.gov.ph/zonal-values"
-CDN = "https://bir-cdn.bir.gov.ph/BIR/pdf/"
 CODE = re.compile(r"^(RR|CR|RC|CC|PS|I|X|GP|CL|GL|APD|A\d{0,2})$")
 
 
@@ -124,12 +123,12 @@ def main() -> None:
     vs = ROOT / f"lgus/{pc}/valuation_sources.json"
     before = {x["xls_sha256"]: x["downloaded"] for x in json.loads(vs.read_text())["schedules"]} if vs.exists() else {}
     sources, rows = [], []
-    for rdo, (name, fname) in city["rdos"].items():
+    for rdo, (name, url) in city["rdos"].items():
         z = ROOT / f"data/valuation/rdo{rdo}.zip"
         xls = next((ROOT / f"data/valuation/rdo{rdo}").glob("*.xls*"))
         src, rr = parse(rdo, name, xls)
         h = sha256(xls)
-        src.update({"url": CDN + fname.replace(" ", "%20") + ".zip", "listed_on": PAGE,
+        src.update({"url": url, "listed_on": PAGE,
                     "zip_sha256": sha256(z), "xls_filename": xls.name, "xls_sha256": h,
                     "downloaded": before.get(h) or dt.datetime.fromtimestamp(z.stat().st_mtime).date().isoformat(),
                     "local": str(xls.relative_to(ROOT)), "rows": len(rr)})

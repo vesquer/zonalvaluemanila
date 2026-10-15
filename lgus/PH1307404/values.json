@@ -96216,7 +96216,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "***",
+     "name": "(Alley 14,15,17,18 & 19) ***",
      "within": "Bagong Pag-asa"
     },
     {
@@ -140036,34 +140036,11 @@
     "row": 1928,
     "text": "INTERIOR | MENDEZ ROAD | BENEFITS | RR | 40,000"
    },
-   "interpretation": "RR value along INTERIOR in Sangandaan.",
-   "recipe": [
-    {
-     "id": "s0",
-     "op": "select_roads",
-     "name": "INTERIOR",
-     "within": "Sangandaan",
-     "from": "MENDEZ ROAD",
-     "to": "BENEFITS",
-     "soft_limits": true
-    },
-    {
-     "op": "assign_value",
-     "value_php_sqm": 40000.0,
-     "class_code": "RR",
-     "rdo": "38",
-     "department_order": "033-2024",
-     "effective_date": "2024-04-11",
-     "input": "s0",
-     "applies_to": "street"
-    }
-   ],
-   "assumptions": [
-    "Kept to the stretch inside the row's barangay (plus 20 m past its edge)",
-    "Vicinity read as limits from 'MENDEZ ROAD' to 'BENEFITS'; if a limit is not found the whole street in the barangay is valued and the row notes it"
-   ],
-   "confidence": 0.6,
-   "status": "pending_review"
+   "interpretation": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate.",
+   "recipe": null,
+   "assumptions": [],
+   "confidence": 0.0,
+   "status": "manual_geometry"
   },
   {
    "rule_id": "QCV-38-1482",
@@ -218279,31 +218256,11 @@
     "row": 124,
     "text": "CALLEJON | BANUYO | RR | 60,000"
    },
-   "interpretation": "RR value along CALLEJON in Amihan.",
-   "recipe": [
-    {
-     "id": "s0",
-     "op": "select_roads",
-     "name": "CALLEJON",
-     "within": "Amihan"
-    },
-    {
-     "op": "assign_value",
-     "value_php_sqm": 60000.0,
-     "class_code": "RR",
-     "rdo": "40",
-     "department_order": "035-2024",
-     "effective_date": "2024-04-19",
-     "input": "s0",
-     "applies_to": "street"
-    }
-   ],
-   "assumptions": [
-    "Kept to the stretch inside the row's barangay (plus 20 m past its edge)",
-    "Vicinity 'BANUYO' read as the neighbourhood, not as a limit"
-   ],
-   "confidence": 0.5,
-   "status": "pending_review"
+   "interpretation": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate.",
+   "recipe": null,
+   "assumptions": [],
+   "confidence": 0.0,
+   "status": "manual_geometry"
   },
   {
    "rule_id": "QCV-40-0008",
@@ -218317,31 +218274,11 @@
     "row": 125,
     "text": "CALLEJON | BANUYO | CR | 78,000"
    },
-   "interpretation": "CR value along CALLEJON in Amihan.",
-   "recipe": [
-    {
-     "id": "s0",
-     "op": "select_roads",
-     "name": "CALLEJON",
-     "within": "Amihan"
-    },
-    {
-     "op": "assign_value",
-     "value_php_sqm": 78000.0,
-     "class_code": "CR",
-     "rdo": "40",
-     "department_order": "035-2024",
-     "effective_date": "2024-04-19",
-     "input": "s0",
-     "applies_to": "street"
-    }
-   ],
-   "assumptions": [
-    "Kept to the stretch inside the row's barangay (plus 20 m past its edge)",
-    "Vicinity 'BANUYO' read as the neighbourhood, not as a limit"
-   ],
-   "confidence": 0.5,
-   "status": "pending_review"
+   "interpretation": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate.",
+   "recipe": null,
+   "assumptions": [],
+   "confidence": 0.0,
+   "status": "manual_geometry"
   },
   {
    "rule_id": "QCV-40-0009",
@@ -218770,7 +218707,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "TALISAY**",
+     "name": "TALISAY",
      "within": "Amihan"
     },
     {
@@ -218807,7 +218744,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "TANQUILE**",
+     "name": "TANQUILE",
      "within": "Amihan"
     },
     {
@@ -220862,7 +220799,7 @@
     {
      "id": "a",
      "op": "select_feature",
-     "name": "GREENVIEW COMPOUND**",
+     "name": "GREENVIEW COMPOUND",
      "within": "Bagong Lipunan Ng Crame"
     },
     {
@@ -220899,7 +220836,7 @@
     {
      "id": "a",
      "op": "select_feature",
-     "name": "GREENVIEW COMPOUND**",
+     "name": "GREENVIEW COMPOUND",
      "within": "Bagong Lipunan Ng Crame"
     },
     {
@@ -223397,7 +223334,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "J. M. BASA**",
+     "name": "J. M. BASA",
      "within": "Bagumbayan"
     },
     {
@@ -224922,7 +224859,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "STO. TOMAS ST.***",
+     "name": "STO. TOMAS ST.",
      "within": "Bagumbayan"
     },
     {
@@ -224959,7 +224896,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "STO. TOMAS ST.***",
+     "name": "STO. TOMAS ST.",
      "within": "Bagumbayan"
     },
     {
@@ -224996,7 +224933,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "SAN PABLO ST.***",
+     "name": "SAN PABLO ST.",
      "within": "Bagumbayan"
     },
     {
@@ -225033,7 +224970,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "SAN PABLO ST.***",
+     "name": "SAN PABLO ST.",
      "within": "Bagumbayan"
     },
     {
@@ -225070,7 +225007,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "STO. NIÑO ST.***",
+     "name": "STO. NIÑO ST.",
      "within": "Bagumbayan"
     },
     {
@@ -225107,7 +225044,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "STO. NIÑO ST.***",
+     "name": "STO. NIÑO ST.",
      "within": "Bagumbayan"
     },
     {
@@ -225144,7 +225081,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "F. SANTOS ST.***",
+     "name": "F. SANTOS ST.",
      "within": "Bagumbayan"
     },
     {
@@ -225181,7 +225118,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "F. SANTOS ST.***",
+     "name": "F. SANTOS ST.",
      "within": "Bagumbayan"
     },
     {
@@ -225218,7 +225155,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "VICTORINO ALLEY***",
+     "name": "VICTORINO ALLEY",
      "within": "Bagumbayan"
     },
     {
@@ -225255,7 +225192,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "VICTORINO ALLEY***",
+     "name": "VICTORINO ALLEY",
      "within": "Bagumbayan"
     },
     {
@@ -231051,7 +230988,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "MILKY WAY LANE**",
+     "name": "MILKY WAY LANE",
      "within": "Blue Ridge B",
      "from": "MILKYWAY DRIVE",
      "to": "RIVERSIDE DRIVE",
@@ -231092,7 +231029,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "MILKY WAY LANE**",
+     "name": "MILKY WAY LANE",
      "within": "Blue Ridge B",
      "from": "MILKYWAY DRIVE",
      "to": "RIVERSIDE DRIVE",
@@ -231133,7 +231070,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "RIVERVIEW DRIVE**",
+     "name": "RIVERVIEW DRIVE",
      "within": "Blue Ridge B",
      "from": "STARLINE",
      "to": "RIVERSIDE DRIVE",
@@ -231174,7 +231111,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "RIVERVIEW DRIVE**",
+     "name": "RIVERVIEW DRIVE",
      "within": "Blue Ridge B",
      "from": "STARLINE",
      "to": "RIVERSIDE DRIVE",
@@ -242810,7 +242747,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "K-JJ ST*",
+     "name": "K-JJ ST",
      "within": "East Kamias"
     },
     {
@@ -242848,7 +242785,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "K-JJ ST*",
+     "name": "K-JJ ST",
      "within": "East Kamias"
     },
     {
@@ -251998,31 +251935,11 @@
     "row": 1621,
     "text": "CALLEJON | KALANTIAW | RR | 50,000"
    },
-   "interpretation": "RR value along CALLEJON in Masagana.",
-   "recipe": [
-    {
-     "id": "s0",
-     "op": "select_roads",
-     "name": "CALLEJON",
-     "within": "Masagana"
-    },
-    {
-     "op": "assign_value",
-     "value_php_sqm": 50000.0,
-     "class_code": "RR",
-     "rdo": "40",
-     "department_order": "035-2024",
-     "effective_date": "2024-04-19",
-     "input": "s0",
-     "applies_to": "street"
-    }
-   ],
-   "assumptions": [
-    "Kept to the stretch inside the row's barangay (plus 20 m past its edge)",
-    "Vicinity 'KALANTIAW' read as the neighbourhood, not as a limit"
-   ],
-   "confidence": 0.5,
-   "status": "pending_review"
+   "interpretation": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate.",
+   "recipe": null,
+   "assumptions": [],
+   "confidence": 0.0,
+   "status": "manual_geometry"
   },
   {
    "rule_id": "QCV-40-0998",
@@ -252036,31 +251953,11 @@
     "row": 1622,
     "text": "CALLEJON | KALANTIAW | CR | 60,000"
    },
-   "interpretation": "CR value along CALLEJON in Masagana.",
-   "recipe": [
-    {
-     "id": "s0",
-     "op": "select_roads",
-     "name": "CALLEJON",
-     "within": "Masagana"
-    },
-    {
-     "op": "assign_value",
-     "value_php_sqm": 60000.0,
-     "class_code": "CR",
-     "rdo": "40",
-     "department_order": "035-2024",
-     "effective_date": "2024-04-19",
-     "input": "s0",
-     "applies_to": "street"
-    }
-   ],
-   "assumptions": [
-    "Kept to the stretch inside the row's barangay (plus 20 m past its edge)",
-    "Vicinity 'KALANTIAW' read as the neighbourhood, not as a limit"
-   ],
-   "confidence": 0.5,
-   "status": "pending_review"
+   "interpretation": "Applies to unnamed alleys or lanes in the barangay, which the map cannot locate.",
+   "recipe": null,
+   "assumptions": [],
+   "confidence": 0.0,
+   "status": "manual_geometry"
   },
   {
    "rule_id": "QCV-40-0999",
@@ -271520,7 +271417,7 @@
     {
      "id": "a",
      "op": "select_feature",
-     "name": "ST. IGNATIUS VILLAGE***",
+     "name": "ST. IGNATIUS VILLAGE",
      "within": "Saint Ignatius"
     },
     {
@@ -271557,7 +271454,7 @@
     {
      "id": "a",
      "op": "select_feature",
-     "name": "ST. IGNATIUS VILLAGE***",
+     "name": "ST. IGNATIUS VILLAGE",
      "within": "Saint Ignatius"
     },
     {
@@ -273409,7 +273306,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "BRIDGETOWN BLVD****",
+     "name": "BRIDGETOWN BLVD",
      "within": "Ugong Norte"
     },
     {
@@ -273447,7 +273344,7 @@
     {
      "id": "s0",
      "op": "select_roads",
-     "name": "PARKLINKS AVE.****",
+     "name": "PARKLINKS AVE.",
      "within": "Ugong Norte"
     },
     {

@@ -1,8 +1,17 @@
 {
- "_note": "Cities this map covers and the BIR zonal value schedules (one Excel file per RDO) that value them. `file` is the name BIR lists on https://www.bir.gov.ph/zonal-values; the zip is fetched from the CDN under that name. `prefix` starts each row's rule_id.",
+ "_note": "Cities this map covers and the BIR zonal value schedules (one Excel file per RDO, zipped) that value them: rdo -> [name, download link as listed on https://www.bir.gov.ph/zonal-values]. `prefix` starts each row's rule_id.",
  "PH1307404": {"lgu": "Quezon City", "prefix": "QCV", "rdos": {
-   "28": ["Novaliches", "RDO No. 28 - Novaliches, Quezon City"],
-   "38": ["North Quezon City", "RDO No. 38 - North Quezon City"],
-   "39": ["South Quezon City", "RDO No. 39 - South Quezon City"],
-   "40": ["Cubao", "RDO No. 40 - Cubao"]}}
+   "28": ["Novaliches", "https://bir-cdn.bir.gov.ph/BIR/pdf/RDO%20No.%2028%20-%20Novaliches,%20Quezon%20City.zip"],
+   "38": ["North Quezon City", "https://bir-cdn.bir.gov.ph/BIR/pdf/RDO%20No.%2038%20-%20North%20Quezon%20City.zip"],
+   "39": ["South Quezon City", "https://bir-cdn.bir.gov.ph/BIR/pdf/RDO%20No.%2039%20-%20South%20Quezon%20City.zip"],
+   "40": ["Cubao", "https://bir-cdn.bir.gov.ph/BIR/pdf/RDO%20No.%2040%20-%20Cubao.zip"]}},
+ "PH1307403": {"lgu": "Pasig", "prefix": "PSV", "rdos": {
+   "43": ["Pasig City", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2043%20-%20Pasig%20City_copy_copy_copy_copy.zip"]}},
+ "PH1303901": {"lgu": "Manila", "prefix": "MNV", "rdos": {
+   "29": ["Tondo/San Nicolas", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2029%20-%20Tondo-San%20Nicolas_copy_copy_copy_copy.zip"],
+   "30": ["Binondo", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2030%20-%20Binondo_copy_copy.zip"],
+   "31": ["Sta. Cruz", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2031%20-%20Sta.%20Cruz%20Manila_copy_copy.zip"],
+   "32": ["Quiapo/Sampaloc/San Miguel/Sta. Mesa", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2032%20-%20Quiapo-Sampaloc-San%20Miguel-Sta%20Mesa_copy_copy.zip"],
+   "33": ["Intramuros/Ermita/Malate", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2033%20-%20Intramuros-Ermita-Malate_copy_copy.zip"],
+   "34": ["Paco/Pandacan/Sta. Ana/San Andres", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2034%20-%20Paco-Pandacan-Sta.%20Ana-San%20Andres_copy.zip"]}}
 }

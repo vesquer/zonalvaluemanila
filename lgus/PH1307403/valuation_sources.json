@@ -1,0 +1,61 @@
+{
+ "lgu": "Pasig",
+ "adm3_pcode": "PH1307403",
+ "valuation_base": "BIR zonal values",
+ "smv": {
+  "status": "none recorded",
+  "note": "Under RA 12001 an approved City Schedule of Market Values replaces BIR zonal values; record it here when approved and rebuild."
+ },
+ "schedules": [
+  {
+   "rdo": "43",
+   "name": "Pasig City",
+   "department_order": "024-2023",
+   "revision": "7th",
+   "effective_date": "2023-06-06",
+   "sheet": "Sheet 9 (DO 24-2023)",
+   "barangays": [
+    "BAGONG ILOG",
+    "BAGONG KATIPUNAN",
+    "BAMBANG",
+    "BUTING",
+    "CANIOGAN",
+    "DELA PAZ",
+    "KALAWAAN",
+    "KAPASIGAN",
+    "KAPITOLYO",
+    "MALINAO",
+    "MANGGAHAN",
+    "MAYBUNGA",
+    "ORANBO",
+    "PALATIW",
+    "PINAGBUHATAN",
+    "PINEDA",
+    "ROSARIO",
+    "SAGAD",
+    "SAN ANTONIO",
+    "SAN JOAQUIN",
+    "SAN JOSE",
+    "SAN MIGUEL",
+    "SAN NICOLAS",
+    "SANTA CRUZ",
+    "SANTA LUCIA",
+    "SANTA ROSA",
+    "SANTOLAN",
+    "SANTO TOMAS",
+    "SUMILANG",
+    "UGONG",
+    "ALL BARANGAYS",
+    ", THE ZONAL VALUE PRESCRIBED FOR THE SAME CLASSIFICATION OF REAL PROPERTY LOCATED IN"
+   ],
+   "url": "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2043%20-%20Pasig%20City_copy_copy_copy_copy.zip",
+   "listed_on": "https://www.bir.gov.ph/zonal-values",
+   "zip_sha256": "8eac798b896c32dc248eca47279608b35b06bb1b80e59ea5e90e709c14b4e8a2",
+   "xls_filename": "RDO No. 43 - Pasig City.xls",
+   "xls_sha256": "fbad524b874fdd8ae68c22609248b287225c72093a83bb56cd716b0684c3303b",
+   "downloaded": "2026-10-15",
+   "local": "data/valuation/rdo43/RDO No. 43 - Pasig City.xls",
+   "rows": 2646
+  }
+ ]
+}
