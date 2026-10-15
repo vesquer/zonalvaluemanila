@@ -31,7 +31,7 @@ def main() -> None:
             for st in r["recipe"]:
                 if st["op"] != "select_roads" or ops._norm(st["name"]) in known or st["name"] in out:
                     continue
-                area = ops._within(b, st["within"]).buffer(ops.SCOPE_M)
+                area = ops._within(b, st["within"]).buffer(b.scope_m)
                 near = sorted(set(ops._near(b.roads, area)["name"].dropna()))
                 want = " ".join(sorted(ops._tokens(st["name"])))
                 scored = sorted(((difflib.SequenceMatcher(None, want, " ".join(sorted(ops._tokens(n)))).ratio(), n) for n in near),

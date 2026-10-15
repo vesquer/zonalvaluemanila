@@ -12,3 +12,17 @@ make serve
 
 `lgus/<pcode>/aliases.json` and the generated `values.json` are the reviewed record; their git history is the audit log.
 `data/` and `tiles/` are git-ignored and rebuilt by `scripts/`.
+
+## Rebuild a city
+
+```
+.venv/bin/python scripts/parse_schedules.py <pcode>   # data/valuation/rdo<N>/*.xls -> data/prep, valuation_sources.json
+.venv/bin/python scripts/gen_values.py <pcode>        # -> lgus/<pcode>/values.json
+make build PSGC=<pcode>                               # -> lgus/<pcode>/out/
+.venv/bin/python scripts/alias_suggest.py <pcode> all 0.8 > lgus/<pcode>/alias_suggestions.json
+./scripts/build_tiles.sh                              # every built city -> tiles/, checks the size budget
+```
+
+Cities and their schedule links are in `scripts/cities.json`. A reviewer copies accepted suggestions from
+`alias_suggestions.json` into `aliases.json` (`"roads": {"SCHEDULE NAME": "OSM name"}`, or `"NAME @ Barangay"` to
+hold in one barangay only), then rebuilds. Suggestions are never accepted automatically: many are wrong.

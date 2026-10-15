@@ -41,6 +41,13 @@ def to_date(v, book) -> str:
     return s
 
 
+def norm_do(do: str) -> str:
+    """'037-2024' stays; Manila's NOTICE sheets write '27-19' or '077-18' for 027-2019 and 077-2018."""
+    do = re.sub(r"\s+", "", do)
+    m = re.fullmatch(r"(\d{1,3})-(\d{2}|\d{4})", do)
+    return f"{int(m.group(1)):03d}-{m.group(2) if len(m.group(2)) == 4 else '20' + m.group(2)}" if m else do
+
+
 def current_order(book):
     """The NOTICE row whose 'To' column reads Present: (DO, revision, effective date, sheet)."""
     n = book.sheet_by_index(0)
@@ -50,7 +57,7 @@ def current_order(book):
             do, rev, frm = cell(v[0]), cell(v[1]), v[2]
             num = do.split("-")[0].lstrip("0")
             sheet = next(s for s in book.sheet_names() if re.search(rf"DO\s*0*{num}-", s) or s.strip().startswith("Sheet 8"))
-            return re.sub(r"\s+", "", do), rev, to_date(frm, book), sheet
+            return norm_do(do), rev, to_date(frm, book), sheet
     raise SystemExit("no 'Present' row on NOTICE sheet")
 
 
@@ -69,11 +76,25 @@ def label_value(vals: list, label: re.Pattern) -> str | None:
     return None
 
 
-BRGY = re.compile(r"^(zone\s*/\s*)?barangay\b", re.I)
+BRGY = re.compile(r"^(zone\s*/\s*)?barangay(\s*/\s*zone)?\b", re.I)
+
+
+def numbered(b: str) -> str | None:
+    """Manila's barangays are numbered and each RDO file heads them its own way: '206', '649.0', '1/1' (barangay/zone),
+    'Zone 30 / Brgy 306', 'ZONE 71 / Brgy 663 - A', or zone and barangay run together ('71661.0' = zone 71, 661).
+    -> 'Barangay 661', 'Barangay 663-A', the names in the boundary data. None for a heading without a number."""
+    m = re.search(r"\b(?:br?gy|barangay)\.?\s*(\d+)\s*(?:-\s*([A-Z])\b)?", b, re.I)
+    if m:
+        return f"Barangay {int(m.group(1))}" + (f"-{m.group(2).upper()}" if m.group(2) else "")
+    m = re.match(r"^\s*(\d+(?:\.0)?)\s*(?:/\s*\d+)?", b)
+    if not m:
+        return None
+    n = int(float(m.group(1)))
+    return f"Barangay {n % 1000 if n >= 10000 else n}"
 DO_LABEL = re.compile(r"^d\.?\s*o\.?\s*no\.?", re.I)
 
 
-def parse(rdo: str, name: str, xls: pathlib.Path) -> tuple[dict, list[dict]]:
+def parse(rdo: str, name: str, xls: pathlib.Path, numbered_brgys: bool = False) -> tuple[dict, list[dict]]:
     book = xlrd.open_workbook(str(xls))
     do, rev, eff, sheet_name = current_order(book)
     s = book.sheet_by_name(sheet_name)
@@ -87,13 +108,17 @@ def parse(rdo: str, name: str, xls: pathlib.Path) -> tuple[dict, list[dict]]:
         if not any(texts):
             continue
         b = label_value(vals, BRGY)
+        if b and numbered_brgys:
+            b = numbered(b)  # a heading without a number is a footnote: the barangay above continues
+            if b is None:
+                continue
         if b:
             brgy = re.sub(r"\(\s*cont.*$", "", b, flags=re.I).strip(" .")
             if brgy not in brgys:
                 brgys.append(brgy)
             in_table, prev = False, None
             continue
-        if texts[0].upper().startswith("STREET"):
+        if re.sub(r"\s+", "", texts[0]).upper().startswith("STREET"):  # also 'S T R E E T  N A M E'
             in_table = True
             continue
         if not in_table or brgy is None:
@@ -126,7 +151,7 @@ def main() -> None:
     for rdo, (name, url) in city["rdos"].items():
         z = ROOT / f"data/valuation/rdo{rdo}.zip"
         xls = next((ROOT / f"data/valuation/rdo{rdo}").glob("*.xls*"))
-        src, rr = parse(rdo, name, xls)
+        src, rr = parse(rdo, name, xls, city.get("numbered_barangays", False))
         h = sha256(xls)
         src.update({"url": url, "listed_on": PAGE,
                     "zip_sha256": sha256(z), "xls_filename": xls.name, "xls_sha256": h,

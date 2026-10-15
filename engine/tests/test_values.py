@@ -32,7 +32,7 @@ def test_street_and_interior_rows_build_end_to_end(vbase):
     assert r.flags == [] and r.conflicts == []
     s = r.streets.iloc[0]
     assert s.geometry.geom_type in ("LineString", "MultiLineString")
-    assert s.geometry.length == pytest.approx(500 + ops.EDGE_M, abs=1)  # kept to San Isidro plus the edge allowance
+    assert s.geometry.length == pytest.approx(500 + vbase.edge_m, abs=1)  # kept to San Isidro plus the edge allowance
     assert (s.value_php_sqm, s.class_code, s.department_order) == (84000, "RR", "033-2024")
     assert s.description == "MAHARLIKA HIGHWAY | RR | 84000"  # schedule text kept verbatim for the popup
     a = r.areas.iloc[0]
@@ -168,7 +168,7 @@ def test_row_naming_two_streets_values_both(vbase):
                       {"id": "u", "op": "union", "a": "s0", "b": "s1"},
                       {"op": "assign_value", "input": "u", "value_php_sqm": 1, "class_code": "RR", "applies_to": "street"}]}
     r = run_values(vbase, [row])
-    assert r.flags == [] and r.streets.iloc[0].geometry.length == pytest.approx(1000 + 500 + ops.EDGE_M, abs=1)
+    assert r.flags == [] and r.streets.iloc[0].geometry.length == pytest.approx(1000 + 500 + vbase.edge_m, abs=1)
 
 
 def test_area_names_match_without_their_designator(vbase):

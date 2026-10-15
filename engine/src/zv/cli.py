@@ -50,7 +50,9 @@ def load_base(pcode: str):
     af = ROOT / "lgus" / pcode / "aliases.json"
     raw = json.loads(af.read_text()) if af.exists() else {}
     aliases = alias_map({**raw.get("roads", {}), **raw.get("features", {})})
-    return Base(lgu=lgu, crs=epsg, roads=r[["class", "name", "geometry"]].reset_index(drop=True), admin=brgy.to_crs(epsg),
+    sf = ROOT / "lgus" / pcode / "settings.json"
+    scope = {k: float(v) for k, v in json.loads(sf.read_text()).items() if k in ("scope_m", "end_m", "edge_m")} if sf.exists() else {}
+    return Base(lgu=lgu, crs=epsg, **scope, roads=r[["class", "name", "geometry"]].reset_index(drop=True), admin=brgy.to_crs(epsg),
                 features=sites[sites.intersects(lgu.buffer(500))][["name", "geometry"]].reset_index(drop=True), aliases=aliases)
 
 

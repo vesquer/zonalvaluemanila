@@ -7,7 +7,7 @@
    "40": ["Cubao", "https://bir-cdn.bir.gov.ph/BIR/pdf/RDO%20No.%2040%20-%20Cubao.zip"]}},
  "PH1307403": {"lgu": "Pasig", "prefix": "PSV", "rdos": {
    "43": ["Pasig City", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2043%20-%20Pasig%20City_copy_copy_copy_copy.zip"]}},
- "PH1303901": {"lgu": "Manila", "prefix": "MNV", "rdos": {
+ "PH1303901": {"lgu": "Manila", "prefix": "MNV", "numbered_barangays": true, "rdos": {
    "29": ["Tondo/San Nicolas", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2029%20-%20Tondo-San%20Nicolas_copy_copy_copy_copy.zip"],
    "30": ["Binondo", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2030%20-%20Binondo_copy_copy.zip"],
    "31": ["Sta. Cruz", "https://bir-cdn.bir.gov.ph/local/pdf/RDO%20No.%2031%20-%20Sta.%20Cruz%20Manila_copy_copy.zip"],

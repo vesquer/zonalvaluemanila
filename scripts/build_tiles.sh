@@ -19,6 +19,16 @@ brg = gpd.read_file("data/base/boundaries.gpkg", layer="barangay")
 meta = {"cities": {}, "schedules": {}, "by_rdo": [], "conflicts": 0, "unmatched": {}, "search": []}
 streets, areas = [], []
 pt = lambda g: [round(g.x, 5), round(g.y, 5)]
+
+
+def fix(g, city):
+    """Dates stay text (pandas would read them as timestamps); every feature names its city."""
+    if len(g):
+        g["effective_date"] = g["effective_date"].astype(str).str[:10]
+    g["city"] = city
+    return g
+
+
 for pc in cities:
     c = bnd[bnd.pcode == pc]
     if c.empty:
@@ -39,8 +49,8 @@ for pc in built:
     meta["conflicts"] += len(rep["conflicts"])
     for brgy, items in rep["unmatched_by_barangay"].items():
         meta["unmatched"][f"{brgy}, {city}"] = [[i["text"], i["reason"]] for i in items]
-    s = gpd.read_file(root / f"lgus/{pc}/out/values_streets.geojson"); s["effective_date"] = s["effective_date"].astype(str).str[:10]; s["city"] = city; streets.append(s)
-    a = gpd.read_file(root / f"lgus/{pc}/out/values_areas.geojson"); a["effective_date"] = a["effective_date"].astype(str).str[:10]; a["city"] = city; areas.append(a)
+    s = gpd.read_file(root / f"lgus/{pc}/out/values_streets.geojson"); s = fix(s, city); streets.append(s)
+    a = gpd.read_file(root / f"lgus/{pc}/out/values_areas.geojson"); a = fix(a, city); areas.append(a) if len(a) else None
     # valued streets: the schedule's own spelling, one entry per street and barangay
     s = s.to_crs(32651)
     s["sname"] = s["description"].str.split(" | ", regex=False).str[0].str.strip()

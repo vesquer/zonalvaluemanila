@@ -19,6 +19,10 @@ class Base:
     roads: gpd.GeoDataFrame                # class, name, geometry
     admin: gpd.GeoDataFrame                # name, pcode, geometry (barangays)
     features: gpd.GeoDataFrame             # name, geometry (named sites)
+    # barangay search scope (defaults in ops; a city with small barangays sets its own in lgus/<pcode>/settings.json)
+    scope_m: float = 150.0                 # names are looked for this close to the barangay
+    end_m: float = 300.0                   # from/to limits are looked for this close to the barangay
+    edge_m: float = 50.0                   # a street valued in one barangay is kept this far past its edge
     national_classes: tuple[str, ...] = ("motorway", "trunk", "primary")  # OSM proxy for class="national"
     match_log: list[str] = field(default_factory=list)  # approximate name matches, surfaced to reviewers
     aliases: dict[str, list[str]] = field(default_factory=dict)  # reviewed names, from ops.alias_map(lgus/<pcode>/aliases.json)

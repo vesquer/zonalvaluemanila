@@ -21,7 +21,8 @@ OUT_OF_SCOPE = {"RC": "residential condominium unit", "CC": "commercial condomin
 AREA = re.compile(r"\b(VILL(AGE)?|SUBD(IVISION)?S?|COMPOUND|CMPD|HOMES|HEIGHTS|ESTATES?|HOUSING|PROJECT|SITIO|TOWNHOMES?|"
                   r"RESIDENCES|PHASE|PH\.?\s*[IVX\d]+|GK|GAWAD KALINGA|CONDO(MINIUM)?S?|TOWN ?HOUSES?|CAMP|CAMPUS|COMPLEX)\b")
 STREET_END = re.compile(r"\b(ST|STREET|AVE|AVENUE|RD|ROAD|DR|DRIVE|LANE|EXT|EXTENSION|BLVD|BOULEVARD|HI-?WAY|HIGHWAY)\.?$")
-GENERIC = re.compile(r"^(ALLEY|ALLEYS|CALLEJON|CALLEJONS|INTERIOR|INTERIOR LOTS?|ROAD LOTS?|PATHWAYS?)\s*\*?$")
+# unnamed ways the base data cannot name: "ALLEY *", "CALLEJON", "RAILROAD" (numbered ones, "ROAD 4", are often in OSM)
+GENERIC = re.compile(r"^(ALLEYS?|CALLEJONS?|INTERIOR( LOTS?)?|ROAD LOTS?|PATHWAYS?|RAILROAD)\s*\*?$")
 UNITS = re.compile(r"\b(CONDO(MINIUM)?S?|TOWN ?HOUSES?|T'HOUSE|CCT|TCT)\b")
 # hyphenated words that are one name, not "from - to"
 COMPOUND = re.compile(r"\b(PAG-ASA|PAG-IBIG|HI-WAY|DUYAN-DUYAN|STO\.?-|STA\.?-|BAGONG-|SAN-|DE-|LA-)", re.I)
@@ -61,8 +62,9 @@ def split_vicinity(v: list[str]) -> tuple[str, str] | None:
 
 def street_names(s: str) -> list[str]:
     """'TUAYAN ST./FAMILARA ST.' -> two streets; 'KALAWAG(CALAUAG)' -> the first spelling.
-    'C. VALIENTE ST. (formerly Valiente St) *' -> the current name (the star marks a renamed street)."""
-    s = re.sub(r"\s*\(.*?\)\s*", " ", s).replace("*", " ").strip()
+    'C. VALIENTE ST. (formerly Valiente St) *' or 'E. FERNANDEZ formerly SAN MARCELINO' -> the current name."""
+    s = re.sub(r"\s*\(.*?\)\s*", " ", s).replace("*", " ")
+    s = re.sub(r"\s+formerly\b.*$", "", s, flags=re.I).strip()  # "E. FERNANDEZ formerly SAN MARCELINO"
     return [p.strip() for p in re.split(r"\s*/\s*|\s+&\s+", s) if len(p.strip()) >= 2]
 
 

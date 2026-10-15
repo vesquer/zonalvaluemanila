@@ -1,0 +1,832 @@
+{
+ "STO. NIÑO MAIN": [
+  "Santo Niño Street",
+  0.8,
+  "Barangay 107"
+ ],
+ "P. ABAD SANTOS": [
+  "J. Abad Santos Street",
+  0.92,
+  "Barangay 11"
+ ],
+ "R. MAGSAYSAY": [
+  "Magsaysay Street",
+  0.9,
+  "Barangay 116"
+ ],
+ "RODRIGUEZ": [
+  "E. Rodriguez",
+  0.9,
+  "Barangay 122"
+ ],
+ "ALINIAN": [
+  "Alinan Street",
+  0.92,
+  "Barangay 123"
+ ],
+ "KANLURAN": [
+  "Kaunlaran Street",
+  0.82,
+  "Barangay 124"
+ ],
+ "SILANGANAN": [
+  "Silangan Street",
+  0.89,
+  "Barangay 126"
+ ],
+ "C. DAYAO": [
+  "Dayao Street",
+  0.83,
+  "Barangay 129"
+ ],
+ "C. EDUQUE": [
+  "Eduque Street",
+  0.86,
+  "Barangay 129"
+ ],
+ "C. PLAYA": [
+  "Playa Street",
+  0.83,
+  "Barangay 130"
+ ],
+ "NAVAL": [
+  "Nava Street",
+  0.89,
+  "Barangay 131"
+ ],
+ "GEN .LUCBAN": [
+  "General Lukban Street",
+  0.93,
+  "Barangay 148"
+ ],
+ "G. PERFECTO": [
+  "Perfecto Street",
+  0.89,
+  "Barangay 152"
+ ],
+ "PLANAS": [
+  "J. Planas Street",
+  0.86,
+  "Barangay 152"
+ ],
+ "CLEMENTE": [
+  "P. Clemente Street",
+  0.89,
+  "Barangay 158"
+ ],
+ "T. PAEZ": [
+  "Paez Street",
+  0.8,
+  "Barangay 166"
+ ],
+ "GEN. LUCBAN": [
+  "General Lukban Street",
+  0.93,
+  "Barangay 167"
+ ],
+ "CALAGA": [
+  "Dalaga Street",
+  0.83,
+  "Barangay 171"
+ ],
+ "SAN LUCAS": [
+  "San Luis Street",
+  0.82,
+  "Barangay 18"
+ ],
+ "P. DAGANAN": [
+  "Danganan Street",
+  0.82,
+  "Barangay 182"
+ ],
+ "FONDA": [
+  "Fronda Street",
+  0.91,
+  "Barangay 183"
+ ],
+ "PRILLES": [
+  "Frilles Street",
+  0.86,
+  "Barangay 183"
+ ],
+ "P. SALITA": [
+  "Salita Street",
+  0.86,
+  "Barangay 187"
+ ],
+ "E. AGUILAR": [
+  "F. Aguilar Street",
+  0.89,
+  "Barangay 187"
+ ],
+ "S. P. DEL ROSARIO": [
+  "P. del Rosario Street",
+  0.93,
+  "Barangay 187"
+ ],
+ "DELOS SANTOS": [
+  "S. de los Santos Street",
+  0.89,
+  "Barangay 188"
+ ],
+ "S. DEL ROSARIO": [
+  "P. del Rosario Street",
+  0.85,
+  "Barangay 189"
+ ],
+ "CECILIO": [
+  "A. Cecilio Street",
+  0.88,
+  "Barangay 192"
+ ],
+ "M. GALIAN": [
+  "M. Gallan Street",
+  0.88,
+  "Barangay 192"
+ ],
+ "TABORA": [
+  "S. Tabora Street",
+  0.86,
+  "Barangay 193"
+ ],
+ "LAURA": [
+  "Faura Street",
+  0.8,
+  "Barangay 2"
+ ],
+ "JOSE ABAD SANTOS": [
+  "Abad Santos Avenue",
+  0.81,
+  "Barangay 201"
+ ],
+ "T BUGALLON": [
+  "Bugallon Street",
+  0.89,
+  "Barangay 209"
+ ],
+ "BO. ROXAS": [
+  "Barrio Roxas Street",
+  0.8,
+  "Barangay 221"
+ ],
+ "BALINTAWAK": [
+  "B. Balintawak Street",
+  0.91,
+  "Barangay 229"
+ ],
+ "G SANTIAGO": [
+  "Santiago Street",
+  0.89,
+  "Barangay 249"
+ ],
+ "G ARANETA": [
+  "Araneta Street",
+  0.88,
+  "Barangay 254"
+ ],
+ "G MASANGKAY": [
+  "Masangkay Street",
+  0.9,
+  "Barangay 260"
+ ],
+ "COMMERCIO": [
+  "Comercio Street",
+  0.94,
+  "Barangay 271"
+ ],
+ "P. CARREON": [
+  "Carreon Street",
+  0.88,
+  "Barangay 276"
+ ],
+ "VELASQUEZ": [
+  "A. Velasquez Street",
+  0.9,
+  "Barangay 276"
+ ],
+ "TONELEROS": [
+  "Tonelero Street",
+  0.94,
+  "Barangay 282"
+ ],
+ "INGRESO": [
+  "Ingresso Street",
+  0.93,
+  "Barangay 287"
+ ],
+ "MUELLE DELA INDUSTRIA": [
+  "Muelle de la Industria",
+  0.88,
+  "Barangay 287"
+ ],
+ "PYREIRA": [
+  "Perreira Street",
+  0.8,
+  "Barangay 287"
+ ],
+ "TRONQUED": [
+  "Tronque Street",
+  0.93,
+  "Barangay 294"
+ ],
+ "TAMBAKAN": [
+  "Tambacan Street",
+  0.88,
+  "Barangay 298"
+ ],
+ "C. AGUIRRE": [
+  "Aguirre Street",
+  0.88,
+  "Barangay 3"
+ ],
+ "OROSCO": [
+  "Orozco Street",
+  0.83,
+  "Barangay 306"
+ ],
+ "P. DUCOS": [
+  "Ducos Street",
+  0.83,
+  "Barangay 306"
+ ],
+ "EN FLORANTE": [
+  "Florante Street",
+  0.84,
+  "Barangay 308"
+ ],
+ "COMMANDANTE": [
+  "Comandante Street",
+  0.95,
+  "Barangay 309"
+ ],
+ "GERMINA": [
+  "Germinal Street",
+  0.93,
+  "Barangay 309"
+ ],
+ "A MENDOZA": [
+  "Mendoza Boulevard",
+  0.88,
+  "Barangay 310"
+ ],
+ "V FUGOSO": [
+  "Fugoso Street",
+  0.86,
+  "Barangay 311"
+ ],
+ "E REMIGIO": [
+  "Remigio Street",
+  0.88,
+  "Barangay 315"
+ ],
+ "IBARRA": [
+  "L. Ibarra Street",
+  0.86,
+  "Barangay 33"
+ ],
+ "CONCEPCION": [
+  "V. Concepcion Street",
+  0.91,
+  "Barangay 342"
+ ],
+ "LAONG LAAN": [
+  "Laon Laan Street",
+  0.95,
+  "Barangay 342"
+ ],
+ "ORTEGA": [
+  "P. Ortega Street",
+  0.86,
+  "Barangay 36"
+ ],
+ "P. SORIANO": [
+  "Soriano Street",
+  0.88,
+  "Barangay 36"
+ ],
+ "BAUTISTA": [
+  "A. Bautista Street",
+  0.89,
+  "Barangay 383"
+ ],
+ "NORSAGARAY": [
+  "Norzagaray Street",
+  0.9,
+  "Barangay 383"
+ ],
+ "CAROMINA": [
+  "Coromina Street",
+  0.88,
+  "Barangay 391"
+ ],
+ "MURILLO": [
+  "Morillo Street",
+  0.86,
+  "Barangay 393"
+ ],
+ "C. LERMA": [
+  "Lerma Street",
+  0.83,
+  "Barangay 395"
+ ],
+ "G.M. TOLENTINO": [
+  "G. Tolentino Street",
+  0.92,
+  "Barangay 396"
+ ],
+ "ARENAS": [
+  "M. Arenas Street",
+  0.86,
+  "Barangay 407"
+ ],
+ "SOR PETRONILA": [
+  "Sor Petronilla Street",
+  0.96,
+  "Barangay 407"
+ ],
+ "RIANZAREZ": [
+  "Rianzares Street",
+  0.89,
+  "Barangay 409"
+ ],
+ "MENDIOLA": [
+  "E. Mendiola Street",
+  0.89,
+  "Barangay 416"
+ ],
+ "M. DELA FUENTE": [
+  "M. de la Fuente Street",
+  0.81,
+  "Barangay 417"
+ ],
+ "AREVALO": [
+  "Arevallo Street",
+  0.93,
+  "Barangay 421"
+ ],
+ "M DELA FUENTE": [
+  "M. de la Fuente Street",
+  0.81,
+  "Barangay 423"
+ ],
+ "R MAGSAYSAY BLVD": [
+  "Magsaysay Boulevard",
+  0.9,
+  "Barangay 424"
+ ],
+ "PALTOK EXT": [
+  "Santol Extension",
+  0.81,
+  "Barangay 426"
+ ],
+ "PALTOK": [
+  "Paltoc Street",
+  0.83,
+  "Barangay 427"
+ ],
+ "MA. CRISTINA": [
+  "Maria Cristina Street",
+  0.88,
+  "Barangay 439"
+ ],
+ "G M TOLENTINO": [
+  "G. Tolentino Street",
+  0.92,
+  "Barangay 465"
+ ],
+ "PIY MARGALL": [
+  "Piy Margal Street",
+  0.95,
+  "Barangay 472"
+ ],
+ "MACEDA": [
+  "A. Maceda Street",
+  0.86,
+  "Barangay 492"
+ ],
+ "ANTIPOLO": [
+  "New Antipolo Street",
+  0.8,
+  "Barangay 497"
+ ],
+ "J. ALMARIO": [
+  "Almario Street",
+  0.88,
+  "Barangay 50"
+ ],
+ "MACARAEG": [
+  "Macaraig Street",
+  0.88,
+  "Barangay 512"
+ ],
+ "INSTRUCION": [
+  "Instruccion Street",
+  0.95,
+  "Barangay 524"
+ ],
+ "MERCEDEZ": [
+  "Mercedes Street",
+  0.88,
+  "Barangay 525"
+ ],
+ "LUISITO": [
+  "Luisto Street",
+  0.92,
+  "Barangay 541"
+ ],
+ "MA LUISA": [
+  "Maria Luisa Street",
+  0.84,
+  "Barangay 567"
+ ],
+ "R MAGASAYSAY BLVD.": [
+  "Magsaysay Boulevard",
+  0.86,
+  "Barangay 579"
+ ],
+ "MANGA AVE": [
+  "Mangga Avenue",
+  0.91,
+  "Barangay 581"
+ ],
+ "E VALLEJO": [
+  "Vallejo Street",
+  0.88,
+  "Barangay 585"
+ ],
+ "ESCODA": [
+  "L. Escoda Street",
+  0.86,
+  "Barangay 585"
+ ],
+ "R MAGSAYSAY BLVD.": [
+  "Magsaysay Boulevard",
+  0.9,
+  "Barangay 586"
+ ],
+ "R PERALTA": [
+  "Peralta Street",
+  0.88,
+  "Barangay 589"
+ ],
+ "GATMAITAN": [
+  "Gatmayan Street",
+  0.82,
+  "Barangay 60"
+ ],
+ "ALIWIW": [
+  "Aliw-iw Street",
+  0.92,
+  "Barangay 601"
+ ],
+ "BYERNES": [
+  "Biyernes Street",
+  0.93,
+  "Barangay 601"
+ ],
+ "HWEBES": [
+  "Huwebes Street",
+  0.92,
+  "Barangay 601"
+ ],
+ "PAT ANTONIO": [
+  "Patricio Antonio Street",
+  0.81,
+  "Barangay 602"
+ ],
+ "SALUYSOY": [
+  "Saloysoy Street",
+  0.88,
+  "Barangay 602"
+ ],
+ "MAGSIKAP": [
+  "Masikap Street",
+  0.93,
+  "Barangay 617"
+ ],
+ "KATUWIRAN": [
+  "Katwiran Street",
+  0.94,
+  "Barangay 619"
+ ],
+ "MARIANO": [
+  "F. Mariano Street",
+  0.88,
+  "Barangay 631"
+ ],
+ "G V MATA": [
+  "V. Mata Street",
+  0.86,
+  "Barangay 636"
+ ],
+ "ABREAU": [
+  "Abreu Street",
+  0.91,
+  "Barangay 641"
+ ],
+ "4TH STREET": [
+  "14th Street",
+  0.86,
+  "Barangay 649"
+ ],
+ "1ST STREET": [
+  "21st Street",
+  0.86,
+  "Barangay 653"
+ ],
+ "2ND STREET": [
+  "22nd Street",
+  0.86,
+  "Barangay 653"
+ ],
+ "3RD STREET": [
+  "23rd Street",
+  0.86,
+  "Barangay 653"
+ ],
+ "7TH STREET": [
+  "17th Street",
+  0.86,
+  "Barangay 653"
+ ],
+ "LEGASPI": [
+  "Legazpi Street",
+  0.86,
+  "Barangay 654"
+ ],
+ "CORREA": [
+  "P. Correa Street",
+  0.86,
+  "Barangay 664"
+ ],
+ "GUERRERO": [
+  "L. Guerrero Street",
+  0.89,
+  "Barangay 666"
+ ],
+ "JORGE BACOBO": [
+  "Jorge Bocobo Street",
+  0.92,
+  "Barangay 666"
+ ],
+ "F AGONCILLO": [
+  "Agoncillo Street",
+  0.9,
+  "Barangay 675"
+ ],
+ "F. T. BENITEZ": [
+  "F. Benitez Street",
+  0.9,
+  "Barangay 675"
+ ],
+ "LEON GUINTO SR": [
+  "Leon Guinto Street",
+  0.85,
+  "Barangay 675"
+ ],
+ "ANAKBAYAN": [
+  "Anak Bayan Street",
+  0.95,
+  "Barangay 686"
+ ],
+ "J NAKPIL": [
+  "Nakpil Street",
+  0.86,
+  "Barangay 688"
+ ],
+ "F.T. BENITEZ": [
+  "F. Benitez Street",
+  0.9,
+  "Barangay 689"
+ ],
+ "F. AGONCILLO": [
+  "Agoncillo Street",
+  0.9,
+  "Barangay 690"
+ ],
+ "P QUIRINO AVENUE": [
+  "Quirino Avenue",
+  0.88,
+  "Barangay 691"
+ ],
+ "L MA GUERRERO": [
+  "Luis Maria Guerrero Street",
+  0.81,
+  "Barangay 697"
+ ],
+ "DR J QUINTOS JR": [
+  "Dr. J. Quintos Street",
+  0.94,
+  "Barangay 699"
+ ],
+ "RAJAH MATANDA": [
+  "Raja Matanda Street",
+  0.96,
+  "Barangay 7"
+ ],
+ "AGUEDA": [
+  "Aguida Street",
+  0.83,
+  "Barangay 701"
+ ],
+ "ARAGON": [
+  "C. Aragon Street",
+  0.86,
+  "Barangay 724"
+ ],
+ "FERMIN": [
+  "Ermin Street",
+  0.91,
+  "Barangay 724"
+ ],
+ "DON YSIDRO": [
+  "Don Ysidoro Street",
+  0.95,
+  "Barangay 727"
+ ],
+ "ESTRADA": [
+  "A. Estrada Street",
+  0.88,
+  "Barangay 727"
+ ],
+ "KAPITAN TICONG": [
+  "Kapitan Tikong Street",
+  0.93,
+  "Barangay 727"
+ ],
+ "ROSA MAYO": [
+  "Rosa Maio Street",
+  0.89,
+  "Barangay 733"
+ ],
+ "CIRIACO TUAZON": [
+  "Ciriaco Tuason Street",
+  0.93,
+  "Barangay 739"
+ ],
+ "CONG AUGUSTO FRANCISCO": [
+  "Augusto Francisco Street",
+  0.87,
+  "Barangay 747"
+ ],
+ "PABLO OCAMPO SR.": [
+  "Pablo Ocampo Street",
+  0.86,
+  "Barangay 755"
+ ],
+ "CONCHU": [
+  "Concha Street",
+  0.83,
+  "Barangay 767"
+ ],
+ "SAN ANDRES EXTN.": [
+  "San Andres Street",
+  0.8,
+  "Barangay 774"
+ ],
+ "REVELIN": [
+  "Revillin Street",
+  0.8,
+  "Barangay 782"
+ ],
+ "CONG AUGOSTO FRANCISCO": [
+  "Augusto Francisco Street",
+  0.82,
+  "Barangay 791"
+ ],
+ "ZAPIRO": [
+  "Zafiro Street",
+  0.83,
+  "Barangay 798"
+ ],
+ "JIMENEZ": [
+  "Jiménez I Street",
+  0.88,
+  "Barangay 798"
+ ],
+ "VON GRONAU": [
+  "Von Granao Street",
+  0.8,
+  "Barangay 798"
+ ],
+ "ANTONIO ISIP SR": [
+  "Antonio Isip Senior Street",
+  0.8,
+  "Barangay 814"
+ ],
+ "ANTONIO ISIP, SR.": [
+  "Antonio Isip Senior Street",
+  0.8,
+  "Barangay 817"
+ ],
+ "BARRIO KAPANGPANGAN": [
+  "Barrio Kapampanga",
+  0.89,
+  "Barangay 818-A"
+ ],
+ "ZAMORA": [
+  "J. Zamora Street",
+  0.86,
+  "Barangay 826"
+ ],
+ "TALONDON": [
+  "Talundon Street",
+  0.88,
+  "Barangay 833"
+ ],
+ "I. CERTEZA": [
+  "L. Certeza Street",
+  0.89,
+  "Barangay 837"
+ ],
+ "LORENZO DELA PAZ": [
+  "Lorenzo de la Paz Street",
+  0.97,
+  "Barangay 837"
+ ],
+ "CERTEZA": [
+  "L. Certeza Street",
+  0.88,
+  "Barangay 839"
+ ],
+ "VICTORIANO": [
+  "Victorino Street",
+  0.95,
+  "Barangay 847"
+ ],
+ "KAHILUM II": [
+  "Kahilom Ⅱ Street",
+  0.9,
+  "Barangay 857"
+ ],
+ "GENERAL OSMALIC": [
+  "General Osmanlic Street",
+  0.97,
+  "Barangay 860"
+ ],
+ "A. DE LAS ALAS": [
+  "A. delas Alas Street",
+  0.96,
+  "Barangay 866"
+ ],
+ "KAHILUM I": [
+  "Kahilom Ⅱ Street",
+  0.84,
+  "Barangay 870"
+ ],
+ "CAGAYAN": [
+  "A. Cagayan Street",
+  0.88,
+  "Barangay 874"
+ ],
+ "DELPAN": [
+  "R. del Pan Street",
+  0.8,
+  "Barangay 874"
+ ],
+ "BO. BANTING": [
+  "Barrio Banting Street",
+  0.83,
+  "Barangay 877"
+ ],
+ "PATINIO": [
+  "J. Patiño Street",
+  0.8,
+  "Barangay 879"
+ ],
+ "M. BAYANI": [
+  "Bayani Street",
+  0.86,
+  "Barangay 882"
+ ],
+ "ALLEY 1": [
+  "Alley 2",
+  0.86,
+  "Barangay 887"
+ ],
+ "FELIX Y. MANALO": [
+  "Felix Manalo Street",
+  0.92,
+  "Barangay 894"
+ ],
+ "VILLAMOR": [
+  "A. Villamor Street",
+  0.89,
+  "Barangay 901"
+ ],
+ "DAGUISONAN": [
+  "Daguisunan Street",
+  0.9,
+  "Barangay 904"
+ ],
+ "KAPULONG": [
+  "Capulong Street",
+  0.88,
+  "Barangay 93"
+ ],
+ "JACINTO": [
+  "E. Jacinto Street",
+  0.88,
+  "Barangay 96"
+ ]
+}

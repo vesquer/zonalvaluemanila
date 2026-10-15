@@ -11,8 +11,8 @@ from .validate import validate_all
 
 MIN_AREA_M2 = 1.0
 MIN_LEN_M = 1.0
-CONFLICT_LEN_M = 2 * ops.EDGE_M + 10  # two values on one street conflict past this shared length (a street's pieces in
-                                      # neighbouring barangays overlap by up to 2 x EDGE_M at the boundary by design)
+CONFLICT_PAD_M = 10.0      # two values on one street conflict past 2 x edge_m + this shared length (a street's pieces in
+                           # neighbouring barangays overlap by up to 2 x edge_m at the boundary by design)
 CONFLICT_AREA_M2 = 100.0   # ... and on one area past this shared area
 
 
@@ -104,7 +104,7 @@ def run_values(b: Base, rules: list[dict[str, Any]]) -> ValueResult:
         except ops.SelectionEmpty as e:
             res.flags.append({"rule_id": rule["rule_id"], "barangay": rule.get("barangay", ""), "rdo": str(rule.get("rdo", "")),
                               "flag": str(e), "text": rule.get("source", {}).get("text", "")})
-    res.conflicts = find_conflicts(got)
+    res.conflicts = find_conflicts(got, 2 * b.edge_m + CONFLICT_PAD_M)
     clash: dict[str, list[str]] = {}
     for c in res.conflicts:
         clash.setdefault(c["a"], []).append(c["b"])
@@ -114,7 +114,7 @@ def run_values(b: Base, rules: list[dict[str, Any]]) -> ValueResult:
     return res
 
 
-def find_conflicts(items: list[AssignedValue]) -> list[dict[str, Any]]:
+def find_conflicts(items: list[AssignedValue], min_len_m: float = 110.0) -> list[dict[str, Any]]:
     """Pairs of rows of the same classification and kind (street with street, interior with interior, area with
     area) that put different values on the same ground."""
     import shapely
@@ -131,7 +131,7 @@ def find_conflicts(items: list[AssignedValue]) -> list[dict[str, Any]]:
                 o = g[j]
                 if kind == "street":
                     shared = a.geom.intersection(o.geom.buffer(2)).length
-                    if shared <= CONFLICT_LEN_M:
+                    if shared <= min_len_m:
                         continue
                 else:
                     shared = a.geom.intersection(o.geom).area

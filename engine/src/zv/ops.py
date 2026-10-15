@@ -16,10 +16,8 @@ class AmbiguousName(SelectionEmpty):
     """An approximate name matched several different places: a reviewer must pick; never guess."""
 
 
-# Barangay outlines (COD-AB) are indicative and can sit 50-100 m off the streets, so a barangay scope is generous.
-SCOPE_M = 150.0  # names are looked for this close to the barangay
-END_M = 300.0    # from/to limits are looked for this close to the barangay
-EDGE_M = 50.0    # a street valued in one barangay is kept this far past its edge
+# Barangay outlines (COD-AB) are indicative and can sit 50-100 m off the streets, so a barangay scope is generous:
+# Base.scope_m (150 m), Base.end_m (300 m) and Base.edge_m (50 m) by default.
 
 
 def _norm(s: str) -> str:
@@ -40,6 +38,7 @@ def _alias_key(name: str, where: str | list[str] = "") -> str:
 
 
 _STOP = {"road", "street", "avenue", "highway", "st", "ave", "rd", "blvd", "boulevard", "the", "of", "and", "creek", "river"}
+SUFFIX = {"sr", "jr"}  # optional in the wanted name: "LEON GUINTO SR" = "Leon Guinto Street", not the other way round
 
 
 _ABBR = {"sct": "scout", "gen": "general", "col": "colonel", "sgt": "sergeant", "hon": "honorable", "sto": "santo", "sta": "santa",
@@ -58,6 +57,11 @@ def _words(s: str, stop: set[str] = _STOP) -> list[str]:
         words[-1] = "drive"
     if len(words) > 1 and words[0] == "st":  # "St. Paul" is a saint, "Paul St." a street
         words[0] = "saint"
+    # run-together initials: "TM KALAW" = "T. M. Kalaw" (two or three letters, no vowel, not an abbreviation)
+    split = [c for w in words for c in (list(w) if 2 <= len(w) <= 3 and w.isalpha() and not set(w) & set("aeiouy")
+                                         and w not in _ABBR and w not in _STOP else [w])]
+    if any(len(t) > 1 and t not in _STOP for t in split):  # "MRR ROAD" keeps MRR: nothing else would name it
+        words = split
     words = [_ABBR.get(t, t) for t in words]
     return [t for t in words if t not in stop]
 
@@ -91,7 +95,7 @@ def _name_match(series, name: str, log: list[str] | None = None, aliases: dict[s
     exact = series.fillna("").map(lambda v: _norm(v) == n)
     if exact.any():
         return exact
-    want = _tokens(name, stop)
+    want = _tokens(name, stop) - SUFFIX
     if not want:
         return exact
     if len(want) < 2:  # one significant word ("Dao", "Walnut") is too weak to match loosely city-wide
@@ -103,10 +107,11 @@ def _name_match(series, name: str, log: list[str] | None = None, aliases: dict[s
     if loose.any():
         names = sorted(set(series[loose]))
         same = [x for x in names if _words(x, stop) == _words(name, stop)]  # "Tandang Sora Ave" is the avenue, not "... Avenue Extension"
-        if len({_norm(x) for x in names}) > 1 and len({_norm(x) for x in same}) == 1:
-            loose = series.fillna("").map(lambda v: _norm(v) == _norm(same[0]))
+        key = lambda x: tuple(_words(x, stop))  # "MH Del Pilar St" and "M. H. del Pilar Street" are one place
+        if len({key(x) for x in names}) > 1 and len({key(x) for x in same}) == 1:
+            loose = series.fillna("").map(lambda v: bool(v) and key(v) == key(same[0]))
             names = sorted(set(series[loose]))
-        if len({_norm(x) for x in names}) > 1:  # case/punctuation variants of one name are the same place
+        if len({key(x) for x in names}) > 1:  # spelling variants of one name are the same place
             raise AmbiguousName(f"{name!r} is ambiguous; candidates: " + "; ".join(names[:6]))
         if log is not None:
             log.append(f"approximate name match for {name!r}: {names[0]}")
@@ -125,11 +130,11 @@ def _within(b: Base, within: str | list[str]) -> BaseGeometry | None:
 
 def select_roads(b: Base, *, name: str = "", cls: str = "", frm: str = "", to: str = "", within: str | list[str] = "",
                  soft_limits: bool = False, near: BaseGeometry | None = None) -> BaseGeometry:
-    """`within`: a barangay name (or several); only roads in it are searched and the result is kept to it (plus EDGE_M).
+    """`within`: a barangay name (or several); only roads in it are searched and the result is kept to it (plus b.edge_m).
     `soft_limits`: if a from/to limit cannot be found, keep the whole road (inside `within`) and log it for review."""
     area = _within(b, within)
     if area is not None:
-        near = area.buffer(SCOPE_M)
+        near = area.buffer(b.scope_m)
     r = _near(b.roads, near)
     if cls == "national":
         r = r[r["class"].isin(b.national_classes)]
@@ -143,14 +148,14 @@ def select_roads(b: Base, *, name: str = "", cls: str = "", frm: str = "", to: s
     g = unary_union(r.geometry.values)
     if area is not None:
         whole = g
-        g = g.intersection(area.buffer(EDGE_M))
+        g = g.intersection(area.buffer(b.edge_m))
         if g.is_empty or g.length == 0:
             # the named road is near but wholly outside the (indicative) outline: keep what lies within the search scope
             g = whole.intersection(near)
-            b.match_log.append(f"{name!r} lies outside the {within} outline; kept within {SCOPE_M:.0f} m of it")
+            b.match_log.append(f"{name!r} lies outside the {within} outline; kept within {b.scope_m:.0f} m of it")
     if frm or to:
         try:
-            g = _limit(b, g, name, frm, to, None if area is None else area.buffer(END_M))
+            g = _limit(b, g, name, frm, to, None if area is None else area.buffer(b.end_m))
         except SelectionEmpty as e:
             if not soft_limits:
                 raise
@@ -214,7 +219,7 @@ def select_feature(b: Base, *, name: str, within: str | list[str] = "", near: Ba
     """`within`: a barangay name (or several); only sites in it are searched and an outline is cut to it."""
     area = _within(b, within)
     if area is not None:
-        near = area.buffer(SCOPE_M)
+        near = area.buffer(b.scope_m)
     feats = _near(b.features, near)
     f = feats[_name_match(feats["name"], name, b.match_log, b.aliases, scoped=near is not None, where=within, stop=_AREA)]
     if f.empty:

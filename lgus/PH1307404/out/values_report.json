@@ -4,21 +4,21 @@
    "rdo": "28",
    "rows": 2474,
    "in_scope": 2068,
-   "placed": 1063,
-   "unmatched": 976,
+   "placed": 1101,
+   "unmatched": 938,
    "manual": 29,
    "out_of_scope": 406,
-   "match_rate": 0.514
+   "match_rate": 0.5324
   },
   {
    "rdo": "38",
    "rows": 2101,
    "in_scope": 1734,
-   "placed": 1414,
-   "unmatched": 319,
+   "placed": 1424,
+   "unmatched": 309,
    "manual": 1,
    "out_of_scope": 367,
-   "match_rate": 0.8155
+   "match_rate": 0.8212
   },
   {
    "rdo": "39",
@@ -34,11 +34,11 @@
    "rdo": "40",
    "rows": 1734,
    "in_scope": 1264,
-   "placed": 1079,
-   "unmatched": 181,
+   "placed": 1087,
+   "unmatched": 173,
    "manual": 4,
    "out_of_scope": 470,
-   "match_rate": 0.8536
+   "match_rate": 0.86
   }
  ],
  "conflicts": [
@@ -298,6 +298,21 @@
   },
   {
    "a": "QCV-28-0712",
+   "b": "QCV-28-1850",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    98000.0,
+    103000.0
+   ],
+   "shared": 241.7,
+   "barangays": [
+    "Greater Lagro",
+    "Santa Monica"
+   ]
+  },
+  {
+   "a": "QCV-28-0712",
    "b": "QCV-28-1353",
    "class_code": "CR",
    "applies_to": "street",
@@ -312,18 +327,17 @@
    ]
   },
   {
-   "a": "QCV-28-0712",
-   "b": "QCV-28-1850",
+   "a": "QCV-28-0715",
+   "b": "QCV-28-0716",
    "class_code": "CR",
    "applies_to": "street",
    "values": [
-    98000.0,
-    103000.0
+    95000.0,
+    88000.0
    ],
-   "shared": 241.7,
+   "shared": 297.4,
    "barangays": [
-    "Greater Lagro",
-    "Santa Monica"
+    "Greater Lagro"
    ]
   },
   {
@@ -380,7 +394,7 @@
     99000.0,
     61000.0
    ],
-   "shared": 2333.4,
+   "shared": 1786.3,
    "barangays": [
     "Pasong Tamo"
    ]
@@ -458,36 +472,6 @@
    "barangays": [
     "Bagong Pag-asa",
     "Pinyahan"
-   ]
-  },
-  {
-   "a": "QCV-38-0837",
-   "b": "QCV-38-1621",
-   "class_code": "CR",
-   "applies_to": "street",
-   "values": [
-    115000.0,
-    110000.0
-   ],
-   "shared": 525.0,
-   "barangays": [
-    "Lourdes",
-    "San Isidro Labrador"
-   ]
-  },
-  {
-   "a": "QCV-38-0837",
-   "b": "QCV-38-1441",
-   "class_code": "CR",
-   "applies_to": "street",
-   "values": [
-    115000.0,
-    110000.0
-   ],
-   "shared": 177.2,
-   "barangays": [
-    "Lourdes",
-    "Salvacion"
    ]
   },
   {
@@ -1121,51 +1105,6 @@
    ]
   },
   {
-   "a": "QCV-39-0720",
-   "b": "QCV-40-1613",
-   "class_code": "CR",
-   "applies_to": "street",
-   "values": [
-    145000.0,
-    235000.0
-   ],
-   "shared": 1495.4,
-   "barangays": [
-    "Mariana",
-    "Valencia"
-   ]
-  },
-  {
-   "a": "QCV-39-0720",
-   "b": "QCV-40-0772",
-   "class_code": "CR",
-   "applies_to": "street",
-   "values": [
-    145000.0,
-    235000.0
-   ],
-   "shared": 180.3,
-   "barangays": [
-    "Kaunlaran",
-    "Mariana"
-   ]
-  },
-  {
-   "a": "QCV-39-0720",
-   "b": "QCV-40-0627",
-   "class_code": "CR",
-   "applies_to": "street",
-   "values": [
-    145000.0,
-    235000.0
-   ],
-   "shared": 206.9,
-   "barangays": [
-    "Immaculate Concepcion",
-    "Mariana"
-   ]
-  },
-  {
    "a": "QCV-39-0880",
    "b": "QCV-39-0958",
    "class_code": "CR",
@@ -1271,21 +1210,6 @@
   },
   {
    "a": "QCV-39-1081",
-   "b": "QCV-40-0704",
-   "class_code": "CR",
-   "applies_to": "street",
-   "values": [
-    76000.0,
-    155000.0
-   ],
-   "shared": 318.4,
-   "barangays": [
-    "East Kamias",
-    "Pinyahan"
-   ]
-  },
-  {
-   "a": "QCV-39-1081",
    "b": "QCV-40-0743",
    "class_code": "CR",
    "applies_to": "street",
@@ -1297,6 +1221,21 @@
    "barangays": [
     "Pinyahan",
     "West Kamias"
+   ]
+  },
+  {
+   "a": "QCV-39-1081",
+   "b": "QCV-40-0704",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    76000.0,
+    155000.0
+   ],
+   "shared": 318.4,
+   "barangays": [
+    "East Kamias",
+    "Pinyahan"
    ]
   },
   {
@@ -1675,21 +1614,6 @@
   },
   {
    "a": "QCV-28-0390",
-   "b": "QCV-28-1206",
-   "class_code": "RR",
-   "applies_to": "street",
-   "values": [
-    84000.0,
-    92000.0
-   ],
-   "shared": 150.3,
-   "barangays": [
-    "Culiat",
-    "New Era (Constitution Hills)"
-   ]
-  },
-  {
-   "a": "QCV-28-0390",
    "b": "QCV-38-1972",
    "class_code": "RR",
    "applies_to": "street",
@@ -1701,6 +1625,21 @@
    "barangays": [
     "Culiat",
     "Vasra"
+   ]
+  },
+  {
+   "a": "QCV-28-0390",
+   "b": "QCV-28-1206",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    84000.0,
+    92000.0
+   ],
+   "shared": 150.3,
+   "barangays": [
+    "Culiat",
+    "New Era (Constitution Hills)"
    ]
   },
   {
@@ -1772,7 +1711,7 @@
     78000.0,
     27000.0
    ],
-   "shared": 2333.4,
+   "shared": 1786.3,
    "barangays": [
     "Pasong Tamo"
    ]
@@ -1861,6 +1800,20 @@
     28000.0
    ],
    "shared": 386.8,
+   "barangays": [
+    "Tandang Sora"
+   ]
+  },
+  {
+   "a": "QCV-28-2189",
+   "b": "QCV-28-2190",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    45000.0,
+    28000.0
+   ],
+   "shared": 611.0,
    "barangays": [
     "Tandang Sora"
    ]
@@ -2132,36 +2085,6 @@
    "barangays": [
     "Del Monte",
     "San Antonio"
-   ]
-  },
-  {
-   "a": "QCV-38-0836",
-   "b": "QCV-38-1620",
-   "class_code": "RR",
-   "applies_to": "street",
-   "values": [
-    87000.0,
-    84000.0
-   ],
-   "shared": 525.0,
-   "barangays": [
-    "Lourdes",
-    "San Isidro Labrador"
-   ]
-  },
-  {
-   "a": "QCV-38-0836",
-   "b": "QCV-38-1440",
-   "class_code": "RR",
-   "applies_to": "street",
-   "values": [
-    87000.0,
-    84000.0
-   ],
-   "shared": 177.2,
-   "barangays": [
-    "Lourdes",
-    "Salvacion"
    ]
   },
   {
@@ -2493,12 +2416,12 @@
   },
   {
    "a": "QCV-39-1372",
-   "b": "QCV-39-1740",
+   "b": "QCV-39-1715",
    "class_code": "RR",
    "applies_to": "street",
    "values": [
     87000.0,
-    50000.0
+    85000.0
    ],
    "shared": 115.3,
    "barangays": [
@@ -2508,12 +2431,12 @@
   },
   {
    "a": "QCV-39-1372",
-   "b": "QCV-39-1715",
+   "b": "QCV-39-1740",
    "class_code": "RR",
    "applies_to": "street",
    "values": [
     87000.0,
-    85000.0
+    50000.0
    ],
    "shared": 115.3,
    "barangays": [
@@ -2833,6 +2756,49 @@
    ]
   },
   {
+   "a": "QCV-28-1010",
+   "b": "QCV-28-1012",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    35000.0,
+    48000.0
+   ],
+   "shared": 16719.5,
+   "barangays": [
+    "Matandang Balara"
+   ]
+  },
+  {
+   "a": "QCV-28-1010",
+   "b": "QCV-28-1056",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    35000.0,
+    48000.0
+   ],
+   "shared": 4920.7,
+   "barangays": [
+    "Matandang Balara"
+   ]
+  },
+  {
+   "a": "QCV-28-1530",
+   "b": "QCV-28-2295",
+   "class_code": "RR",
+   "applies_to": "area",
+   "values": [
+    28000.0,
+    41000.0
+   ],
+   "shared": 9514.6,
+   "barangays": [
+    "Pasong Tamo",
+    "Tandang Sora"
+   ]
+  },
+  {
    "a": "QCV-28-1922",
    "b": "QCV-28-1928",
    "class_code": "RR",
@@ -2844,6 +2810,20 @@
    "shared": 72083.5,
    "barangays": [
     "Sauyo"
+   ]
+  },
+  {
+   "a": "QCV-28-0664",
+   "b": "QCV-28-0670",
+   "class_code": "CR",
+   "applies_to": "area",
+   "values": [
+    40000.0,
+    46000.0
+   ],
+   "shared": 6501.2,
+   "barangays": [
+    "Fairview"
    ]
   },
   {
@@ -2861,17 +2841,32 @@
    ]
   },
   {
-   "a": "QCV-28-0664",
-   "b": "QCV-28-0670",
+   "a": "QCV-28-1011",
+   "b": "QCV-28-1013",
    "class_code": "CR",
    "applies_to": "area",
    "values": [
-    40000.0,
+    44000.0,
+    60000.0
+   ],
+   "shared": 16719.5,
+   "barangays": [
+    "Matandang Balara"
+   ]
+  },
+  {
+   "a": "QCV-28-1531",
+   "b": "QCV-28-2296",
+   "class_code": "CR",
+   "applies_to": "area",
+   "values": [
+    61000.0,
     46000.0
    ],
-   "shared": 6501.2,
+   "shared": 9514.6,
    "barangays": [
-    "Fairview"
+    "Pasong Tamo",
+    "Tandang Sora"
    ]
   },
   {
@@ -3788,11 +3783,6 @@
     "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
    },
    {
-    "rule_id": "QCV-38-0329",
-    "text": "CARMEL AVE | ROSARIO | CARMEL SUBD. | RR | 46,000",
-    "reason": "'CARMEL AVE' is ambiguous; candidates: Carmel Avenue; Carmel Street"
-   },
-   {
     "rule_id": "QCV-38-0331",
     "text": "CARMEL SUVD. 2 | VISAYAS | MA. VICTORIA | RR | 46,000",
     "reason": "no road named 'CARMEL SUVD. 2' in Bahay Toro"
@@ -3841,11 +3831,6 @@
     "rule_id": "QCV-38-0367",
     "text": "HAYAVILLE | MINDANAO | CONGRESSIONAL | RR | 40,000",
     "reason": "no road named 'HAYAVILLE' in Bahay Toro"
-   },
-   {
-    "rule_id": "QCV-38-0374",
-    "text": "IMELDA VILL | ROAD 20 | RR | 40,000",
-    "reason": "'IMELDA VILL' is ambiguous; candidates: Imelda Compound; Imelda Village"
    },
    {
     "rule_id": "QCV-38-0378",
@@ -4013,16 +3998,6 @@
     "rule_id": "QCV-38-0501",
     "text": "ANAHAW | A. BONIFACIO | BALINGASA RD | RR | 36,000",
     "reason": "no road named 'ANAHAW' in Balingasa"
-   },
-   {
-    "rule_id": "QCV-38-0506",
-    "text": "BALINGASA RD | A. BONIFACIO | HARMONY | RR | 40,000",
-    "reason": "'BALINGASA RD' is ambiguous; candidates: Balingasa Road; Balingasa Street"
-   },
-   {
-    "rule_id": "QCV-38-0507",
-    "text": "BALINGASA RD | A. BONIFACIO | HARMONY | CR | 80,000",
-    "reason": "'BALINGASA RD' is ambiguous; candidates: Balingasa Road; Balingasa Street"
    },
    {
     "rule_id": "QCV-38-0521",
@@ -5416,18 +5391,6 @@
     "reason": "no road named 'DAPDAP' in Duyan-duyan"
    }
   ],
-  "E. Rodriguez": [
-   {
-    "rule_id": "QCV-40-0524",
-    "text": "NEW YORK | EDSA - HARVARD | RR | 135,000",
-    "reason": "'NEW YORK' is ambiguous; candidates: New York Avenue; New York Street"
-   },
-   {
-    "rule_id": "QCV-40-0525",
-    "text": "NEW YORK | EDSA - HARVARD | CR | 165,000",
-    "reason": "'NEW YORK' is ambiguous; candidates: New York Avenue; New York Street"
-   }
-  ],
   "Escopa I, Escopa II, Escopa III, Escopa IV": [
    {
     "rule_id": "QCV-40-0573",
@@ -5574,16 +5537,6 @@
   ],
   "Greater Lagro": [
    {
-    "rule_id": "QCV-28-0715",
-    "text": "REGALADO AVE. | QUIRINO HIGHWAY - MINDANAO | CR | 95,000",
-    "reason": "'REGALADO AVE.' is ambiguous; candidates: Regalado Avenue; Regalado Highway"
-   },
-   {
-    "rule_id": "QCV-28-0716",
-    "text": "REGALADO AVE. | QUIRINO HIGHWAY - MINDANAO | CR | 88,000",
-    "reason": "'REGALADO AVE.' is ambiguous; candidates: Regalado Avenue; Regalado Highway"
-   },
-   {
     "rule_id": "QCV-28-0723",
     "text": "NEOPOLITAN-CASA MILAN | COMMONWEALTH AVE. (PHASE V) | RR | 48,000",
     "reason": "no road named 'NEOPOLITAN-CASA MILAN' in Greater Lagro"
@@ -5661,26 +5614,6 @@
     "reason": "no road named 'GOOD HAVEN III' in Gulod"
    },
    {
-    "rule_id": "QCV-28-0779",
-    "text": "STA.MONICA VILLAGE SUBD | QUIRINO HIGHWAY | RR | 20,000",
-    "reason": "'STA.MONICA VILLAGE SUBD' is ambiguous; candidates: Santa Monica; Santa Monica Cockpit; Santa Monica Village"
-   },
-   {
-    "rule_id": "QCV-28-0780",
-    "text": "STA.MONICA VILLAGE SUBD | QUIRINO HIGHWAY | CR | 43,000",
-    "reason": "'STA.MONICA VILLAGE SUBD' is ambiguous; candidates: Santa Monica; Santa Monica Cockpit; Santa Monica Village"
-   },
-   {
-    "rule_id": "QCV-28-0781",
-    "text": "VILLAFLOR SUBDIVISION | QUIRINO HIGHWAY | RR | 20,000",
-    "reason": "'VILLAFLOR SUBDIVISION' is ambiguous; candidates: Villaflor Avenue; Villaflor Village"
-   },
-   {
-    "rule_id": "QCV-28-0782",
-    "text": "VILLAFLOR SUBDIVISION | QUIRINO HIGHWAY | CR | 43,000",
-    "reason": "'VILLAFLOR SUBDIVISION' is ambiguous; candidates: Villaflor Avenue; Villaflor Village"
-   },
-   {
     "rule_id": "QCV-28-0787",
     "text": "ALL OTHER TOWNHOUSES | RR | 60,000",
     "reason": "Applies to townhouse or condominium lots in the barangay, which the map cannot locate."
@@ -5692,11 +5625,6 @@
    }
   ],
   "Holy Spirit": [
-   {
-    "rule_id": "QCV-28-0798",
-    "text": "SAMPAGUITA AVE. | ALONG MAPAYAPA VILL | CR | 55,000",
-    "reason": "'SAMPAGUITA AVE.' is ambiguous; candidates: Sampaguita Avenue; Sampaguita Street"
-   },
    {
     "rule_id": "QCV-28-0803",
     "text": "DONA JUANA SUBDIVISION | SAMPAGUITA ST | RR | 30,000",
@@ -5855,7 +5783,7 @@
    {
     "rule_id": "QCV-28-0845",
     "text": "DON CARLOS TOWNHOUSE | DON CARLOS ST | RR | 26,000",
-    "reason": "'DON CARLOS TOWNHOUSE' is ambiguous; candidates: Don. C; Don.C"
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
    },
    {
     "rule_id": "QCV-28-0847",
@@ -5945,16 +5873,6 @@
     "rule_id": "QCV-40-0654",
     "text": "MARY LAND | MONTE DE PIEDAD-NEW YORK | CR | 108,000",
     "reason": "no road named 'MARY LAND' in Immaculate Concepcion"
-   },
-   {
-    "rule_id": "QCV-40-0657",
-    "text": "NEW YORK | EDSA - E. RODRIGUEZ | RR | 135,000",
-    "reason": "'NEW YORK' is ambiguous; candidates: New York Avenue; New York Street"
-   },
-   {
-    "rule_id": "QCV-40-0658",
-    "text": "NEW YORK | EDSA - E. RODRIGUEZ | CR | 165,000",
-    "reason": "'NEW YORK' is ambiguous; candidates: New York Avenue; New York Street"
    },
    {
     "rule_id": "QCV-40-0665",
@@ -6077,16 +5995,6 @@
     "rule_id": "QCV-28-0903",
     "text": "NORTH OLYMPUS IV | ZABARTE RD | CR | 56,000",
     "reason": "no road named 'NORTH OLYMPUS IV' in Kaligayahan"
-   },
-   {
-    "rule_id": "QCV-28-0904",
-    "text": "NORTH ZABARTE SUBD (fmly: zabarte subd) | MOCKINGBIRD ST | RR | 16,000",
-    "reason": "feature not found: 'NORTH ZABARTE SUBD' in Kaligayahan"
-   },
-   {
-    "rule_id": "QCV-28-0905",
-    "text": "NORTH ZABARTE SUBD (fmly: zabarte subd) | MOCKINGBIRD ST | CR | 29,000",
-    "reason": "feature not found: 'NORTH ZABARTE SUBD' in Kaligayahan"
    },
    {
     "rule_id": "QCV-28-0906",
@@ -6811,16 +6719,6 @@
     "reason": "feature not found: 'COMMONWEALTH HOBART HOMES' in Matandang Balara"
    },
    {
-    "rule_id": "QCV-28-1010",
-    "text": "COMMONWEALTH HOMES | NEW REPUBLIC HOMESITE | RR | 35,000",
-    "reason": "'COMMONWEALTH HOMES' is ambiguous; candidates: Commonwealth; Commonwealth Townhomes; Commonwealth Village"
-   },
-   {
-    "rule_id": "QCV-28-1011",
-    "text": "COMMONWEALTH HOMES | NEW REPUBLIC HOMESITE | CR | 44,000",
-    "reason": "'COMMONWEALTH HOMES' is ambiguous; candidates: Commonwealth; Commonwealth Townhomes; Commonwealth Village"
-   },
-   {
     "rule_id": "QCV-28-1024",
     "text": "NEW INTRAMUROS VILLAGE | COMMONWEALTH AVE. | RR | 36,000",
     "reason": "'NEW INTRAMUROS VILLAGE' is ambiguous; candidates: New Capitol Estates Ⅰ; New Intramuros Village Clubhouse; New Intramuros Village Park"
@@ -7234,11 +7132,6 @@
     "reason": "no road named 'DELA PAZ' in New Era (Constitution Hills)"
    },
    {
-    "rule_id": "QCV-28-1220",
-    "text": "REDEEMER | CENTRAL AVE | RR | 44,000",
-    "reason": "'REDEEMER' is ambiguous; candidates: Redeemer Road; Redeemer Street"
-   },
-   {
     "rule_id": "QCV-28-1223",
     "text": "ST. PAUL | CENTRAL AVE | RR | 44,000",
     "reason": "no road named 'ST. PAUL' in New Era (Constitution Hills)"
@@ -7403,11 +7296,6 @@
     "reason": "no road named 'R. URDUJA STREET' in Novaliches Proper"
    },
    {
-    "rule_id": "QCV-28-1321",
-    "text": "SAMPAGUITA ST | RAMIREZ SUBD | RR | 42,000",
-    "reason": "'SAMPAGUITA ST' is ambiguous; candidates: Sampaguita; Sampaguita Street"
-   },
-   {
     "rule_id": "QCV-28-1322",
     "text": "SAN DIONISIO | DONA ROSARIO | RR | 16,000",
     "reason": "no road named 'SAN DIONISIO' in Novaliches Proper"
@@ -7446,16 +7334,6 @@
     "rule_id": "QCV-28-1333",
     "text": "DONA ROSARIO SUBD | DONA ROSARIO ST | CR | 20,000",
     "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
-   },
-   {
-    "rule_id": "QCV-28-1334",
-    "text": "MAGNO SUBD | SUSANO ROAD | RR | 21,000",
-    "reason": "'MAGNO SUBD' is ambiguous; candidates: Magno; Magno Subdivision"
-   },
-   {
-    "rule_id": "QCV-28-1335",
-    "text": "MAGNO SUBD | SUSANO ROAD | CR | 26,000",
-    "reason": "'MAGNO SUBD' is ambiguous; candidates: Magno; Magno Subdivision"
    },
    {
     "rule_id": "QCV-28-1340",
@@ -7721,32 +7599,12 @@
     "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
    },
    {
-    "rule_id": "QCV-28-1370",
-    "text": "SACRED HEART SUBD. | QURINO HIGHWAY | RR | 20,000",
-    "reason": "'SACRED HEART SUBD.' is ambiguous; candidates: Sacred Heart; Sacred Heart Novitiate; Sacred Heart Novitiate & Retreat House; Sacred Heart Tennis Court; Sacred Heart Tire & Battery Supply; Sacred Heart Village"
-   },
-   {
-    "rule_id": "QCV-28-1371",
-    "text": "SACRED HEART SUBD. | QURINO HIGHWAY | CR | 46,000",
-    "reason": "'SACRED HEART SUBD.' is ambiguous; candidates: Sacred Heart; Sacred Heart Novitiate; Sacred Heart Novitiate & Retreat House; Sacred Heart Tennis Court; Sacred Heart Tire & Battery Supply; Sacred Heart Village"
-   },
-   {
     "rule_id": "QCV-28-1386",
     "text": "ALL OTHER TOWNHOUSES | RR | 30,000",
     "reason": "Applies to townhouse or condominium lots in the barangay, which the map cannot locate."
    }
   ],
   "Pasong Tamo": [
-   {
-    "rule_id": "QCV-28-1391",
-    "text": "HIMLAYAN RD | BANLAT - ROAD 1 | RR | 48,000",
-    "reason": "'HIMLAYAN RD' is ambiguous; candidates: Himlayan Avenue; Himlayan Road"
-   },
-   {
-    "rule_id": "QCV-28-1392",
-    "text": "HIMLAYAN RD | BANLAT - ROAD 1 | CR | 62,000",
-    "reason": "'HIMLAYAN RD' is ambiguous; candidates: Himlayan Avenue; Himlayan Road"
-   },
    {
     "rule_id": "QCV-28-1399",
     "text": "DON JULIO GREGORIO AVE. | ILANG-ILANG - ARKA HOMES RD | RR | 55,000",
@@ -7878,11 +7736,6 @@
     "reason": "feature not found: 'MASAGANA CMPD' in Pasong Tamo"
    },
    {
-    "rule_id": "QCV-28-1434",
-    "text": "NARRA | VISAYAS-TANDANG SORA | RR | 40,000",
-    "reason": "'NARRA' is ambiguous; candidates: Narra Avenue; Narra Street"
-   },
-   {
     "rule_id": "QCV-28-1435",
     "text": "NAWASA SIDE | NEAR LUZON AVE | RR | 25,000",
     "reason": "no road named 'NAWASA SIDE' in Pasong Tamo"
@@ -7921,16 +7774,6 @@
     "rule_id": "QCV-28-1446",
     "text": "S. MAKAYA | VISAYAS-TANDANG SORA | RR | 40,000",
     "reason": "no road named 'S. MAKAYA' in Pasong Tamo"
-   },
-   {
-    "rule_id": "QCV-28-1447",
-    "text": "SAMPAGUITA AVE | LUZON AVE - WALING WALING | RR | 52,000",
-    "reason": "'SAMPAGUITA AVE' is ambiguous; candidates: Sampaguita Avenue; Sampaguita Street"
-   },
-   {
-    "rule_id": "QCV-28-1448",
-    "text": "SAMPAGUITA AVE | LUZON AVE - WALING WALING | CR | 60,000",
-    "reason": "'SAMPAGUITA AVE' is ambiguous; candidates: Sampaguita Avenue; Sampaguita Street"
    },
    {
     "rule_id": "QCV-28-1449",
@@ -8191,16 +8034,6 @@
     "rule_id": "QCV-28-1527",
     "text": "ROXASVILLE SUBD | PHILAND EXTENSION | CR | 61,000",
     "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
-   },
-   {
-    "rule_id": "QCV-28-1530",
-    "text": "SAN MIGUEL VILL. | HIMLAYAN ROAD | RR | 28,000",
-    "reason": "'SAN MIGUEL VILL.' is ambiguous; candidates: San Miguel; San Miguel Village"
-   },
-   {
-    "rule_id": "QCV-28-1531",
-    "text": "SAN MIGUEL VILL. | HIMLAYAN ROAD | CR | 61,000",
-    "reason": "'SAN MIGUEL VILL.' is ambiguous; candidates: San Miguel; San Miguel Village"
    },
    {
     "rule_id": "QCV-28-1532",
@@ -8640,18 +8473,6 @@
     "reason": "feature not found: 'ZAMORA REALTY' in Payatas"
    }
   ],
-  "Pinagkaisahan": [
-   {
-    "rule_id": "QCV-40-1111",
-    "text": "NEW YORK (PABLO REYES, SR. ST.) | E. RODRIGUEZ SR. - EDSA | RR | 135,000",
-    "reason": "'NEW YORK' is ambiguous; candidates: New York Avenue; New York Street"
-   },
-   {
-    "rule_id": "QCV-40-1112",
-    "text": "NEW YORK (PABLO REYES, SR. ST.) | E. RODRIGUEZ SR. - EDSA | CR | 165,000",
-    "reason": "'NEW YORK' is ambiguous; candidates: New York Avenue; New York Street"
-   }
-  ],
   "Pinyahan": [
    {
     "rule_id": "QCV-39-1072",
@@ -8794,29 +8615,9 @@
     "rule_id": "QCV-40-1542",
     "text": "RIVIERA | 4TH STREET - BONNY SERRANO | CR | 90,000",
     "reason": "no road named 'RIVIERA' in Saint Ignatius"
-   },
-   {
-    "rule_id": "QCV-40-1547",
-    "text": "ST. IGNATIUS VILLAGE*** | RR | 75,000",
-    "reason": "'ST. IGNATIUS VILLAGE' is ambiguous; candidates: Saint Ignatius; Saint Ignatius Church; Saint Ignatius Park; Saint Ignatius Village; Saint Ignatius of Loyola Cathedral; St. Ignatius Barangay Hall"
-   },
-   {
-    "rule_id": "QCV-40-1548",
-    "text": "ST. IGNATIUS VILLAGE*** | CR | 90,000",
-    "reason": "'ST. IGNATIUS VILLAGE' is ambiguous; candidates: Saint Ignatius; Saint Ignatius Church; Saint Ignatius Park; Saint Ignatius Village; Saint Ignatius of Loyola Cathedral; St. Ignatius Barangay Hall"
    }
   ],
   "Saint Peter": [
-   {
-    "rule_id": "QCV-38-1902",
-    "text": "N.S. AMORANTO - RETIRO | BANAWE | CORDILLERA | RR | 94,000",
-    "reason": "no road named 'N.S. AMORANTO - RETIRO' in Saint Peter"
-   },
-   {
-    "rule_id": "QCV-38-1903",
-    "text": "N.S. AMORANTO - RETIRO | BANAWE | CORDILLERA | CR | 112,000",
-    "reason": "no road named 'N.S. AMORANTO - RETIRO' in Saint Peter"
-   },
    {
     "rule_id": "QCV-38-1905",
     "text": "PALTOK | STA. CATALINA | CORDILLERA | RR | 66,000",
@@ -9604,7 +9405,7 @@
    {
     "rule_id": "QCV-28-1842",
     "text": "VILLA HERMANO IV (TOWNHOUSE) | J.P. RIZAL | RR | 38,000",
-    "reason": "'VILLA HERMANO IV' is ambiguous; candidates: Villa Hermano I Subdivision; Villa Hermano Ⅰ"
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
    },
    {
     "rule_id": "QCV-28-1844",
@@ -9747,16 +9548,6 @@
     "reason": "feature not found: 'GREENVIEW 2 SUBD' in Sauyo"
    },
    {
-    "rule_id": "QCV-28-1881",
-    "text": "GREENVIEW EXEC VILLAGE | RIVERDALE | RR | 19,000",
-    "reason": "'GREENVIEW EXEC VILLAGE' is ambiguous; candidates: Greenview Executive Townhouse; Greenview Executive Village"
-   },
-   {
-    "rule_id": "QCV-28-1882",
-    "text": "GREENVIEW EXEC VILLAGE | RIVERDALE | CR | 24,000",
-    "reason": "'GREENVIEW EXEC VILLAGE' is ambiguous; candidates: Greenview Executive Townhouse; Greenview Executive Village"
-   },
-   {
     "rule_id": "QCV-28-1883",
     "text": "GREENVIEW EXECUTIVE VILLAGE PH 1 & 3 | DAHLIA ST | RR | 32,000",
     "reason": "feature not found: 'GREENVIEW EXECUTIVE VILLAGE PH 1' in Sauyo"
@@ -9882,16 +9673,6 @@
     "reason": "no road named 'STA. BARBARA ROYALE' in Sauyo"
    },
    {
-    "rule_id": "QCV-28-1920",
-    "text": "VICTORIA SUBD | MINDANAO AVE | RR | 22,000",
-    "reason": "'VICTORIA SUBD' is ambiguous; candidates: Victoria; Victoria Subdivision"
-   },
-   {
-    "rule_id": "QCV-28-1921",
-    "text": "VICTORIA SUBD | MINDANAO AVE | CR | 28,000",
-    "reason": "'VICTORIA SUBD' is ambiguous; candidates: Victoria; Victoria Subdivision"
-   },
-   {
     "rule_id": "QCV-28-1924",
     "text": "WEST CLASSIC GARDEN HOMES | MERRY ST. | RR | 20,000",
     "reason": "feature not found: 'WEST CLASSIC GARDEN HOMES' in Sauyo"
@@ -9932,27 +9713,12 @@
     "reason": "feature not found: 'OCEAN PARK TOWNHOUSE' in Sauyo"
    },
    {
-    "rule_id": "QCV-28-1946",
-    "text": "VILLA HERMANO HOMES I, II | VICTORIAN HEIGHTS | RR | 34,000",
-    "reason": "'VILLA HERMANO HOMES I, II' is ambiguous; candidates: Villa Hermano I Subdivision; Villa Hermano Ⅰ"
-   },
-   {
     "rule_id": "QCV-28-1948",
     "text": "ALL OTHER TOWNHOUSES | RR | 31,000",
     "reason": "Applies to townhouse or condominium lots in the barangay, which the map cannot locate."
    }
   ],
   "Sienna": [
-   {
-    "rule_id": "QCV-38-1682",
-    "text": "N.S. AMORANTO - RETIRO | BANAWE | G. ARANETA | RR | 94,000",
-    "reason": "no road named 'N.S. AMORANTO - RETIRO' in Sienna"
-   },
-   {
-    "rule_id": "QCV-38-1683",
-    "text": "N.S. AMORANTO - RETIRO | CR | 112,000",
-    "reason": "no road named 'N.S. AMORANTO - RETIRO' in Sienna"
-   },
    {
     "rule_id": "QCV-38-1686",
     "text": "SGT D. M. ALCARAZ | BANAWE | DON JOSE | RR | 66,000",
@@ -10030,18 +9796,6 @@
     "rule_id": "QCV-40-1563",
     "text": "CENTURY CPD | 20TH AVE. | CR | 60,000",
     "reason": "no road named 'CENTURY CPD' in Tagumpay"
-   }
-  ],
-  "Talayan": [
-   {
-    "rule_id": "QCV-38-1922",
-    "text": "N. S. AMORANTO RETIRO | G. ARANETA | TALAYAN ROAD | RR | 94,000",
-    "reason": "no road named 'N. S. AMORANTO RETIRO' in Talayan"
-   },
-   {
-    "rule_id": "QCV-38-1923",
-    "text": "N. S. AMORANTO RETIRO | G. ARANETA | TALAYAN ROAD | CR | 112,000",
-    "reason": "no road named 'N. S. AMORANTO RETIRO' in Talayan"
    }
   ],
   "Talipapa": [
@@ -10348,21 +10102,6 @@
     "reason": "no road named 'PLANETA LANE' in Tandang Sora"
    },
    {
-    "rule_id": "QCV-28-2189",
-    "text": "VENUS RD | FLORVILLE - FERCON | RR | 45,000",
-    "reason": "'VENUS RD' is ambiguous; candidates: Venus Road; Venus Street"
-   },
-   {
-    "rule_id": "QCV-28-2190",
-    "text": "VENUS ST | TANDANG SORA - MERCURY | RR | 28,000",
-    "reason": "'VENUS ST' is ambiguous; candidates: Venus Road; Venus Street"
-   },
-   {
-    "rule_id": "QCV-28-2191",
-    "text": "VENUS ST | TANDANG SORA - MERCURY | CR | 32,000",
-    "reason": "'VENUS ST' is ambiguous; candidates: Venus Road; Venus Street"
-   },
-   {
     "rule_id": "QCV-28-2199",
     "text": "AGUILAR CMPD | GLORIA 2 | RR | 45,000",
     "reason": "feature not found: 'AGUILAR CMPD' in Tandang Sora"
@@ -10456,16 +10195,6 @@
     "rule_id": "QCV-28-2224",
     "text": "APOCAR SUBD | RED STREET; NEAR CARMEL V | CR | 42,000",
     "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
-   },
-   {
-    "rule_id": "QCV-28-2227",
-    "text": "CAPITOL HOMESITE SUBD | TANDANG SORA | RR | 50,000",
-    "reason": "'CAPITOL HOMESITE SUBD' is ambiguous; candidates: Capitol Homesite; Capitol Homesite Subdivision"
-   },
-   {
-    "rule_id": "QCV-28-2228",
-    "text": "CAPITOL HOMESITE SUBD | TANDANG SORA | CR | 60,000",
-    "reason": "'CAPITOL HOMESITE SUBD' is ambiguous; candidates: Capitol Homesite; Capitol Homesite Subdivision"
    },
    {
     "rule_id": "QCV-28-2229",
@@ -10706,26 +10435,6 @@
     "rule_id": "QCV-28-2294",
     "text": "ROSALIA COMPOUND | TANDANG SORA AVE | CR | 46,000",
     "reason": "feature not found: 'ROSALIA COMPOUND' in Tandang Sora"
-   },
-   {
-    "rule_id": "QCV-28-2295",
-    "text": "SAN MIGUEL VILLAGE | BANLAT RD | RR | 41,000",
-    "reason": "'SAN MIGUEL VILLAGE' is ambiguous; candidates: San Miguel; San Miguel Compound"
-   },
-   {
-    "rule_id": "QCV-28-2296",
-    "text": "SAN MIGUEL VILLAGE | BANLAT RD | CR | 46,000",
-    "reason": "'SAN MIGUEL VILLAGE' is ambiguous; candidates: San Miguel; San Miguel Compound"
-   },
-   {
-    "rule_id": "QCV-28-2297",
-    "text": "SAN PEDRO 1 CMPD | MATVILLE ST | RR | 21,000",
-    "reason": "'SAN PEDRO 1 CMPD' is ambiguous; candidates: San Pedro 10; San Pedro Compound 10"
-   },
-   {
-    "rule_id": "QCV-28-2298",
-    "text": "SAN PEDRO 1 CMPD | MATVILLE ST | CR | 29,000",
-    "reason": "'SAN PEDRO 1 CMPD' is ambiguous; candidates: San Pedro 10; San Pedro Compound 10"
    },
    {
     "rule_id": "QCV-28-2299",

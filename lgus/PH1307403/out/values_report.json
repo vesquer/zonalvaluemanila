@@ -4,11 +4,11 @@
    "rdo": "43",
    "rows": 2646,
    "in_scope": 1350,
-   "placed": 750,
-   "unmatched": 508,
+   "placed": 770,
+   "unmatched": 488,
    "manual": 92,
    "out_of_scope": 1296,
-   "match_rate": 0.5556
+   "match_rate": 0.5704
   }
  ],
  "conflicts": [
@@ -24,6 +24,21 @@
    "shared": 448.4,
    "barangays": [
     "Bagong Ilog"
+   ]
+  },
+  {
+   "a": "PSV-43-0143",
+   "b": "PSV-43-1851",
+   "class_code": "RR",
+   "applies_to": "street",
+   "values": [
+    18000.0,
+    30000.0
+   ],
+   "shared": 227.7,
+   "barangays": [
+    "Bambang",
+    "Sumilang"
    ]
   },
   {
@@ -278,21 +293,6 @@
    ]
   },
   {
-   "a": "PSV-43-1697",
-   "b": "PSV-43-1855",
-   "class_code": "RR",
-   "applies_to": "street",
-   "values": [
-    19000.0,
-    18000.0
-   ],
-   "shared": 466.0,
-   "barangays": [
-    "Santa Rosa",
-    "Sumilang"
-   ]
-  },
-  {
    "a": "PSV-43-1768",
    "b": "PSV-43-1769",
    "class_code": "RR",
@@ -377,6 +377,21 @@
    "shared": 774.0,
    "barangays": [
     "Caniogan",
+    "Sagad"
+   ]
+  },
+  {
+   "a": "PSV-43-0411",
+   "b": "PSV-43-1177",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    90000.0,
+    80000.0
+   ],
+   "shared": 235.5,
+   "barangays": [
+    "Kapasigan",
     "Sagad"
    ]
   },
@@ -470,6 +485,36 @@
    ]
   },
   {
+   "a": "PSV-43-0767",
+   "b": "PSV-43-1200",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    200000.0,
+    280000.0
+   ],
+   "shared": 199.0,
+   "barangays": [
+    "Oranbo",
+    "San Antonio"
+   ]
+  },
+  {
+   "a": "PSV-43-0767",
+   "b": "PSV-43-1199",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    200000.0,
+    315000.0
+   ],
+   "shared": 199.0,
+   "barangays": [
+    "Oranbo",
+    "San Antonio"
+   ]
+  },
+  {
    "a": "PSV-43-0772",
    "b": "PSV-43-1209",
    "class_code": "CR",
@@ -523,22 +568,81 @@
     325000.0,
     160000.0
    ],
-   "shared": 204.0,
+   "shared": 149.1,
    "barangays": [
     "San Antonio",
     "Ugong"
    ]
   },
   {
-   "a": "PSV-43-1203",
-   "b": "PSV-43-1901",
+   "a": "PSV-43-1199",
+   "b": "PSV-43-1200",
    "class_code": "CR",
    "applies_to": "street",
    "values": [
-    290000.0,
-    200000.0
+    315000.0,
+    280000.0
    ],
-   "shared": 739.1,
+   "shared": 1535.7,
+   "barangays": [
+    "San Antonio"
+   ]
+  },
+  {
+   "a": "PSV-43-1199",
+   "b": "PSV-43-1898",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    315000.0,
+    170000.0
+   ],
+   "shared": 891.0,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1199",
+   "b": "PSV-43-1899",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    315000.0,
+    170000.0
+   ],
+   "shared": 891.0,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1200",
+   "b": "PSV-43-1898",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    280000.0,
+    170000.0
+   ],
+   "shared": 891.0,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1200",
+   "b": "PSV-43-1899",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    280000.0,
+    170000.0
+   ],
+   "shared": 891.0,
    "barangays": [
     "San Antonio",
     "Ugong"
@@ -552,6 +656,21 @@
    "values": [
     290000.0,
     220000.0
+   ],
+   "shared": 739.1,
+   "barangays": [
+    "San Antonio",
+    "Ugong"
+   ]
+  },
+  {
+   "a": "PSV-43-1203",
+   "b": "PSV-43-1901",
+   "class_code": "CR",
+   "applies_to": "street",
+   "values": [
+    290000.0,
+    200000.0
    ],
    "shared": 739.1,
    "barangays": [
@@ -1214,11 +1333,6 @@
     "reason": "feature not found: 'LAKEVIEW SUBD' in Bagong Ilog"
    },
    {
-    "rule_id": "PSV-43-0096",
-    "text": "PHOENIX SUBD | CAPT. HP JAVIER | RR | 85,000",
-    "reason": "'PHOENIX SUBD' is ambiguous; candidates: Phoenix; Phoenix Subdivision"
-   },
-   {
     "rule_id": "PSV-43-0097",
     "text": "ROBINSONS CIRCLE SUBD | CAPT. HP JAVIER | RR | 70,000",
     "reason": "feature not found: 'ROBINSONS CIRCLE SUBD' in Bagong Ilog"
@@ -1301,11 +1415,6 @@
     "rule_id": "PSV-43-0141",
     "text": "E FELICIANO ST | E SANTOS-DR GARCIA ST | CR | 24,000",
     "reason": "no road named 'E FELICIANO ST' in Bambang"
-   },
-   {
-    "rule_id": "PSV-43-0143",
-    "text": "E SANTOS ST | A LUNA-SUMILAN GBDRY | RR | 18,000",
-    "reason": "'E SANTOS ST' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
    },
    {
     "rule_id": "PSV-43-0144",
@@ -1455,11 +1564,6 @@
     "reason": "no road named 'E DELOS SANTOS' in Buting"
    },
    {
-    "rule_id": "PSV-43-0208",
-    "text": "E SANTOS | LOZADA - SAN GUILLERMO | RR | 18,000",
-    "reason": "'E SANTOS' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
-   },
-   {
     "rule_id": "PSV-43-0210",
     "text": "F T ANGELES | PATEROS BDRY-SAN GUILLERMO | RR | 12,000",
     "reason": "no road named 'F T ANGELES' in Buting"
@@ -1515,41 +1619,6 @@
     "rule_id": "PSV-43-0243",
     "text": "C RAYMUNDO AVE EXT (PASIG BLVD EXT) * | VARGAS BRIDGE- DR S. ANTONIO AVE - C RAYMUNDO AVE | I | 58,000",
     "reason": "no road named 'C RAYMUNDO AVE EXT' in Caniogan"
-   },
-   {
-    "rule_id": "PSV-43-0246",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | CR | 70,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0247",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | RR | 43,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0248",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | X | 50,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0249",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | CR | 70,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0250",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | RR | 43,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0251",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | RR | 43,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0252",
-    "text": "DR SIXTO ANTONIO AVE | C RAYMUNDO AVE EXT (PASIG BLVD EXT) - N ESPIRITU ST | CR | 70,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
    },
    {
     "rule_id": "PSV-43-0253",
@@ -1853,16 +1922,6 @@
     "reason": "no road named 'BEDANA' in Kapasigan"
    },
    {
-    "rule_id": "PSV-43-0411",
-    "text": "DR SIXTO ANTONIO AVE | A. MABINI-R BEDANA, SAN NICOLAS | CR | 90,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
-    "rule_id": "PSV-43-0412",
-    "text": "DR SIXTO ANTONIO AVE | A. MABINI-R BEDANA, SAN NICOLAS | RR | 50,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
     "rule_id": "PSV-43-0413",
     "text": "F BLUMENTRITT | MABINI-COMMERCIO | CR | 48,000",
     "reason": "no road named 'F BLUMENTRITT' in Kapasigan"
@@ -1994,7 +2053,7 @@
    {
     "rule_id": "PSV-43-0614",
     "text": "SPS SUBD | G RAYMUNDO | RR | 19,000",
-    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
+    "reason": "feature not found: 'SPS SUBD' in Malinao"
    },
    {
     "rule_id": "PSV-43-0609",
@@ -2592,11 +2651,6 @@
     "reason": "no road named 'FERRER' in Pinagbuhatan"
    },
    {
-    "rule_id": "PSV-43-0912",
-    "text": "MC GUINTO ST | R CRUZ | RR | 14,000",
-    "reason": "'MC GUINTO ST' is ambiguous; candidates: M. C. Guinto Street; M. C. Guinto Street Extension"
-   },
-   {
     "rule_id": "PSV-43-0914",
     "text": "MALASAGA | GUANIO-MALASAGA | RR | 14,000",
     "reason": "no road named 'MALASAGA' in Pinagbuhatan"
@@ -2629,7 +2683,7 @@
    {
     "rule_id": "PSV-43-0931",
     "text": "CATTLEYA HOMES (TH-REGULAR) * | URBANO VELASCO AVE- R CRUZ | RR | 45,000",
-    "reason": "'CATTLEYA HOMES' is ambiguous; candidates: Cattleya; Cattleya Compound"
+    "reason": "result has no area inside the LGU (e.g. the named place is only a point in the data)"
    },
    {
     "rule_id": "PSV-43-0932",
@@ -3098,11 +3152,6 @@
     "reason": "no road named 'DODGE CITY' in Sagad"
    },
    {
-    "rule_id": "PSV-43-1177",
-    "text": "DR SIXTO ANTONIO AVE | AFABLE-RAYMUNDO | CR | 80,000",
-    "reason": "'DR SIXTO ANTONIO AVE' is ambiguous; candidates: Doctor Sixto Antonio Avenue; Dr. Sixto Antonio Avenue"
-   },
-   {
     "rule_id": "PSV-43-1179",
     "text": "FELICIANO | ANTONIO-GUNAO | RR | 18,000",
     "reason": "no road named 'FELICIANO' in Sagad"
@@ -3160,16 +3209,6 @@
     "reason": "no road named 'LOURDES ST' in San Antonio"
    },
    {
-    "rule_id": "PSV-43-1199",
-    "text": "MERALCO AVE | ORTIGAS AVE - GEN. LIM | CR | 315,000",
-    "reason": "'MERALCO AVE' is ambiguous; candidates: Meralco Avenue; Meralco Road"
-   },
-   {
-    "rule_id": "PSV-43-1200",
-    "text": "MERALCO AVE | ORTIGAS AVE - GEN. LIM | CR | 280,000",
-    "reason": "'MERALCO AVE' is ambiguous; candidates: Meralco Avenue; Meralco Road"
-   },
-   {
     "rule_id": "PSV-43-1211",
     "text": "CHASON TOWNHOUSE (TH- REGULAR) * | GEN. ATIENZA | RR | 100,000",
     "reason": "feature not found: 'CHASON TOWNHOUSE' in San Antonio"
@@ -3186,11 +3225,6 @@
    }
   ],
   "San Joaquin": [
-   {
-    "rule_id": "PSV-43-1473",
-    "text": "E. SANTOS | A LUNA-END | CR | 45,000",
-    "reason": "'E. SANTOS' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
-   },
    {
     "rule_id": "PSV-43-1477",
     "text": "HERNANDEZ | ELISCO-ROAD | RR | 18,000",
@@ -3948,11 +3982,6 @@
     "reason": "no road named 'E. RODRIGUEZ ST.' in Sumilang"
    },
    {
-    "rule_id": "PSV-43-1851",
-    "text": "E. SANTOS AVE. | LOPEZ JAENA-BAMBANG | RR | 30,000",
-    "reason": "'E. SANTOS AVE.' is ambiguous; candidates: E. Santos Avenue; E. Santos Street"
-   },
-   {
     "rule_id": "PSV-43-1854",
     "text": "LIWANAG ST. | LOPEZ JAENA-KALAYAAN ST | RR | 18,000",
     "reason": "no road named 'LIWANAG ST.' in Sumilang"
@@ -4058,16 +4087,6 @@
     "rule_id": "PSV-43-1897",
     "text": "MAGDIWANG ST. | DIMASALANG ST-END | RR | 17,000",
     "reason": "no road named 'MAGDIWANG ST.' in Ugong"
-   },
-   {
-    "rule_id": "PSV-43-1898",
-    "text": "MERALCO AVE. | ORTIGAS-J. VARGAS | CR | 170,000",
-    "reason": "'MERALCO AVE.' is ambiguous; candidates: Meralco Avenue; Meralco Road"
-   },
-   {
-    "rule_id": "PSV-43-1899",
-    "text": "MERALCO AVE. | ORTIGAS-J. VARGAS | CR | 170,000",
-    "reason": "'MERALCO AVE.' is ambiguous; candidates: Meralco Avenue; Meralco Road"
    },
    {
     "rule_id": "PSV-43-1908",
