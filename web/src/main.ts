@@ -8,10 +8,10 @@ const TILES = (import.meta.env.VITE_TILES_URL as string | undefined) ?? "tiles";
 const tileUrl = (f: string) => new URL(`${TILES}/${f}`, location.href).href;
 const src = (f: string) => ({ type: "vector" as const, url: `pmtiles://${tileUrl(f)}` });
 
-// Zonal values: PHP per square metre bands, one blue ramp light -> dark
+// Zonal values: PHP per square metre bands, green (low) -> yellow -> red (high)
 const BANDS: [number, string, string][] = [
-  [0, "#b7d3f6", "Under 1k"], [1000, "#86b6ef", "1k–5k"], [5000, "#5598e7", "5k–20k"],
-  [20000, "#2a78d6", "20k–50k"], [50000, "#1c5cab", "50k–100k"], [100000, "#104281", "Over 100k"],
+  [0, "#1a9850", "Under 1k"], [1000, "#91cf60", "1k–5k"], [5000, "#d9ef8b", "5k–20k"],
+  [20000, "#fee08b", "20k–50k"], [50000, "#fc8d59", "50k–100k"], [100000, "#d73027", "Over 100k"],
 ];
 const valueColor: any = ["step", ["get", "value_php_sqm"], BANDS[0][1], ...BANDS.slice(1).flatMap(([t, c]) => [t, c])];
 const CLASSES: [string, string][] = [
@@ -62,7 +62,7 @@ const map = new maplibregl.Map({
       // a street with two different values for one classification: never resolved, marked for review
       { id: "values-conflicts", type: "line", source: "values", "source-layer": "value_streets", minzoom: 13,
         filter: ["all", byClass("RR"), ["!=", ["get", "conflict_with"], ""]],
-        paint: { "line-color": "#d03b3b", "line-width": 1.5, "line-dasharray": [1, 1.5], "line-offset": 5 } },
+        paint: { "line-color": "#7e22ce", "line-width": 1.5, "line-dasharray": [1, 1.5], "line-offset": 5 } },
       // wide invisible line: a tap target bigger than the mark
       { id: "values-streets-hit", type: "line", source: "values", "source-layer": "value_streets", filter: byClass("RR"),
         paint: { "line-color": "#000", "line-opacity": 0, "line-width": 14 } },
