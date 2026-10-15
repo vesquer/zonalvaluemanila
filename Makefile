@@ -1,6 +1,6 @@
 PY ?= $(shell command -v python3.14 || command -v python3.13 || command -v python3.12 || command -v python3.11 || echo python3)
 ZV = .venv/bin/zv
-.PHONY: setup base test build serve web
+.PHONY: setup base test build serve web tiles deploy deploy-check
 setup:
 	$(PY) -m venv .venv && .venv/bin/pip install -q -e "engine[dev]"
 	cd web && npm install
@@ -16,3 +16,9 @@ serve:
 	cd web && npm run dev
 web:
 	cd web && npm run build
+tiles:
+	./scripts/build_tiles.sh
+deploy-check:
+	DRY_RUN=1 ./scripts/deploy.sh
+deploy:
+	./scripts/deploy.sh

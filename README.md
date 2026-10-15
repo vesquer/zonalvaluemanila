@@ -26,3 +26,13 @@ make build PSGC=<pcode>                               # -> lgus/<pcode>/out/
 Cities and their schedule links are in `scripts/cities.json`. A reviewer copies accepted suggestions from
 `alias_suggestions.json` into `aliases.json` (`"roads": {"SCHEDULE NAME": "OSM name"}`, or `"NAME @ Barangay"` to
 hold in one barangay only), then rebuilds. Suggestions are never accepted automatically: many are wrong.
+
+## Deploy (GitHub Pages)
+
+`make deploy` builds `web/dist` (page + tiles), checks the budget (site under 20 MB, no file over 25 MB) and that
+`values_meta.json` matches every city's build report, then force-pushes the site as a single commit to the
+`gh-pages` branch of `origin`. `make deploy-check` does all of it except the push.
+
+One-time setup: create the GitHub repo, `git remote add origin <repo url>`, `git push -u origin main`, then in the
+repo's Settings → Pages choose "Deploy from a branch", `gh-pages`, `/ (root)`. The map is served at
+`https://<user>.github.io/<repo>/`; paths are relative, so the folder name does not matter.
