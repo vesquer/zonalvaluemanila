@@ -1,5 +1,5 @@
 {
-  "name": "ph-land-use-map",
+  "name": "zonal-value-map",
   "private": true,
   "type": "module",
   "scripts": { "dev": "vite", "build": "tsc && vite build", "preview": "vite preview" },
