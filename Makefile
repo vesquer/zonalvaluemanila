@@ -1,9 +1,11 @@
 PY ?= $(shell command -v python3.14 || command -v python3.13 || command -v python3.12 || command -v python3.11 || echo python3)
 ZV = .venv/bin/zv
-.PHONY: setup test build serve web
+.PHONY: setup base test build serve web
 setup:
 	$(PY) -m venv .venv && .venv/bin/pip install -q -e "engine[dev]"
 	cd web && npm install
+base:
+	./scripts/build_base.sh
 test:
 	.venv/bin/pytest -q engine/tests
 build:

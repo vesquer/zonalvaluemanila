@@ -28,79 +28,38 @@ def cmd_validate(args: list[str]) -> int:
     return 1 if errs else 0
 
 
+BASE = ROOT / "data/base"  # the clip made once by scripts/build_base.sh; nothing national is read after it
+
+
 def load_base(pcode: str):
-    """Build the metric-CRS base for one LGU (municipality/city pcode) from data/."""
+    """Build the metric-CRS base for one city (adm3 pcode) from the clip in data/base/."""
     import geopandas as gpd
     import pandas as pd
     from .base import Base, utm_epsg
     from .ops import alias_map
-    b = ROOT / "data/boundaries"
-    city = gpd.read_file(b / "phl_admin3.shp", where=f"adm3_pcode = '{pcode}'")
+    bf, of = BASE / "boundaries.gpkg", BASE / "osm.gpkg"
+    if not (bf.exists() and of.exists()):
+        raise SystemExit("data/base is missing: run scripts/build_base.sh")
+    city = gpd.read_file(bf, layer="city", where=f"pcode = '{pcode}'")
     if city.empty:
-        raise SystemExit(f"PSGC/pcode {pcode} not found in data/boundaries/phl_admin3.shp")
+        raise SystemExit(f"PSGC/pcode {pcode} not in data/base/boundaries.gpkg (add it to CITIES in scripts/build_base.sh)")
     c = city.geometry.iloc[0].centroid
     epsg = utm_epsg(c.x, c.y)
-    brgy = gpd.read_file(b / "phl_admin4.shp", where=f"adm3_pcode = '{pcode}'").rename(
-        columns={"adm4_name": "name", "adm4_pcode": "pcode"})[["name", "pcode", "geometry"]]
-    minx, miny, maxx, maxy = city.total_bounds
-    roads = []
-    for tier in ("major", "minor"):
-        f = ROOT / f"data/tmp/roads_{tier}.geojsonl"
-        if f.exists():
-            roads.append(gpd.read_file(f, bbox=(minx, miny, maxx, maxy)))
-    r = pd.concat(roads) if roads else gpd.GeoDataFrame({"class": [], "name": []}, geometry=[], crs=4326)
+    brgy = gpd.read_file(bf, layer="barangay", where=f"city_pcode = '{pcode}'")[["name", "pcode", "geometry"]]
+    bbox = tuple(city.total_bounds)
     lgu = city.to_crs(epsg).geometry.iloc[0]
-    r = gpd.GeoDataFrame(r, crs=4326).to_crs(epsg)
+    r = gpd.read_file(of, layer="roads", bbox=bbox).to_crs(epsg)
     r = r[r.intersects(lgu)]
-    feats, water, lanes = _osm_extras(pcode, (minx, miny, maxx, maxy), epsg, lgu)
+    lanes = gpd.read_file(of, layer="lanes", bbox=bbox).to_crs(epsg)
+    sites = gpd.read_file(of, layer="sites", bbox=bbox).to_crs(epsg)
+    water = gpd.read_file(of, layer="water", bbox=bbox).to_crs(epsg)
     r = pd.concat([r, lanes[lanes.intersects(lgu)]], ignore_index=True)
     af = ROOT / "lgus" / pcode / "aliases.json"
     raw = json.loads(af.read_text()) if af.exists() else {}
     aliases = alias_map({**raw.get("roads", {}), **raw.get("features", {})})
-    return Base(lgu=lgu, crs=epsg, roads=r[["class", "name", "geometry"]].reset_index(drop=True), water=water,
-                admin=brgy.to_crs(epsg), features=feats.reset_index(drop=True), aliases=aliases)
-
-
-LANES = ("service", "living_street", "pedestrian", "road")  # named ways the base road tiers leave out
-
-
-def _osm_extras(pcode: str, bbox, epsg: int, lgu):
-    """Named sites (schools, churches, resorts...), waterways and named minor ways (service roads, living streets:
-    many subdivision streets are tagged so) from the OSM extract; cached per LGU."""
-    import os
-    import geopandas as gpd
-    import pyogrio
-    cache = ROOT / f"data/cache/{pcode}_osm.gpkg"
-    if cache.exists() and "lanes" not in {n for n, _ in pyogrio.list_layers(cache)}:
-        os.environ["OSM_CONFIG_FILE"] = str(ROOT / "scripts/osmconf.ini")
-        lines = gpd.read_file(ROOT / "data/osm/philippines-latest.osm.pbf", layer="lines", bbox=bbox)
-        _lanes(lines).to_file(cache, layer="lanes", driver="GPKG")
-    if not cache.exists():
-        cache.parent.mkdir(parents=True, exist_ok=True)
-        os.environ["OSM_CONFIG_FILE"] = str(ROOT / "scripts/osmconf.ini")
-        pbf = ROOT / "data/osm/philippines-latest.osm.pbf"
-        poly = gpd.read_file(pbf, layer="multipolygons", bbox=bbox)
-        pts = gpd.read_file(pbf, layer="points", bbox=bbox)
-        lines = gpd.read_file(pbf, layer="lines", bbox=bbox)
-        sites = gpd.GeoDataFrame(
-            list(poly[poly["name"].notna()][["name", "geometry"]].itertuples(index=False))
-            + list(pts[pts["name"].notna()][["name", "geometry"]].itertuples(index=False)),
-            columns=["name", "geometry"], crs=4326)
-        ww = lines[lines["waterway"].isin(["river", "stream", "canal", "drain", "ditch"])].copy()
-        ww["kind"] = ww["waterway"].map({"river": "river", "stream": "creek", "canal": "canal", "drain": "canal", "ditch": "canal"})
-        ww[["kind", "name", "geometry"]].to_file(cache, layer="water", driver="GPKG")
-        sites.to_file(cache, layer="features", driver="GPKG")
-        _lanes(lines).to_file(cache, layer="lanes", driver="GPKG")
-    sites = gpd.read_file(cache, layer="features").to_crs(epsg)
-    water = gpd.read_file(cache, layer="water").to_crs(epsg)
-    lanes = gpd.read_file(cache, layer="lanes").to_crs(epsg)
-    return sites[sites.intersects(lgu.buffer(500))], water[water.intersects(lgu)], lanes[["class", "name", "geometry"]]
-
-
-def _lanes(lines):
-    ln = lines[lines["highway"].isin(LANES) & lines["name"].notna()].copy()
-    ln["class"] = ln["highway"]
-    return ln[["class", "name", "geometry"]]
+    return Base(lgu=lgu, crs=epsg, roads=r[["class", "name", "geometry"]].reset_index(drop=True),
+                water=water[water.intersects(lgu)], admin=brgy.to_crs(epsg),
+                features=sites[sites.intersects(lgu.buffer(500))][["name", "geometry"]].reset_index(drop=True), aliases=aliases)
 
 
 def cmd_build_lgu(args: list[str]) -> int:
