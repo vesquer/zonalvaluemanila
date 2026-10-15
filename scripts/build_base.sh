@@ -29,7 +29,7 @@ if [ ! -f $B/osm.gpkg ]; then
   echo "== OSM clip (reads the national extract; once)"
   export OSM_CONFIG_FILE=$PWD/scripts/osmconf.ini
   PBF=$NATIONAL/osm/philippines-latest.osm.pbf
-  ogr2ogr -f GPKG $T/osm_clip.gpkg $PBF lines -nln lines -spat $BBOX -where "highway IS NOT NULL OR waterway IS NOT NULL"
+  ogr2ogr -f GPKG $T/osm_clip.gpkg $PBF lines -nln lines -spat $BBOX -where "highway IS NOT NULL"
   ogr2ogr -f GPKG -update $T/osm_clip.gpkg $PBF points -nln points -spat $BBOX -where "name IS NOT NULL"
   ogr2ogr -f GPKG -update $T/osm_clip.gpkg $PBF multipolygons -nln multipolygons -spat $BBOX -where "name IS NOT NULL" -nlt PROMOTE_TO_MULTI
   M="'motorway','trunk','primary','secondary','motorway_link','trunk_link','primary_link'"
