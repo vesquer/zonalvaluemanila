@@ -1,10 +1,10 @@
-"""Geometry operations: the fixed vocabulary. New operations only by code change with tests."""
+"""Selections that place a schedule row. New operations only by code change with tests."""
 from __future__ import annotations
 import unicodedata
 import shapely
 from shapely.geometry import Polygon
 from shapely.geometry.base import BaseGeometry
-from shapely.ops import polygonize, unary_union
+from shapely.ops import unary_union
 from .base import Base
 
 
@@ -182,17 +182,6 @@ def _has_admin(b: Base, name: str) -> bool:
     return bool(b.admin["name"].fillna("").map(_norm).eq(n).any())
 
 
-def select_water(b: Base, *, kind: str = "", name: str = "") -> BaseGeometry:
-    w = b.water
-    if kind:
-        w = w[w["kind"] == kind]
-    if name:
-        w = w[_name_match(w["name"], name, b.match_log)]
-    if w.empty:
-        raise SelectionEmpty(f"no water for kind={kind!r} name={name!r}")
-    return unary_union(w.geometry.values)
-
-
 def select_admin(b: Base, *, names: list[str] | None = None, pcodes: list[str] | None = None, whole_lgu: bool = False) -> BaseGeometry:
     if whole_lgu:
         return b.lgu
@@ -225,55 +214,8 @@ def select_feature(b: Base, *, name: str, within: str | list[str] = "", near: Ba
     return g
 
 
-def buffer(b: Base, g: BaseGeometry, *, width_m: float, measured_from: str = "centerline", sides: str = "both",
-           road_class: str | None = None) -> BaseGeometry:
-    if width_m <= 0:
-        raise ValueError("width_m must be > 0")
-    w = width_m
-    if measured_from == "row_edge":
-        w += b.row_half_width.get(road_class or "", 0.0)
-    if g.geom_type in ("Polygon", "MultiPolygon", "Point", "MultiPoint"):
-        return g.buffer(w)
-    if sides == "both":
-        return g.buffer(w, cap_style="flat")  # corridor ends where the road segment ends
-    parts = g.geoms if hasattr(g, "geoms") else [g]
-    if sides in ("north", "south", "east", "west"):
-        # keep, per road part, the single-sided buffer that lies further toward that compass side
-        axis, sign = {"north": (1, 1), "south": (1, -1), "east": (0, 1), "west": (0, -1)}[sides]
-        out = []
-        for p in parts:
-            cands = [p.buffer(w, single_sided=True, cap_style="flat"), p.buffer(-w, single_sided=True, cap_style="flat")]
-            out.append(max(cands, key=lambda c: sign * (c.centroid.y if axis else c.centroid.x)))
-        return unary_union(out)
-    if sides not in ("left", "right"):
-        raise ValueError(f"sides must be both/left/right/north/south/east/west, got {sides!r}")
-    d = w if sides == "left" else -w
-    return unary_union([p.buffer(d, single_sided=True, cap_style="flat") for p in parts])
-
-
-def between(b: Base, *geoms: BaseGeometry) -> BaseGeometry:
-    u = unary_union([x.boundary if x.geom_type.endswith("Polygon") else x for x in geoms])
-    polys = list(polygonize(u))
-    if not polys:
-        raise SelectionEmpty("boundary features do not enclose an area")
-    return unary_union(polys)
-
-
 def union(a: BaseGeometry, c: BaseGeometry) -> BaseGeometry:
     return a.union(c)
-
-
-def intersect(a: BaseGeometry, c: BaseGeometry) -> BaseGeometry:
-    return a.intersection(c)
-
-
-def subtract(a: BaseGeometry, c: BaseGeometry) -> BaseGeometry:
-    return a.difference(c)
-
-
-def clip(b: Base, g: BaseGeometry, *, to: str = "lgu", names: list[str] | None = None) -> BaseGeometry:
-    area = b.lgu if to == "lgu" else select_admin(b, names=names or [])
-    return g.intersection(area)
 
 
 def polygons_only(g: BaseGeometry) -> BaseGeometry:

@@ -1,4 +1,4 @@
-"""Base layers an LGU's recipes run against. All geometry is held in a metric CRS."""
+"""Base layers a city's schedule rows are placed against. All geometry is held in a metric CRS."""
 from __future__ import annotations
 from dataclasses import dataclass, field
 import geopandas as gpd
@@ -17,13 +17,8 @@ class Base:
     lgu: BaseGeometry                      # LGU boundary, metric CRS
     crs: int                               # metric EPSG
     roads: gpd.GeoDataFrame                # class, name, geometry
-    water: gpd.GeoDataFrame                # kind, name, geometry
     admin: gpd.GeoDataFrame                # name, pcode, geometry (barangays)
     features: gpd.GeoDataFrame             # name, geometry (named sites)
-    # class -> half ROW width in metres, used when measured_from == "row_edge"
-    row_half_width: dict[str, float] = field(default_factory=lambda: {
-        "motorway": 30.0, "trunk": 15.0, "primary": 10.0, "secondary": 7.5,
-        "tertiary": 5.0, "residential": 3.0, "unclassified": 3.0})
-    national_classes: tuple[str, ...] = ("motorway", "trunk", "primary")  # OSM proxy, spec M1
+    national_classes: tuple[str, ...] = ("motorway", "trunk", "primary")  # OSM proxy for class="national"
     match_log: list[str] = field(default_factory=list)  # approximate name matches, surfaced to reviewers
     aliases: dict[str, list[str]] = field(default_factory=dict)  # reviewed names, from ops.alias_map(lgus/<pcode>/aliases.json)

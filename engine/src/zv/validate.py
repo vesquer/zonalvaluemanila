@@ -1,26 +1,17 @@
-"""Validate recipes before running: known operations only, references resolve, units in metres."""
+"""Validate schedule rows before running: known operations only, references resolve, assign_value last."""
 from __future__ import annotations
 from typing import Any
 
 # op -> (required fields, fields that hold a step id)
 OPS: dict[str, tuple[set[str], set[str]]] = {
     "select_roads": (set(), set()),
-    "select_water": (set(), set()),
     "select_admin": (set(), set()),
     "select_feature": ({"name"}, set()),
-    "buffer": ({"input", "width_m"}, {"input"}),
-    "between": ({"inputs"}, set()),          # inputs: list of step ids
     "union": ({"a", "b"}, {"a", "b"}),
-    "intersect": ({"a", "b"}, {"a", "b"}),
-    "subtract": ({"a", "b"}, {"a", "b"}),
-    "clip": ({"input", "to"}, {"input"}),
-    "residual": ({"area", "zone_code_local"}, {"area"}),
-    "assign": ({"input", "zone_code_local", "layer", "precedence"}, {"input"}),
     "assign_value": ({"input", "value_php_sqm", "class_code", "applies_to"}, {"input"}),
 }
-LAYERS = {"base", "overlay"}
 APPLIES_TO = {"street", "interior", "area"}
-FINAL = {"assign", "assign_value"}
+FINAL = {"assign_value"}
 
 
 def validate_recipe(rule: dict[str, Any]) -> list[str]:
@@ -49,19 +40,6 @@ def validate_recipe(rule: dict[str, Any]) -> list[str]:
         for f in refs:
             if f in s and s[f] not in seen:
                 errs.append(f"{where}: '{f}' refers to unknown step {s[f]!r}")
-        if op == "between":
-            for x in s.get("inputs", []):
-                if x not in seen:
-                    errs.append(f"{where}: input {x!r} is not an earlier step")
-        if op == "buffer" and not (isinstance(s.get("width_m"), (int, float)) and s["width_m"] > 0):
-            errs.append(f"{where}: width_m must be a positive number of metres")
-        if op == "buffer" and s.get("measured_from", "centerline") not in {"centerline", "row_edge"}:
-            errs.append(f"{where}: measured_from must be centerline or row_edge")
-        if op == "assign":
-            if s.get("layer") not in LAYERS:
-                errs.append(f"{where}: layer must be base or overlay")
-            if not isinstance(s.get("precedence"), (int, float)):
-                errs.append(f"{where}: precedence must be a number")
         if op == "assign_value":
             if not (isinstance(s.get("value_php_sqm"), (int, float)) and s["value_php_sqm"] > 0):
                 errs.append(f"{where}: value_php_sqm must be a positive number of PHP per square metre")
@@ -72,9 +50,9 @@ def validate_recipe(rule: dict[str, Any]) -> list[str]:
                 errs.append(f"{where}: duplicate step id {s['id']!r}")
             seen.add(s["id"])
     if steps[-1].get("op") not in FINAL:
-        errs.append(f"{rid}: last step must be assign")
+        errs.append(f"{rid}: last step must be assign_value")
     if any(s.get("op") in FINAL for s in steps[:-1]):
-        errs.append(f"{rid}: assign may only be the last step")
+        errs.append(f"{rid}: assign_value may only be the last step")
     return errs
 
 
@@ -88,9 +66,8 @@ def validate_all(rules: list[dict[str, Any]]) -> list[str]:
     return errs
 
 
-def validate_provenance(rules: list[dict[str, Any]], schema_name: str = "recipe.schema.json") -> list[str]:
-    """Structure and provenance check against a schema (every rule must cite its source).
-    recipe.schema.json for zoning rules, value.schema.json for zonal value rows."""
+def validate_provenance(rules: list[dict[str, Any]], schema_name: str = "value.schema.json") -> list[str]:
+    """Structure and provenance check against value.schema.json (every row must cite its schedule)."""
     import json
     from importlib import resources
     import jsonschema

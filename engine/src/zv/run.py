@@ -1,4 +1,4 @@
-"""Run recipes deterministically and resolve zones by precedence."""
+"""Place schedule rows deterministically. Each row stands alone: no precedence, nothing is resolved away."""
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
@@ -17,16 +17,6 @@ CONFLICT_AREA_M2 = 100.0   # ... and on one area past this shared area
 
 
 @dataclass
-class Assigned:
-    rule_id: str
-    geom: BaseGeometry
-    zone_local: str
-    zone_national: str | None
-    layer: str
-    precedence: float
-
-
-@dataclass
 class AssignedValue:
     rule_id: str
     geom: BaseGeometry
@@ -41,115 +31,25 @@ class AssignedValue:
     notes: list[str] = field(default_factory=list)
 
 
-@dataclass
-class Result:
-    base: gpd.GeoDataFrame
-    overlay: gpd.GeoDataFrame
-    flags: list[dict[str, str]] = field(default_factory=list)  # review flags
-    manual: list[str] = field(default_factory=list)            # rules needing hand-drawn geometry
-    notes: list[str] = field(default_factory=list)             # approximate matches etc.
-
-
-def _run_steps(b: Base, rule: dict[str, Any], assigned: list[Assigned]) -> Assigned:
+def _run_steps(b: Base, rule: dict[str, Any]) -> AssignedValue:
     env: dict[str, BaseGeometry] = {}
-    road_class: str | None = None
-    last: BaseGeometry | None = None
     for s in rule["recipe"]:
         op = s["op"]
         if op == "select_roads":
-            road_class = s.get("class") or None
             g = ops.select_roads(b, name=s.get("name", ""), cls=s.get("class", ""), frm=s.get("from", ""), to=s.get("to", ""),
                                  within=s.get("within", ""), soft_limits=bool(s.get("soft_limits")))
-        elif op == "select_water":
-            g = ops.select_water(b, kind=s.get("kind", ""), name=s.get("name", ""))
         elif op == "select_admin":
             g = ops.select_admin(b, names=s.get("names"), pcodes=s.get("pcodes"), whole_lgu=bool(s.get("whole_lgu")))
         elif op == "select_feature":
             g = ops.select_feature(b, name=s["name"], within=s.get("within", ""))
-        elif op == "buffer":
-            g = ops.buffer(b, env[s["input"]], width_m=s["width_m"], measured_from=s.get("measured_from", "centerline"),
-                           sides=s.get("sides", "both"), road_class=road_class)
-        elif op == "between":
-            g = ops.between(b, *[env[i] for i in s["inputs"]])
-        elif op in ("union", "intersect", "subtract"):
-            g = getattr(ops, op)(env[s["a"]], env[s["b"]])
-        elif op == "clip":
-            g = ops.clip(b, env[s["input"]], to=s["to"], names=s.get("names"))
-        elif op == "residual":
-            taken = unary_union([a.geom for a in assigned if a.layer == "base"]) if assigned else None
-            area = env[s["area"]]
-            g = area.difference(taken) if taken is not None else area
-        elif op == "assign":
-            geom = ops.polygons_only(env[s["input"]].intersection(b.lgu))
-            if geom.is_empty or geom.area <= MIN_AREA_M2:
-                raise ops.SelectionEmpty("result has no area inside the LGU (e.g. the named feature is only a point in the data)")
-            return Assigned(rule["rule_id"], geom, s["zone_code_local"], s.get("zone_code_national"), s["layer"], float(s["precedence"]))
+        elif op == "union":
+            g = ops.union(env[s["a"]], env[s["b"]])
         elif op == "assign_value":
             return _assign_value(b, rule, s, env[s["input"]])
         if "id" in s:
             env[s["id"]] = g
-        last = g
-    raise ValueError(f"{rule['rule_id']}: no assign step ran")  # validator prevents this
+    raise ValueError(f"{rule['rule_id']}: no assign_value step ran")  # validator prevents this
 
-
-def run(b: Base, rules: list[dict[str, Any]]) -> Result:
-    errs = validate_all(rules)
-    if errs:
-        raise ValueError("invalid recipes:\n" + "\n".join(errs))
-    res = Result(gpd.GeoDataFrame(), gpd.GeoDataFrame())
-    assigned: list[Assigned] = []
-    # run in precedence order so `residual` sees what was already assigned
-    def prec(r):
-        steps = r.get("recipe") or []
-        a = [s for s in steps if s.get("op") == "assign"]
-        return (a[-1]["precedence"] if a else 0)
-    for rule in sorted(rules, key=lambda r: -prec(r)):
-        if rule["recipe"] is None:
-            res.manual.append(rule["rule_id"])
-            continue
-        try:
-            assigned.append(_run_steps(b, rule, assigned))
-        except ops.SelectionEmpty as e:
-            res.flags.append({"rule_id": rule["rule_id"], "flag": str(e), "note": rule.get("interpretation", "")})
-    res.notes = list(b.match_log)
-    res.base = _resolve([a for a in assigned if a.layer == "base"], b.crs)
-    res.overlay = _to_gdf([a for a in assigned if a.layer == "overlay"], b.crs)
-    return res
-
-
-def _to_gdf(items: list[Assigned], crs: int) -> gpd.GeoDataFrame:
-    rows = [{"rule_ids": [a.rule_id], "zone_local": a.zone_local, "zone_national": a.zone_national, "precedence": a.precedence, "geometry": a.geom}
-            for a in items if not a.geom.is_empty and a.geom.area > MIN_AREA_M2]
-    return gpd.GeoDataFrame(rows, geometry="geometry", crs=crs) if rows else gpd.GeoDataFrame(
-        {"rule_ids": [], "zone_local": [], "zone_national": [], "precedence": []}, geometry=[], crs=crs)
-
-
-def _resolve(items: list[Assigned], crs: int) -> gpd.GeoDataFrame:
-    """Higher precedence wins; base zones never overlap. Overlays never cut base (handled by layer)."""
-    items = sorted(items, key=lambda a: -a.precedence)
-    taken: BaseGeometry | None = None
-    out: list[Assigned] = []
-    for a in items:
-        g = a.geom if taken is None else a.geom.difference(taken)
-        g = ops.polygons_only(g)
-        if not g.is_empty and g.area > MIN_AREA_M2:
-            out.append(Assigned(a.rule_id, g, a.zone_local, a.zone_national, a.layer, a.precedence))
-        taken = a.geom if taken is None else taken.union(a.geom)
-    return _to_gdf(out, crs)
-
-
-def coverage_report(lgu: BaseGeometry, base: gpd.GeoDataFrame, tol_m2: float = 1.0) -> dict[str, float]:
-    """Acceptance: base zones cover the LGU with no gaps or overlaps."""
-    if base.empty:
-        return {"gap_m2": lgu.area, "overlap_m2": 0.0}
-    u = unary_union(base.geometry.values)
-    gap = lgu.difference(u).area
-    sum_area = float(base.geometry.area.sum())
-    overlap = max(0.0, sum_area - u.area)
-    return {"gap_m2": 0.0 if gap < tol_m2 else gap, "overlap_m2": 0.0 if overlap < tol_m2 else overlap}
-
-
-# --- zonal values -------------------------------------------------------------------------------------------
 
 @dataclass
 class ValueResult:
@@ -182,8 +82,8 @@ def _assign_value(b: Base, rule: dict[str, Any], s: dict[str, Any], g: BaseGeome
 
 
 def run_values(b: Base, rules: list[dict[str, Any]]) -> ValueResult:
-    """Each row stands alone: no precedence, nothing is resolved away. Overlapping different values of one
-    classification are reported as conflicts and both kept; the build never picks one."""
+    """Overlapping different values of one classification are reported as conflicts and both kept; the build
+    never picks one."""
     errs = validate_all(rules)
     if errs:
         raise ValueError("invalid recipes:\n" + "\n".join(errs))
@@ -198,7 +98,7 @@ def run_values(b: Base, rules: list[dict[str, Any]]) -> ValueResult:
             continue
         mark = len(b.match_log)
         try:
-            a = _run_steps(b, rule, [])
+            a = _run_steps(b, rule)
             a.notes = b.match_log[mark:]
             got.append(a)
         except ops.SelectionEmpty as e:

@@ -1,5 +1,5 @@
 import pytest
-from shapely.geometry import LineString, box
+from shapely.geometry import box
 from zv import ops
 from zv.ops import SelectionEmpty
 
@@ -22,12 +22,6 @@ def test_select_roads_missing_stops(base):
         ops.select_roads(base, name="Nowhere Road")
 
 
-def test_select_water(base):
-    assert ops.select_water(base, kind="river").length == 1000
-    with pytest.raises(SelectionEmpty):
-        ops.select_water(base, kind="lake")
-
-
 def test_select_admin(base):
     assert ops.select_admin(base, names=["Poblacion"]).area == 500_000
     assert ops.select_admin(base, pcodes=["B1"]).area == 500_000
@@ -42,44 +36,9 @@ def test_select_feature(base):
         ops.select_feature(base, name="Gone")
 
 
-def test_buffer_both_sides_and_row_edge(base):
-    road = ops.select_roads(base, name="Maharlika Highway")
-    assert ops.buffer(base, road, width_m=30).area == pytest.approx(1000 * 60, rel=0.01)
-    wide = ops.buffer(base, road, width_m=30, measured_from="row_edge", road_class="primary")
-    assert wide.area > ops.buffer(base, road, width_m=30).area  # ROW half width (10 m) added
-
-
-def test_buffer_single_side(base):
-    road = ops.select_roads(base, name="Maharlika Highway")
-    one = ops.buffer(base, road, width_m=30, sides="left")
-    assert one.area == pytest.approx(1000 * 30, rel=0.01)
-    assert one.bounds[1] >= 500 - 1 or one.bounds[3] <= 500 + 1  # all on one side
-
-
-def test_buffer_rejects_nonpositive(base):
-    with pytest.raises(ValueError):
-        ops.buffer(base, box(0, 0, 1, 1), width_m=0)
-
-
-def test_between_encloses(base):
-    a = LineString([(0, 0), (0, 100)]); b = LineString([(100, 0), (100, 100)])
-    c = LineString([(0, 0), (100, 0)]); d = LineString([(0, 100), (100, 100)])
-    assert ops.between(base, a, b, c, d).area == pytest.approx(10_000)
-    with pytest.raises(SelectionEmpty):
-        ops.between(base, a, b)
-
-
-def test_set_ops():
+def test_union():
     a, b = box(0, 0, 10, 10), box(5, 0, 15, 10)
     assert ops.union(a, b).area == 150
-    assert ops.intersect(a, b).area == 50
-    assert ops.subtract(a, b).area == 50
-
-
-def test_clip(base):
-    g = box(-100, -100, 100, 100)
-    assert ops.clip(base, g, to="lgu").area == 10_000
-    assert ops.clip(base, box(0, 0, 900, 900), to="barangay", names=["San Isidro"]).area == 500 * 900
 
 
 def test_approximate_road_name_is_logged(base):
@@ -96,17 +55,6 @@ def test_ambiguous_approximate_name_flags_instead_of_guessing(base):
     base.roads.loc[1, "name"] = "Felipe Ramon Avenue"
     with pytest.raises(ops.AmbiguousName):
         ops.select_roads(base, name="Ramon Felipe Road")
-
-
-def test_buffer_compass_sides(base):
-    road = ops.select_roads(base, name="Maharlika Highway")  # runs east-west at y=500
-    n = ops.buffer(base, road, width_m=30, sides="north")
-    assert n.bounds[1] >= 499 and n.area == pytest.approx(30_000, rel=0.01)
-    s = ops.buffer(base, road, width_m=30, sides="south")
-    assert s.bounds[3] <= 501
-    road2 = ops.select_roads(base, name="Side St")  # north-south at x=500
-    e = ops.buffer(base, road2, width_m=30, sides="east")
-    assert e.bounds[0] >= 499
 
 
 def test_select_roads_between_two_roads(base):

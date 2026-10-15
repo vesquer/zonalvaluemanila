@@ -1,9 +1,9 @@
 import pytest
-from shapely.geometry import LineString, box
+from shapely.geometry import LineString
 from zv import ops
 from zv.ops import SelectionEmpty
 from zv.run import run_values
-from zv.validate import validate_recipe
+from zv.validate import validate_all, validate_recipe
 
 
 def street_row(rid, name, value, cls="RR", brgy="San Isidro", **sel):
@@ -112,8 +112,9 @@ def test_validator_checks_assign_value():
     assert "positive number of PHP" in joined and "applies_to must be" in joined
     early = {"rule_id": "E", "recipe": [{"id": "s", "op": "select_admin", "whole_lgu": True},
                                         {"op": "assign_value", "input": "s", "value_php_sqm": 1, "class_code": "RR", "applies_to": "interior"},
-                                        {"op": "buffer", "input": "s", "width_m": 5}]}
-    assert any("only be the last step" in e for e in validate_recipe(early))
+                                        {"id": "t", "op": "select_admin", "whole_lgu": True}]}
+    joined = " | ".join(validate_recipe(early))
+    assert "only be the last step" in joined and "last step must be assign_value" in joined
 
 
 def test_initials_accents_and_scoped_aliases(vbase):
@@ -145,3 +146,26 @@ def test_street_just_outside_an_indicative_outline_is_kept_and_noted(vbase):
     g = ops.select_roads(vbase, name="ANDROMEDA ST.", within="San Isidro")  # 80 m past San Isidro's edge
     assert g.length == pytest.approx(1000)
     assert any("lies outside the San Isidro outline" in m for m in vbase.match_log)
+
+
+def test_validator_rejects_removed_operations_and_bad_refs():
+    bad = {"rule_id": "B", "recipe": [{"id": "x", "op": "buffer", "input": "nope", "width_m": 5},
+                                      {"op": "assign_value", "input": "nope", "value_php_sqm": 1, "class_code": "RR", "applies_to": "street"}]}
+    joined = " | ".join(validate_recipe(bad))
+    assert "unknown operation" in joined and "unknown step 'nope'" in joined
+
+
+def test_validator_duplicates_and_null_needs_reason():
+    row = street_row("D", "Albay", 1000)
+    assert any("duplicate rule_id" in e for e in validate_all([row, row]))
+    assert validate_recipe({"rule_id": "N", "recipe": None})
+
+
+def test_row_naming_two_streets_values_both(vbase):
+    row = {"rule_id": "U", "barangay": "San Isidro", "rdo": "38", "interpretation": "two streets", "source": {"text": "ALBAY ST./SIDE ST. | RR | 1"},
+           "recipe": [{"id": "s0", "op": "select_roads", "name": "Albay", "within": "San Isidro"},
+                      {"id": "s1", "op": "select_roads", "name": "Maharlika Highway", "within": "San Isidro"},
+                      {"id": "u", "op": "union", "a": "s0", "b": "s1"},
+                      {"op": "assign_value", "input": "u", "value_php_sqm": 1, "class_code": "RR", "applies_to": "street"}]}
+    r = run_values(vbase, [row])
+    assert r.flags == [] and r.streets.iloc[0].geometry.length == pytest.approx(1000 + 500 + ops.EDGE_M, abs=1)

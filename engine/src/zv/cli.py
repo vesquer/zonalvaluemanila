@@ -11,20 +11,14 @@ def _load_rules(path: Path) -> list[dict]:
     return data["rules"] if isinstance(data, dict) else data
 
 
-def _is_values(path: Path) -> bool:
-    data = json.loads(path.read_text())
-    return isinstance(data, dict) and data.get("kind") == "zonal_values"
-
-
 def cmd_validate(args: list[str]) -> int:
     from .validate import validate_all, validate_provenance
     if not args:
-        print("usage: zv validate <recipes.json>")
+        print("usage: zv validate <values.json>")
         return 2
     rules = _load_rules(Path(args[0]))
-    schema = "value.schema.json" if _is_values(Path(args[0])) else "recipe.schema.json"
-    errs = validate_all(rules) + validate_provenance(rules, schema)
-    print("\n".join(errs) if errs else "ok: recipes valid")
+    errs = validate_all(rules) + validate_provenance(rules)
+    print("\n".join(errs) if errs else "ok: rows valid")
     return 1 if errs else 0
 
 
@@ -52,38 +46,12 @@ def load_base(pcode: str):
     r = r[r.intersects(lgu)]
     lanes = gpd.read_file(of, layer="lanes", bbox=bbox).to_crs(epsg)
     sites = gpd.read_file(of, layer="sites", bbox=bbox).to_crs(epsg)
-    water = gpd.read_file(of, layer="water", bbox=bbox).to_crs(epsg)
     r = pd.concat([r, lanes[lanes.intersects(lgu)]], ignore_index=True)
     af = ROOT / "lgus" / pcode / "aliases.json"
     raw = json.loads(af.read_text()) if af.exists() else {}
     aliases = alias_map({**raw.get("roads", {}), **raw.get("features", {})})
-    return Base(lgu=lgu, crs=epsg, roads=r[["class", "name", "geometry"]].reset_index(drop=True),
-                water=water[water.intersects(lgu)], admin=brgy.to_crs(epsg),
+    return Base(lgu=lgu, crs=epsg, roads=r[["class", "name", "geometry"]].reset_index(drop=True), admin=brgy.to_crs(epsg),
                 features=sites[sites.intersects(lgu.buffer(500))][["name", "geometry"]].reset_index(drop=True), aliases=aliases)
-
-
-def cmd_build_lgu(args: list[str]) -> int:
-    from .run import run, coverage_report
-    if not args:
-        print("usage: zv build-lgu <adm3 pcode>")
-        return 2
-    pcode = args[0]
-    d = ROOT / "lgus" / pcode
-    rules = _load_rules(d / "recipes.json")
-    base = load_base(pcode)
-    res = run(base, rules)
-    out = d / "out"
-    out.mkdir(exist_ok=True)
-    for name, gdf in (("zones_base", res.base), ("zones_overlay", res.overlay)):
-        if not gdf.empty:
-            g = gdf.to_crs(4326).copy()
-            g["rule_ids"] = g["rule_ids"].map(lambda x: ",".join(x))
-            g.to_file(out / f"{name}.geojson", driver="GeoJSON")
-    rep = coverage_report(base.lgu, res.base)
-    (out / "report.json").write_text(json.dumps({"coverage": rep, "flags": res.flags, "manual": res.manual, "notes": res.notes}, indent=2))
-    print(f"{pcode}: {len(res.base)} base zones, {len(res.overlay)} overlays; gap {rep['gap_m2']:.0f} m2, "
-          f"overlap {rep['overlap_m2']:.0f} m2; {len(res.flags)} review flags; {len(res.manual)} manual")
-    return 0
 
 
 def cmd_build_values(args: list[str]) -> int:
@@ -132,40 +100,9 @@ def values_report(rules: list[dict], res) -> dict:
     return {"by_rdo": by_rdo, "conflicts": res.conflicts, "unmatched_by_barangay": dict(sorted(unmatched.items()))}
 
 
-def _parse_pages(spec: str, n: int) -> list[int]:
-    out: list[int] = []
-    for part in spec.split(","):
-        a, _, b = part.partition("-")
-        out += range(int(a), int(b or a) + 1)
-    return [p for p in out if 1 <= p <= n]
-
-
-def cmd_prep_pdf(args: list[str]) -> int:
-    """zv prep-pdf <pdf> <outdir> [pages, e.g. 43-53,60]: text per page, page images, scanned-page list."""
-    import pymupdf
-    if len(args) < 2:
-        print("usage: zv prep-pdf <pdf> <outdir> [pages]")
-        return 2
-    doc = pymupdf.open(args[0])
-    out = Path(args[1])
-    out.mkdir(parents=True, exist_ok=True)
-    pages = _parse_pages(args[2], len(doc)) if len(args) > 2 else list(range(1, len(doc) + 1))
-    scanned = []
-    for n in pages:
-        pg = doc[n - 1]
-        text = pg.get_text().strip()
-        if len(text) < 80:  # image-only page: needs OCR (Tesseract) or reading from the image
-            scanned.append(n)
-        (out / f"p{n:03d}.txt").write_text(text)
-        pg.get_pixmap(dpi=110).save(out / f"p{n:03d}.png")
-    (out / "scanned_pages.json").write_text(json.dumps(scanned))
-    print(f"{len(pages)} pages -> {out}; {len(scanned)} look scanned (need OCR): {scanned[:20]}")
-    return 0
-
-
 def main() -> None:
-    cmds = {"validate": cmd_validate, "build": cmd_build_values, "build-lgu": cmd_build_lgu, "prep-pdf": cmd_prep_pdf}
+    cmds = {"validate": cmd_validate, "build": cmd_build_values}
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd not in cmds:
-        sys.exit("usage: zv {validate|build|build-lgu|prep-pdf}")
+        sys.exit("usage: zv {validate|build}")
     sys.exit(cmds[cmd](sys.argv[2:]))

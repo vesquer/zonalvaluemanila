@@ -1,0 +1,8 @@
+{
+ "_note": "Cities this map covers and the BIR zonal value schedules (one Excel file per RDO) that value them. `file` is the name BIR lists on https://www.bir.gov.ph/zonal-values; the zip is fetched from the CDN under that name. `prefix` starts each row's rule_id.",
+ "PH1307404": {"lgu": "Quezon City", "prefix": "QCV", "rdos": {
+   "28": ["Novaliches", "RDO No. 28 - Novaliches, Quezon City"],
+   "38": ["North Quezon City", "RDO No. 38 - North Quezon City"],
+   "39": ["South Quezon City", "RDO No. 39 - South Quezon City"],
+   "40": ["Cubao", "RDO No. 40 - Cubao"]}}
+}

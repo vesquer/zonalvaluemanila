@@ -2,7 +2,7 @@
 # S2: the base for the cities in CITIES, read once from the national data, then everything runs from the clip.
 #   data/base/boundaries.gpkg  city (name, pcode), barangay (name, pcode, city_pcode)
 #   data/base/osm.gpkg         roads (class, name, ref), lanes (named service/living/pedestrian ways), sites (named
-#                              polygons and points), water; all within the cities' bounding box plus MARGIN_DEG
+#                              polygons and points); all within the cities' bounding box plus MARGIN_DEG
 #   tiles/base.pmtiles         roads + barangay outlines for the map
 # NATIONAL points at the national inputs (COD-AB shapefiles in boundaries/, the OSM extract in osm/); only this
 # script reads them. Re-runnable; the clip is skipped when it exists (delete data/base to redo it).
@@ -39,9 +39,6 @@ if [ ! -f $B/osm.gpkg ]; then
     "SELECT highway AS class, name, ref, CASE WHEN highway IN ($M) THEN 'major' ELSE 'minor' END AS tier, geom FROM lines WHERE highway IN ($M,$m)"
   ogr2ogr -f GPKG -update $B/osm.gpkg $T/osm_clip.gpkg -nln lanes -sql \
     "SELECT highway AS class, name, geom FROM lines WHERE highway IN ($L) AND name IS NOT NULL"
-  ogr2ogr -f GPKG -update $B/osm.gpkg $T/osm_clip.gpkg -nln water -sql \
-    "SELECT CASE WHEN waterway = 'river' THEN 'river' WHEN waterway = 'stream' THEN 'creek' ELSE 'canal' END AS kind, name, geom
-     FROM lines WHERE waterway IN ('river','stream','canal','drain','ditch')"
   ogr2ogr -f GPKG -update $B/osm.gpkg $T/osm_clip.gpkg -nln sites -nlt GEOMETRY -sql "SELECT name, geom FROM multipolygons"
   ogr2ogr -f GPKG -append $B/osm.gpkg $T/osm_clip.gpkg -nln sites -nlt GEOMETRY -sql "SELECT name, geom FROM points"
   rm -f $T/osm_clip.gpkg

@@ -1,7 +1,8 @@
-"""Parses the BIR zonal value schedules for Quezon City (RDOs 28, 38, 39, 40) into rows.
+"""Parses one city's BIR zonal value schedules (its RDOs in scripts/cities.json) into rows.
 
+usage: python scripts/parse_schedules.py <pcode>
 In:  data/valuation/rdo<N>.zip (as downloaded) and the .xls inside it, unzipped to data/valuation/rdo<N>/.
-Out: data/prep/qc_values_rows.json (one row per street/class/value) and lgus/PH1307404/valuation_sources.json.
+Out: data/prep/<pcode>_rows.json (one row per street/class/value) and lgus/<pcode>/valuation_sources.json.
 
 Only the sheet of the department order marked "Present" on the NOTICE sheet is read. A blank street cell
 continues the street above it (the schedules list one street with several classes that way)."""
@@ -10,18 +11,13 @@ import hashlib
 import json
 import pathlib
 import re
+import sys
 import xlrd
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-PC = "PH1307404"
+CITIES = json.loads((ROOT / "scripts/cities.json").read_text())
 PAGE = "https://www.bir.gov.ph/zonal-values"
 CDN = "https://bir-cdn.bir.gov.ph/BIR/pdf/"
-RDOS = {
-    "28": ("Novaliches", "RDO No. 28 - Novaliches, Quezon City"),
-    "38": ("North Quezon City", "RDO No. 38 - North Quezon City"),
-    "39": ("South Quezon City", "RDO No. 39 - South Quezon City"),
-    "40": ("Cubao", "RDO No. 40 - Cubao"),
-}
 CODE = re.compile(r"^(RR|CR|RC|CC|PS|I|X|GP|CL|GL|APD|A\d{0,2})$")
 
 
@@ -78,7 +74,7 @@ BRGY = re.compile(r"^(zone\s*/\s*)?barangay\b", re.I)
 DO_LABEL = re.compile(r"^d\.?\s*o\.?\s*no\.?", re.I)
 
 
-def parse(rdo: str, xls: pathlib.Path) -> tuple[dict, list[dict]]:
+def parse(rdo: str, name: str, xls: pathlib.Path) -> tuple[dict, list[dict]]:
     book = xlrd.open_workbook(str(xls))
     do, rev, eff, sheet_name = current_order(book)
     s = book.sheet_by_name(sheet_name)
@@ -117,32 +113,39 @@ def parse(rdo: str, xls: pathlib.Path) -> tuple[dict, list[dict]]:
                "class_code": texts[ci], "value_php_sqm": float(vals[num[-1]]), "sheet": sheet_name, "row": r + 1}
         rows.append(row)
         prev = row
-    src = {"rdo": rdo, "name": RDOS[rdo][0], "department_order": do, "revision": rev, "effective_date": eff, "sheet": sheet_name,
+    src = {"rdo": rdo, "name": name, "department_order": do, "revision": rev, "effective_date": eff, "sheet": sheet_name,
            "barangays": brgys}
     return src, rows
 
 
 def main() -> None:
+    pc = sys.argv[1]
+    city = CITIES[pc]
+    vs = ROOT / f"lgus/{pc}/valuation_sources.json"
+    before = {x["xls_sha256"]: x["downloaded"] for x in json.loads(vs.read_text())["schedules"]} if vs.exists() else {}
     sources, rows = [], []
-    for rdo, (_, fname) in RDOS.items():
+    for rdo, (name, fname) in city["rdos"].items():
         z = ROOT / f"data/valuation/rdo{rdo}.zip"
-        xls = next((ROOT / f"data/valuation/rdo{rdo}").glob("*.xls"))
-        src, rr = parse(rdo, xls)
-        src.update({"url": CDN + fname.replace(" ", "%20").replace(",", ",") + ".zip", "listed_on": PAGE,
-                    "zip_sha256": sha256(z), "xls_filename": xls.name, "xls_sha256": sha256(xls),
-                    "downloaded": "2026-10-12", "local": str(xls.relative_to(ROOT)), "rows": len(rr)})
+        xls = next((ROOT / f"data/valuation/rdo{rdo}").glob("*.xls*"))
+        src, rr = parse(rdo, name, xls)
+        h = sha256(xls)
+        src.update({"url": CDN + fname.replace(" ", "%20") + ".zip", "listed_on": PAGE,
+                    "zip_sha256": sha256(z), "xls_filename": xls.name, "xls_sha256": h,
+                    "downloaded": before.get(h) or dt.datetime.fromtimestamp(z.stat().st_mtime).date().isoformat(),
+                    "local": str(xls.relative_to(ROOT)), "rows": len(rr)})
         sources.append(src)
         rows += rr
         print(f"RDO {rdo}: DO {src['department_order']} ({src['revision']}, effective {src['effective_date']}), "
               f"{len(src['barangays'])} barangays, {len(rr)} rows")
-    out = ROOT / "data/prep/qc_values_rows.json"
+    out = ROOT / f"data/prep/{pc}_rows.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(rows, indent=0, ensure_ascii=False))
-    doc = {"lgu": "Quezon City", "adm3_pcode": PC, "valuation_base": "BIR zonal values",
+    doc = {"lgu": city["lgu"], "adm3_pcode": pc, "valuation_base": "BIR zonal values",
            "smv": {"status": "none recorded", "note": "Under RA 12001 an approved City Schedule of Market Values replaces BIR zonal values; "
                                                       "record it here when approved and rebuild."},
            "schedules": sources}
-    (ROOT / f"lgus/{PC}/valuation_sources.json").write_text(json.dumps(doc, indent=1, ensure_ascii=False))
+    vs.parent.mkdir(parents=True, exist_ok=True)
+    vs.write_text(json.dumps(doc, indent=1, ensure_ascii=False))
     print(len(rows), "rows ->", out.relative_to(ROOT))
 
 

@@ -1,5 +1,7 @@
-"""Generates lgus/PH1307404/values.json (zonal value recipes) from the parsed BIR schedule rows
-(data/prep/qc_values_rows.json, made by qc_values_parse.py).
+"""Generates lgus/<pcode>/values.json (zonal value rows) from the parsed BIR schedule rows
+(data/prep/<pcode>_rows.json, made by parse_schedules.py).
+
+usage: python scripts/gen_values.py <pcode>
 
 Row forms: "ALL OTHER STREETS" -> the barangay interior; a subdivision, village or compound -> its OSM outline;
 anything else -> the named street inside the row's barangay, between its two vicinity streets when it has two.
@@ -7,10 +9,12 @@ Condominium, townhouse-unit and parking-slot classes (RC, CC, PS) are out of the
 import json
 import pathlib
 import re
+import sys
 import geopandas as gpd
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-PC = "PH1307404"
+PC = sys.argv[1] if __name__ == "__main__" else "PH1307404"
+PREFIX = json.loads((ROOT / "scripts/cities.json").read_text())[PC]["prefix"]
 SRC = json.loads((ROOT / f"lgus/{PC}/valuation_sources.json").read_text())["schedules"]
 ALIASES = json.loads((ROOT / f"lgus/{PC}/aliases.json").read_text()) if (ROOT / f"lgus/{PC}/aliases.json").exists() else {}
 OUT_OF_SCOPE = {"RC": "residential condominium unit", "CC": "commercial condominium unit", "PS": "parking slot"}
@@ -32,9 +36,9 @@ def norm_brgy(s: str) -> str:
 
 
 def barangay_names() -> dict[str, str]:
-    adm = gpd.read_file(ROOT / "data/boundaries/phl_admin4.shp", where=f"adm3_pcode = '{PC}'", ignore_geometry=True)
+    adm = gpd.read_file(ROOT / "data/base/boundaries.gpkg", layer="barangay", where=f"city_pcode = '{PC}'", ignore_geometry=True)
     out = {}
-    for n in adm["adm4_name"]:
+    for n in adm["name"]:
         out[norm_brgy(n)] = n
         out.setdefault(norm_brgy(re.sub(r"\(.*?\)", "", n)), n)       # "N.S. Amoranto (Gintong Silahis)"
         inner = re.search(r"\((.*?)\)", n)
@@ -61,7 +65,7 @@ def street_names(s: str) -> list[str]:
 
 
 def main() -> None:
-    rows = json.loads((ROOT / "data/prep/qc_values_rows.json").read_text())
+    rows = json.loads((ROOT / f"data/prep/{PC}_rows.json").read_text())
     src = {s["rdo"]: s for s in SRC}
     bnames = barangay_names()
     balias = {norm_brgy(k): v for k, v in ALIASES.get("barangays", {}).items() if not k.startswith("_")}
@@ -75,7 +79,7 @@ def main() -> None:
             unknown_brgy.add(r["barangay"])
         text = " | ".join([street, *vic, code, f"{r['value_php_sqm']:,.0f}"])
         label = (", ".join(brgy) if isinstance(brgy, list) else brgy) or r["barangay"]
-        rule = {"rule_id": f"QCV-{rdo}-{n:04d}", "lgu_psgc": PC, "rdo": rdo, "barangay": label,
+        rule = {"rule_id": f"{PREFIX}-{rdo}-{n:04d}", "lgu_psgc": PC, "rdo": rdo, "barangay": label,
                 "source": {"file_sha256": s["xls_sha256"], "department_order": s["department_order"], "sheet": r["sheet"],
                            "row": r["row"], "text": text}}
         av = {"op": "assign_value", "value_php_sqm": r["value_php_sqm"], "class_code": code, "rdo": rdo,
